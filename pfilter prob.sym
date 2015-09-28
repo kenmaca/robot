@@ -1,0 +1,1217 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__D0move_to	6	1	0	4	2
+1	__D0main	6	1	4	4	50
+2	__signed_stack_001fopen	6	1	8	4	2
+3	__D0fgets_inline_main	6	1	12	4	3
+4	__SPTArgsMutex	9	0	16	4	6
+5	__constVal32768	6	0	20	4	3
+6	__DU0fopen	5	1	24	4	2
+7	__D0fopen	6	1	28	4	3
+8	__signed_stack_001main	6	1	32	4	82
+9	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	36	4	2
+10	__fopen_7qG2_fsize_7qG2_000	5	1	40	4	4
+11	__constVal65536	6	0	44	4	3
+12	__constValf0P0166666667	10	0	48	4	4
+13	__signed_stack_003main	6	1	52	4	8
+14	__signed_stack_002main	6	1	56	4	22
+15	__constVal37632	6	0	60	4	1
+16	__fopen_default_size	5	0	64	4	1
+17	__RandomTmp	5	1	68	4	21
+18	__fgets_7qG2_num_7qG2_000_inline_main	4	1	72	2	6
+19	__RLSByteCount	3	1	74	2	4
+20	__RLSMaxBytes	3	1	76	2	4
+21	__ArrHelper__main_73_0	4	1	78	2	8
+22	__constVal200	4	0	80	2	5
+23	__fopen_7qG2_result_7qG2_000	4	1	82	2	5
+24	__main_7qG2_dest_7qG2_000	4	1	84	2	6
+25	__main_7qG2_j_7qG2_000	4	1	86	2	6
+26	__move_to_7qG2_f_7qG2_000	4	1	88	2	2
+27	__move_to_7qG2_s_7qG2_000	4	1	90	2	2
+28	__move_to_7qG2_h_7qG2_000	4	1	92	2	3
+29	__main_7qG2_i_7qG2_000	4	1	94	2	36
+30	__RLSReturn	3	1	96	2	5
+31	__main_7qG2_target_7qG2_000	4	1	98	2	7
+32	__ResetSensorPort	1	1	100	1	3
+33	__constVal5	2	0	101	1	3
+34	____ResetSensorSubroutine_return	1	1	102	1	3
+35	____initialize_global_data_return	1	1	103	1	3
+36	__ResetSensorTmp	1	1	104	1	2
+37	__move_to_return	1	1	105	1	5
+38	__fopen_7qG2_handle_7qG2_000	1	1	106	1	5
+39	__fopen_return	1	1	107	1	4
+40	__constVal0	2	1	108	1	14
+41	__constVal3	2	0	109	1	12
+42	__constVal6	2	0	110	1	1
+43	__constVal4	2	0	111	1	6
+44	__SetSensorColorFull_7qG2_port_7qG2_000_inline_main	1	1	112	1	4
+45	__constVal32	2	0	113	1	9
+46	__constVal60	2	0	114	1	1
+47	__constVal10	2	0	115	1	1
+48	____readStringLine_return	1	1	116	1	1
+49	__constVal13	2	0	117	1	2
+50	__constVal12	2	0	118	1	4
+51	__PFTmp	1	1	119	1	1
+52	__main_7qG2_charat_7qG2_000	1	1	120	1	13
+53	__main_7qG2_fd_7qG2_000	1	1	121	1	8
+54	__FReadTmpByte	1	1	122	1	3
+55	__RLSReturnAddress	1	1	123	1	4
+56	__constVal48	2	0	124	1	8
+57	__zffopen	1	1	125	1	3
+58	__constVal15	2	0	126	1	1
+59	__fgets_7qG2_handle_7qG2_000_inline_main	1	1	127	1	3
+60	__zfmain	1	1	128	1	11
+61	__constVal96	2	0	129	1	3
+62	__SetSensorType_7qG2_port_7qG2_000_inline_main	1	1	130	1	2
+63	__SetSensorType_7qG2_type_7qG2_000_inline_main	1	1	131	1	2
+64	__constVal1	2	0	132	1	10
+65	__constVal2	2	0	133	1	8
+66	__constVal63	2	0	134	1	3
+67	____main_7qG2_map_7qG2_000_0	8	0	4	8	1
+68	____main_7qG2_map_7qG2_000_0.NE	4	1	136	2	1
+69	____main_7qG2_map_7qG2_000_0.SE	4	1	138	2	1
+70	____main_7qG2_map_7qG2_000_0.SW	4	1	140	2	1
+71	____main_7qG2_map_7qG2_000_0.NW	4	1	142	2	1
+72	__RandomArgs	8	0	1	4	9
+73	__RandomArgs.Result	4	1	144	2	9
+74	__SPTArgs	8	0	5	8	18
+75	__SPTArgs.Result	2	1	148	1	18
+76	__SPTArgs.Frequency	3	1	150	2	18
+77	__SPTArgs.Duration	3	1	152	2	18
+78	__SPTArgs.Loop	1	1	154	1	18
+79	__SPTArgs.Volume	1	1	155	1	18
+80	__FReadArgs	8	0	4	12	8
+81	__FReadArgs.Result	3	1	156	2	8
+82	__FReadArgs.FileHandle	1	1	158	1	8
+83	__FReadArgs.Buffer	7	0	160	4	8
+84	__FReadArgs.Buffer.Buffer_type	1	0	0	1	0
+85	__FReadArgs.Length	5	1	164	4	8
+86	__FOArgs	8	0	4	12	15
+87	__FOArgs.Result	3	1	168	2	15
+88	__FOArgs.FileHandle	1	1	170	1	15
+89	__FOArgs.Filename	7	0	172	4	15
+90	__FOArgs.Filename.Filename_type	1	0	0	1	0
+91	__FOArgs.Length	5	1	176	4	15
+92	__FCArgs	8	0	2	4	2
+93	__FCArgs.Result	3	1	180	2	2
+94	__FCArgs.FileHandle	1	1	182	1	2
+95	__TextOutArgs	8	0	4	16	6
+96	__TextOutArgs.Result	2	1	184	1	6
+97	__TextOutArgs.Location	8	0	2	4	6
+98	__TextOutArgs.Location.X	4	1	188	2	6
+99	__TextOutArgs.Location.Y	4	1	190	2	6
+100	__TextOutArgs.Text	7	0	192	4	6
+101	__TextOutArgs.Text.Text_type	1	0	0	1	0
+102	__TextOutArgs.Options	5	1	196	4	6
+103	____main_7qG2_list_7qG2_000_0	8	0	4	12	1
+104	____main_7qG2_list_7qG2_000_0.x	4	1	200	2	1
+105	____main_7qG2_list_7qG2_000_0.y	4	1	202	2	1
+106	____main_7qG2_list_7qG2_000_0.theta	4	1	204	2	1
+107	____main_7qG2_list_7qG2_000_0.prob	10	1	208	4	1
+108	__PointOutArgs	8	0	3	12	4
+109	__PointOutArgs.Result	2	1	212	1	4
+110	__PointOutArgs.Location	8	0	2	4	4
+111	__PointOutArgs.Location.X	4	1	216	2	4
+112	__PointOutArgs.Location.Y	4	1	218	2	4
+113	__PointOutArgs.Options	5	1	220	4	4
+114	__ArrHelper__mainparticle_219_0	8	0	4	12	48
+115	__ArrHelper__mainparticle_219_0.x	4	1	224	2	48
+116	__ArrHelper__mainparticle_219_0.y	4	1	226	2	48
+117	__ArrHelper__mainparticle_219_0.theta	4	1	228	2	48
+118	__ArrHelper__mainparticle_219_0.prob	10	1	232	4	48
+119	__ArrHelper__mainintersection_219_0	8	0	4	8	12
+120	__ArrHelper__mainintersection_219_0.NE	4	1	236	2	12
+121	__ArrHelper__mainintersection_219_0.SE	4	1	238	2	12
+122	__ArrHelper__mainintersection_219_0.SW	4	1	240	2	12
+123	__ArrHelper__mainintersection_219_0.NW	4	1	242	2	12
+124	__fgets_7qG2_str_7qG2_000_inline_main	7	0	244	4	12
+125	__fgets_7qG2_str_7qG2_000_inline_main.__fgets_7qG2_str_7qG2_000_inline_main_type	1	0	0	1	0
+126	__OUT_BC	7	0	246	4	1
+127	__OUT_BC.__OUT_BC_type	1	0	0	1	0
+128	__main_7qG2_line_7qG2_000	7	0	248	4	11
+129	__main_7qG2_line_7qG2_000.__main_7qG2_line_7qG2_000_type	1	0	0	1	0
+130	__constStr0009	7	0	250	4	1
+131	__constStr0009.__constStr0009_type	1	1	0	1	0
+132	__strretvalmain	7	0	252	4	3
+133	__strretvalmain.__strretvalmain_type	1	0	0	1	0
+134	__strbuffgets_inline_main	7	0	254	4	6
+135	__strbuffgets_inline_main.__strbuffgets_inline_main_type	1	0	0	1	0
+136	__fopen_7qG2_filename_7qG2_000	7	0	256	4	4
+137	__fopen_7qG2_filename_7qG2_000.__fopen_7qG2_filename_7qG2_000_type	1	0	0	1	0
+138	__strbufmain	7	0	258	4	14
+139	__strbufmain.__strbufmain_type	1	0	0	1	0
+140	__RLSBuffer	7	0	260	4	2
+141	__RLSBuffer.__RLSBuffer_type	1	0	0	1	0
+142	__RLSOutput	7	0	262	4	6
+143	__RLSOutput.__RLSOutput_type	1	0	0	1	0
+144	__strbuffopen	7	0	264	4	4
+145	__strbuffopen.__strbuffopen_type	1	0	0	1	0
+146	__main_7qG2_map_7qG2_000	7	0	266	4	13
+147	__main_7qG2_map_7qG2_000.__main_7qG2_map_7qG2_000_type	8	0	4	8	0
+148	__main_7qG2_map_7qG2_000.__main_7qG2_map_7qG2_000_type.NE	4	0	0	2	0
+149	__main_7qG2_map_7qG2_000.__main_7qG2_map_7qG2_000_type.SE	4	0	2	2	0
+150	__main_7qG2_map_7qG2_000.__main_7qG2_map_7qG2_000_type.SW	4	0	4	2	0
+151	__main_7qG2_map_7qG2_000.__main_7qG2_map_7qG2_000_type.NW	4	0	6	2	0
+152	__main_7qG2_guess_7qG2_000	7	0	268	4	7
+153	__main_7qG2_guess_7qG2_000.__main_7qG2_guess_7qG2_000_type	4	0	0	2	0
+154	__main_7qG2_list_7qG2_000	7	0	270	4	49
+155	__main_7qG2_list_7qG2_000.__main_7qG2_list_7qG2_000_type	8	0	4	12	0
+156	__main_7qG2_list_7qG2_000.__main_7qG2_list_7qG2_000_type.x	4	0	0	2	0
+157	__main_7qG2_list_7qG2_000.__main_7qG2_list_7qG2_000_type.y	4	0	2	2	0
+158	__main_7qG2_list_7qG2_000.__main_7qG2_list_7qG2_000_type.theta	4	0	4	2	0
+159	__main_7qG2_list_7qG2_000.__main_7qG2_list_7qG2_000_type.prob	10	0	8	4	0
+160	__constStr0008	7	0	272	4	1
+161	__constStr0008.__constStr0008_type	1	1	0	1	0
+162	__fopen_7qG2_mode_7qG2_000	7	0	274	4	2
+163	__fopen_7qG2_mode_7qG2_000.__fopen_7qG2_mode_7qG2_000_type	1	0	0	1	0
+164	__constStr0006	7	0	276	4	2
+165	__constStr0006.__constStr0006_type	1	1	0	1	0
+166	__constStr0007	7	0	278	4	1
+167	__constStr0007.__constStr0007_type	1	1	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	268	0	#line 268 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	269	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	268	2	#line 268 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	268	2	#line 268 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	269	2		set __D0main, 75
+0	269	5	#line 269 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	270	5	#pragma macro 7
+0	270	5		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4277	28	#line 4277 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	269	28	#line 269 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	269	28	#line 269 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	270	28		set __D0main, 75
+0	270	31	#line 270 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	271	31	#pragma macro 7
+0	271	31		setout __constVal1, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4284	54	#line 4284 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	270	54	#line 270 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	270	54	#line 270 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	271	54		set __Wait_7qG2_ms_7qG2_000_inline_main, 4000
+0	270	57	#line 270 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	7921	57	#line 7921 "NXCDefs.h"
+0	7922	57		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	60	#line 7921 "NXCDefs.h"
+0	271	60	#line 271 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	274	60	#line 274 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	275	60	#pragma macro 7
+0	275	60		setout __OUT_BC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4301	83	#line 4301 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	274	83	#line 274 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	274	83	#line 274 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	275	83		set __SetSensorType_7qG2_port_7qG2_000_inline_main, 2
+0	274	86	#line 274 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	274	86	#line 274 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	275	86		set __SetSensorType_7qG2_type_7qG2_000_inline_main, 13
+0	274	89	#line 274 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	3663	89	#line 3663 "NXCDefs.h"
+0	3664	89		setin __SetSensorType_7qG2_type_7qG2_000_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_main, 0
+0	3663	93	#line 3663 "NXCDefs.h"
+0	275	93	#line 275 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	275	93	#line 275 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	276	93		set __D0main, 1
+0	276	96	#line 276 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	277	96		tst 5, __zfmain, __D0main
+0	276	99	#line 276 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	277	99		brtst 4, __NXC_Label_528, __zfmain
+0	6069	102	#line 6069 "NXCDefs.h"
+0	6070	102	#pragma macro 6
+0	6070	102		mov __PointOutArgs.Location.X, __constVal200
+0	6070	104		mov __PointOutArgs.Location.Y, __constVal200
+0	6070	106		mov __PointOutArgs.Options, __constVal1
+0	6070	108		syscall 14, __PointOutArgs
+0	4337	111	#line 4337 "NXCDefs.h"
+0	6069	111	#line 6069 "NXCDefs.h"
+0	277	111	#line 277 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	277	111	#line 277 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	278	111		set __signed_stack_001main, 10
+0	277	114	#line 277 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	277	114	#line 277 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	278	114		set __signed_stack_002main, 10
+0	277	117	#line 277 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	277	117	#line 277 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	278	117		getin __D0main, __constVal2, 4
+0	279	121	#line 279 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	279	121	#line 279 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	280	121		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	279	123	#line 279 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	280	123		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	279	125	#line 279 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	280	125		set __TextOutArgs.Options, 0
+0	279	128	#line 279 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	280	128		numtostr __TextOutArgs.Text, __D0main
+0	279	131	#line 279 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	280	131		syscall 13, __TextOutArgs
+0	279	134	#line 279 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	280	134		mov __D0main, __TextOutArgs.Result
+0	279	136	#line 279 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	279	136	#line 279 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	279	136	#line 279 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	281	136	#line 281 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	282	136		jmp __NXC_Label_527
+0	281	138	#line 281 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	283	138	#line 283 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	283	138	#line 283 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	284	138		arrinit __main_7qG2_map_7qG2_000, ____main_7qG2_map_7qG2_000_0, __constVal15
+0	284	142	#line 284 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	285	142		arrinit __main_7qG2_guess_7qG2_000, __constVal0, __constVal3
+0	285	146	#line 285 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	285	146	#line 285 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	288	146	#line 288 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	288	146	#line 288 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	289	146		arrinit __main_7qG2_list_7qG2_000, ____main_7qG2_list_7qG2_000_0, __constVal60
+0	290	150	#line 290 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	301	150	#line 301 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	302	150		set __SetSensorColorFull_7qG2_port_7qG2_000_inline_main, 0
+0	301	153	#line 301 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	3802	153	#line 3802 "NXCDefs.h"
+0	3803	153	#pragma macro 6
+0	3803	153		setin __constVal13, __SetSensorColorFull_7qG2_port_7qG2_000_inline_main, 0
+0	3803	157		setin __constVal0, __SetSensorColorFull_7qG2_port_7qG2_000_inline_main, 1
+0	3803	161		mov __ResetSensorPort, __SetSensorColorFull_7qG2_port_7qG2_000_inline_main
+0	3803	163		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4483	165	#line 4483 "NXCDefs.h"
+0	3802	165	#line 3802 "NXCDefs.h"
+0	304	165	#line 304 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	304	165	#line 304 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	305	165		set __main_7qG2_i_7qG2_000, 0
+0	304	168	#line 304 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	304	168	#line 304 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	305	168		mov __signed_stack_001main, __main_7qG2_i_7qG2_000
+0	304	170	#line 304 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	304	170	#line 304 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	305	170		set __D0main, 60
+0	304	173	#line 304 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	305	173		cmp 0, __zfmain, __signed_stack_001main, __D0main
+0	304	177	#line 304 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	305	177		mov __D0main, __zfmain
+0	304	179	#line 304 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	305	179		brtst 4, __NXC_Label_542, __zfmain
+0	304	182	#line 304 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	305	182		jmp __NXC_Label_543
+0	304	184	#line 304 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	304	184	#line 304 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	304	184	#line 304 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	304	184	#line 304 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	305	184		add __main_7qG2_i_7qG2_000, __main_7qG2_i_7qG2_000, __constVal4
+0	304	188	#line 304 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	305	188	#line 305 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	306	188		jmp __NXC_Label_541
+0	305	190	#line 305 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	306	190		mov __signed_stack_001main, __main_7qG2_i_7qG2_000
+0	305	192	#line 305 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	305	192	#line 305 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	306	192		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
+0	305	196	#line 305 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	305	196	#line 305 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	305	196	#line 305 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	305	196	#line 305 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	306	196		div __signed_stack_002main, __main_7qG2_i_7qG2_000, __constVal4
+0	305	200	#line 305 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	306	200	#line 306 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	306	200	#line 306 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	307	200		mod __ArrHelper__mainparticle_219_0.x, __signed_stack_002main, __constVal3
+0	306	204	#line 306 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	306	204	#line 306 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	307	204		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
+0	306	209	#line 306 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	306	209	#line 306 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	307	209		mov __signed_stack_001main, __main_7qG2_i_7qG2_000
+0	306	211	#line 306 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	306	211	#line 306 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	307	211		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
+0	306	215	#line 306 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	306	215	#line 306 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	306	215	#line 306 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	307	215	#line 307 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	308	215		div __ArrHelper__mainparticle_219_0.y, __main_7qG2_i_7qG2_000, __constVal12
+0	307	219	#line 307 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	307	219	#line 307 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	308	219		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
+0	307	224	#line 307 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	307	224	#line 307 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	308	224		mov __signed_stack_001main, __main_7qG2_i_7qG2_000
+0	307	226	#line 307 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	307	226	#line 307 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	308	226		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
+0	308	230	#line 308 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	309	230		set __ArrHelper__mainparticle_219_0.theta, 100
+0	308	233	#line 308 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	308	233	#line 308 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	309	233		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
+0	308	238	#line 308 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	308	238	#line 308 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	309	238		mov __signed_stack_001main, __main_7qG2_i_7qG2_000
+0	308	240	#line 308 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	308	240	#line 308 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	309	240		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
+0	309	244	#line 309 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	310	244		mov __ArrHelper__mainparticle_219_0.prob, __constValf0P0166666667
+0	309	246	#line 309 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	309	246	#line 309 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	310	246		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
+0	309	251	#line 309 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	309	251	#line 309 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	309	251	#line 309 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	309	251	#line 309 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	309	251	#line 309 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	310	251		add __signed_stack_001main, __main_7qG2_i_7qG2_000, __constVal1
+0	309	255	#line 309 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	309	255	#line 309 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	310	255		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
+0	309	259	#line 309 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	309	259	#line 309 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	309	259	#line 309 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	309	259	#line 309 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	310	259		div __signed_stack_002main, __main_7qG2_i_7qG2_000, __constVal4
+0	309	263	#line 309 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	310	263	#line 310 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	310	263	#line 310 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	311	263		mod __ArrHelper__mainparticle_219_0.x, __signed_stack_002main, __constVal3
+0	310	267	#line 310 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	310	267	#line 310 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	311	267		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
+0	310	272	#line 310 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	310	272	#line 310 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	310	272	#line 310 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	310	272	#line 310 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	310	272	#line 310 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	311	272		add __signed_stack_001main, __main_7qG2_i_7qG2_000, __constVal1
+0	310	276	#line 310 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	310	276	#line 310 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	311	276		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
+0	310	280	#line 310 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	310	280	#line 310 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	310	280	#line 310 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	311	280	#line 311 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	312	280		div __ArrHelper__mainparticle_219_0.y, __main_7qG2_i_7qG2_000, __constVal12
+0	311	284	#line 311 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	311	284	#line 311 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	312	284		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
+0	311	289	#line 311 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	311	289	#line 311 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	311	289	#line 311 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	311	289	#line 311 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	311	289	#line 311 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	312	289		add __signed_stack_001main, __main_7qG2_i_7qG2_000, __constVal1
+0	311	293	#line 311 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	311	293	#line 311 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	312	293		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
+0	312	297	#line 312 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	313	297		set __ArrHelper__mainparticle_219_0.theta, 102
+0	312	300	#line 312 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	312	300	#line 312 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	313	300		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
+0	312	305	#line 312 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	312	305	#line 312 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	312	305	#line 312 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	312	305	#line 312 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	312	305	#line 312 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	313	305		add __signed_stack_001main, __main_7qG2_i_7qG2_000, __constVal1
+0	312	309	#line 312 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	312	309	#line 312 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	313	309		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
+0	313	313	#line 313 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	314	313		mov __ArrHelper__mainparticle_219_0.prob, __constValf0P0166666667
+0	313	315	#line 313 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	313	315	#line 313 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	314	315		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
+0	313	320	#line 313 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	313	320	#line 313 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	313	320	#line 313 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	313	320	#line 313 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	313	320	#line 313 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	314	320		add __signed_stack_001main, __main_7qG2_i_7qG2_000, __constVal2
+0	313	324	#line 313 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	313	324	#line 313 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	314	324		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
+0	313	328	#line 313 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	313	328	#line 313 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	313	328	#line 313 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	313	328	#line 313 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	314	328		div __signed_stack_002main, __main_7qG2_i_7qG2_000, __constVal4
+0	313	332	#line 313 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	314	332	#line 314 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	314	332	#line 314 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	315	332		mod __ArrHelper__mainparticle_219_0.x, __signed_stack_002main, __constVal3
+0	314	336	#line 314 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	314	336	#line 314 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	315	336		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
+0	314	341	#line 314 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	314	341	#line 314 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	314	341	#line 314 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	314	341	#line 314 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	314	341	#line 314 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	315	341		add __signed_stack_001main, __main_7qG2_i_7qG2_000, __constVal2
+0	314	345	#line 314 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	314	345	#line 314 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	315	345		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
+0	314	349	#line 314 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	314	349	#line 314 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	314	349	#line 314 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	315	349	#line 315 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	316	349		div __ArrHelper__mainparticle_219_0.y, __main_7qG2_i_7qG2_000, __constVal12
+0	315	353	#line 315 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	315	353	#line 315 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	316	353		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
+0	315	358	#line 315 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	315	358	#line 315 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	315	358	#line 315 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	315	358	#line 315 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	315	358	#line 315 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	316	358		add __signed_stack_001main, __main_7qG2_i_7qG2_000, __constVal2
+0	315	362	#line 315 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	315	362	#line 315 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	316	362		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
+0	316	366	#line 316 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	317	366		set __ArrHelper__mainparticle_219_0.theta, 101
+0	316	369	#line 316 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	316	369	#line 316 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	317	369		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
+0	316	374	#line 316 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	316	374	#line 316 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	316	374	#line 316 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	316	374	#line 316 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	316	374	#line 316 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	317	374		add __signed_stack_001main, __main_7qG2_i_7qG2_000, __constVal2
+0	316	378	#line 316 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	316	378	#line 316 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	317	378		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
+0	317	382	#line 317 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	318	382		mov __ArrHelper__mainparticle_219_0.prob, __constValf0P0166666667
+0	317	384	#line 317 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	317	384	#line 317 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	318	384		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
+0	317	389	#line 317 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	317	389	#line 317 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	317	389	#line 317 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	317	389	#line 317 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	317	389	#line 317 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	318	389		add __signed_stack_001main, __main_7qG2_i_7qG2_000, __constVal3
+0	317	393	#line 317 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	317	393	#line 317 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	318	393		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
+0	317	397	#line 317 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	317	397	#line 317 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	317	397	#line 317 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	317	397	#line 317 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	318	397		div __signed_stack_002main, __main_7qG2_i_7qG2_000, __constVal4
+0	317	401	#line 317 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	318	401	#line 318 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	318	401	#line 318 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	319	401		mod __ArrHelper__mainparticle_219_0.x, __signed_stack_002main, __constVal3
+0	318	405	#line 318 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	318	405	#line 318 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	319	405		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
+0	318	410	#line 318 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	318	410	#line 318 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	318	410	#line 318 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	318	410	#line 318 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	318	410	#line 318 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	319	410		add __signed_stack_001main, __main_7qG2_i_7qG2_000, __constVal3
+0	318	414	#line 318 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	318	414	#line 318 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	319	414		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
+0	318	418	#line 318 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	318	418	#line 318 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	318	418	#line 318 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	319	418	#line 319 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	320	418		div __ArrHelper__mainparticle_219_0.y, __main_7qG2_i_7qG2_000, __constVal12
+0	319	422	#line 319 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	319	422	#line 319 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	320	422		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
+0	319	427	#line 319 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	319	427	#line 319 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	319	427	#line 319 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	319	427	#line 319 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	319	427	#line 319 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	320	427		add __signed_stack_001main, __main_7qG2_i_7qG2_000, __constVal3
+0	319	431	#line 319 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	319	431	#line 319 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	320	431		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
+0	320	435	#line 320 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	321	435		set __ArrHelper__mainparticle_219_0.theta, 103
+0	320	438	#line 320 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	320	438	#line 320 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	321	438		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
+0	320	443	#line 320 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	320	443	#line 320 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	320	443	#line 320 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	320	443	#line 320 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	320	443	#line 320 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	321	443		add __signed_stack_001main, __main_7qG2_i_7qG2_000, __constVal3
+0	320	447	#line 320 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	320	447	#line 320 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	321	447		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
+0	321	451	#line 321 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	322	451		mov __ArrHelper__mainparticle_219_0.prob, __constValf0P0166666667
+0	321	453	#line 321 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	321	453	#line 321 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	322	453		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
+0	321	458	#line 321 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	341	458	#line 341 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	342	458		jmp __NXC_Label_544
+0	341	460	#line 341 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	341	460	#line 341 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	342	460		strcat __strbufmain, __constStr0009
+0	341	464	#line 341 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	342	464		mov __fopen_7qG2_filename_7qG2_000, __strbufmain
+0	341	466	#line 341 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	342	466		strcat __strbufmain, __constStr0006
+0	341	470	#line 341 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	342	470		mov __fopen_7qG2_mode_7qG2_000, __strbufmain
+0	343	472	#line 343 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	344	472		subcall fopen, __fopen_return
+0	343	474	#line 343 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	344	474		mov __main_7qG2_fd_7qG2_000, __DU0fopen
+0	343	476	#line 343 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	343	476	#line 343 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	343	476	#line 343 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	344	476		set __main_7qG2_i_7qG2_000, 0
+0	343	479	#line 343 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	343	479	#line 343 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	344	479		mov __signed_stack_001main, __main_7qG2_i_7qG2_000
+0	343	481	#line 343 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	343	481	#line 343 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	344	481		set __D0main, 15
+0	343	484	#line 343 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	344	484		cmp 0, __zfmain, __signed_stack_001main, __D0main
+0	343	488	#line 343 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	344	488		mov __D0main, __zfmain
+0	343	490	#line 343 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	344	490		brtst 4, __NXC_Label_642, __zfmain
+0	343	493	#line 343 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	344	493		jmp __NXC_Label_643
+0	343	495	#line 343 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	344	495		add __main_7qG2_i_7qG2_000, __main_7qG2_i_7qG2_000, __constVal1
+0	344	499	#line 344 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	345	499		jmp __NXC_Label_641
+0	344	501	#line 344 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	345	501		mov __fgets_7qG2_str_7qG2_000_inline_main, __main_7qG2_line_7qG2_000
+0	344	503	#line 344 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	345	503		set __fgets_7qG2_num_7qG2_000_inline_main, 10
+0	344	506	#line 344 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	344	506	#line 344 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	345	506		mov __fgets_7qG2_handle_7qG2_000_inline_main, __main_7qG2_fd_7qG2_000
+0	344	508	#line 344 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	17659	508	#line 17659 "NXCDefs.h"
+0	17660	508	#pragma macro 7
+0	17660	508		mov __FReadArgs.FileHandle, __main_7qG2_fd_7qG2_000
+0	17660	510		mov __RLSMaxBytes, __fgets_7qG2_num_7qG2_000_inline_main
+0	17660	512		subcall __readStringLine, __RLSReturnAddress
+0	17660	514		mov __D0fgets_inline_main, __RLSReturn
+0	17660	516		mov __fgets_7qG2_str_7qG2_000_inline_main, __RLSOutput
+0	5034	518	#line 5034 "NXCDefs.h"
+0	17659	518	#line 17659 "NXCDefs.h"
+0	17659	518	#line 17659 "NXCDefs.h"
+0	17661	518	#line 17661 "NXCDefs.h"
+0	17662	518		strcat __strbuffgets_inline_main, __fgets_7qG2_str_7qG2_000_inline_main
+0	17661	522	#line 17661 "NXCDefs.h"
+0	17661	522	#line 17661 "NXCDefs.h"
+0	347	522	#line 347 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	348	522		mov __main_7qG2_line_7qG2_000, __fgets_7qG2_str_7qG2_000_inline_main
+0	347	524	#line 347 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	348	524		mov __strretvalmain, __strbuffgets_inline_main
+0	347	526	#line 347 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	347	526	#line 347 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	348	526		set __main_7qG2_j_7qG2_000, 0
+0	347	529	#line 347 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	347	529	#line 347 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	348	529		mov __signed_stack_001main, __main_7qG2_j_7qG2_000
+0	347	531	#line 347 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	347	531	#line 347 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	348	531		set __D0main, 7
+0	347	534	#line 347 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	348	534		cmp 0, __zfmain, __signed_stack_001main, __D0main
+0	347	538	#line 347 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	348	538		mov __D0main, __zfmain
+0	347	540	#line 347 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	348	540		brtst 4, __NXC_Label_654, __zfmain
+0	347	543	#line 347 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	348	543		jmp __NXC_Label_655
+0	347	545	#line 347 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	347	545	#line 347 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	347	545	#line 347 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	347	545	#line 347 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	348	545		add __main_7qG2_j_7qG2_000, __main_7qG2_j_7qG2_000, __constVal2
+0	347	549	#line 347 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	348	549	#line 348 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	349	549		jmp __NXC_Label_653
+0	348	551	#line 348 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	349	551		strcat __strbufmain, __main_7qG2_line_7qG2_000
+0	348	555	#line 348 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	349	555		mov __D0main, __main_7qG2_j_7qG2_000
+0	349	557	#line 349 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	350	557		index __main_7qG2_charat_7qG2_000, __strbufmain, __D0main
+0	349	561	#line 349 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	349	561	#line 349 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	349	561	#line 349 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	350	561		mov __D0main, __main_7qG2_j_7qG2_000
+0	353	563		brcmp 4, __NXC_Label_670, __constVal0, __D0main
+0	354	567		brcmp 4, __NXC_Label_675, __constVal2, __D0main
+0	355	571		brcmp 4, __NXC_Label_680, __constVal4, __D0main
+0	356	575		brcmp 4, __NXC_Label_685, __constVal6, __D0main
+0	357	579		jmp __NXC_Label_669
+0	351	581	#line 351 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	351	581	#line 351 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	352	581		mov __signed_stack_001main, __main_7qG2_i_7qG2_000
+0	351	583	#line 351 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	351	583	#line 351 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	352	583		index __ArrHelper__mainintersection_219_0, __main_7qG2_map_7qG2_000, __signed_stack_001main
+0	351	587	#line 351 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	351	587	#line 351 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	352	587	#line 352 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	352	587	#line 352 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	353	587		sub __ArrHelper__mainintersection_219_0.NE, __main_7qG2_charat_7qG2_000, __constVal48
+0	352	591	#line 352 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	352	591	#line 352 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	353	591		replace __main_7qG2_map_7qG2_000, __main_7qG2_map_7qG2_000, __signed_stack_001main, __ArrHelper__mainintersection_219_0
+0	352	596	#line 352 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	353	596	#line 353 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	354	596		jmp __NXC_Label_669
+0	353	598	#line 353 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	354	598	#line 354 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	354	598	#line 354 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	355	598		mov __signed_stack_001main, __main_7qG2_i_7qG2_000
+0	354	600	#line 354 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	354	600	#line 354 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	355	600		index __ArrHelper__mainintersection_219_0, __main_7qG2_map_7qG2_000, __signed_stack_001main
+0	354	604	#line 354 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	354	604	#line 354 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	355	604	#line 355 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	355	604	#line 355 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	356	604		sub __ArrHelper__mainintersection_219_0.SE, __main_7qG2_charat_7qG2_000, __constVal48
+0	355	608	#line 355 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	355	608	#line 355 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	356	608		replace __main_7qG2_map_7qG2_000, __main_7qG2_map_7qG2_000, __signed_stack_001main, __ArrHelper__mainintersection_219_0
+0	355	613	#line 355 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	356	613	#line 356 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	357	613		jmp __NXC_Label_669
+0	356	615	#line 356 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	357	615	#line 357 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	357	615	#line 357 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	358	615		mov __signed_stack_001main, __main_7qG2_i_7qG2_000
+0	357	617	#line 357 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	357	617	#line 357 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	358	617		index __ArrHelper__mainintersection_219_0, __main_7qG2_map_7qG2_000, __signed_stack_001main
+0	357	621	#line 357 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	357	621	#line 357 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	358	621	#line 358 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	358	621	#line 358 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	359	621		sub __ArrHelper__mainintersection_219_0.SW, __main_7qG2_charat_7qG2_000, __constVal48
+0	358	625	#line 358 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	358	625	#line 358 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	359	625		replace __main_7qG2_map_7qG2_000, __main_7qG2_map_7qG2_000, __signed_stack_001main, __ArrHelper__mainintersection_219_0
+0	358	630	#line 358 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	359	630	#line 359 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	360	630		jmp __NXC_Label_669
+0	359	632	#line 359 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	360	632	#line 360 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	360	632	#line 360 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	361	632		mov __signed_stack_001main, __main_7qG2_i_7qG2_000
+0	360	634	#line 360 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	360	634	#line 360 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	361	634		index __ArrHelper__mainintersection_219_0, __main_7qG2_map_7qG2_000, __signed_stack_001main
+0	360	638	#line 360 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	360	638	#line 360 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	361	638	#line 361 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	361	638	#line 361 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	362	638		sub __ArrHelper__mainintersection_219_0.NW, __main_7qG2_charat_7qG2_000, __constVal48
+0	361	642	#line 361 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	361	642	#line 361 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	362	642		replace __main_7qG2_map_7qG2_000, __main_7qG2_map_7qG2_000, __signed_stack_001main, __ArrHelper__mainintersection_219_0
+0	361	647	#line 361 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	362	647	#line 362 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	362	647	#line 362 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	364	647	#line 364 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	366	647	#line 366 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	367	647		jmp __NXC_Label_656
+0	366	649	#line 366 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	366	649	#line 366 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	367	649		jmp __NXC_Label_644
+0	366	651	#line 366 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	366	651	#line 366 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	367	651		mov __fgets_7qG2_str_7qG2_000_inline_main, __main_7qG2_line_7qG2_000
+0	366	653	#line 366 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	367	653		set __fgets_7qG2_num_7qG2_000_inline_main, 10
+0	366	656	#line 366 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	366	656	#line 366 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	367	656		mov __fgets_7qG2_handle_7qG2_000_inline_main, __main_7qG2_fd_7qG2_000
+0	366	658	#line 366 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	17659	658	#line 17659 "NXCDefs.h"
+0	17660	658	#pragma macro 7
+0	17660	658		mov __FReadArgs.FileHandle, __main_7qG2_fd_7qG2_000
+0	17660	660		mov __RLSMaxBytes, __fgets_7qG2_num_7qG2_000_inline_main
+0	17660	662		subcall __readStringLine, __RLSReturnAddress
+0	17660	664		mov __D0fgets_inline_main, __RLSReturn
+0	17660	666		mov __fgets_7qG2_str_7qG2_000_inline_main, __RLSOutput
+0	5247	668	#line 5247 "NXCDefs.h"
+0	17659	668	#line 17659 "NXCDefs.h"
+0	17659	668	#line 17659 "NXCDefs.h"
+0	17661	668	#line 17661 "NXCDefs.h"
+0	17662	668		strcat __strbuffgets_inline_main, __fgets_7qG2_str_7qG2_000_inline_main
+0	17661	672	#line 17661 "NXCDefs.h"
+0	17661	672	#line 17661 "NXCDefs.h"
+0	367	672	#line 367 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	368	672		mov __main_7qG2_line_7qG2_000, __fgets_7qG2_str_7qG2_000_inline_main
+0	367	674	#line 367 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	368	674		mov __strretvalmain, __strbuffgets_inline_main
+0	367	676	#line 367 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	367	676	#line 367 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	368	676		strcat __strbufmain, __main_7qG2_line_7qG2_000
+0	367	680	#line 367 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	368	680		set __D0main, 0
+0	368	683	#line 368 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	369	683		index __main_7qG2_charat_7qG2_000, __strbufmain, __D0main
+0	368	687	#line 368 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	368	687	#line 368 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	368	687	#line 368 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	368	687	#line 368 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	369	687	#line 369 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	369	687	#line 369 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	370	687		sub __main_7qG2_target_7qG2_000, __main_7qG2_charat_7qG2_000, __constVal48
+0	369	691	#line 369 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	369	691	#line 369 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	369	691	#line 369 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	369	691	#line 369 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	370	691	#line 370 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	370	691	#line 370 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	371	691		mul __main_7qG2_target_7qG2_000, __main_7qG2_target_7qG2_000, __constVal5
+0	370	695	#line 370 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	370	695	#line 370 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	370	695	#line 370 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	371	695		strcat __strbufmain, __main_7qG2_line_7qG2_000
+0	370	699	#line 370 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	371	699		set __D0main, 2
+0	371	702	#line 371 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	372	702		index __main_7qG2_charat_7qG2_000, __strbufmain, __D0main
+0	371	706	#line 371 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	371	706	#line 371 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	371	706	#line 371 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	371	706	#line 371 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	371	706	#line 371 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	371	706	#line 371 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	372	706		add __signed_stack_001main, __main_7qG2_target_7qG2_000, __main_7qG2_charat_7qG2_000
+0	371	710	#line 371 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	374	710	#line 374 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	374	710	#line 374 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	375	710		sub __main_7qG2_target_7qG2_000, __signed_stack_001main, __constVal48
+0	374	714	#line 374 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	374	714	#line 374 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	374	714	#line 374 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	375	714		mov __fgets_7qG2_str_7qG2_000_inline_main, __main_7qG2_line_7qG2_000
+0	374	716	#line 374 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	375	716		set __fgets_7qG2_num_7qG2_000_inline_main, 10
+0	374	719	#line 374 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	374	719	#line 374 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	375	719		mov __fgets_7qG2_handle_7qG2_000_inline_main, __main_7qG2_fd_7qG2_000
+0	374	721	#line 374 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	17659	721	#line 17659 "NXCDefs.h"
+0	17660	721	#pragma macro 7
+0	17660	721		mov __FReadArgs.FileHandle, __main_7qG2_fd_7qG2_000
+0	17660	723		mov __RLSMaxBytes, __fgets_7qG2_num_7qG2_000_inline_main
+0	17660	725		subcall __readStringLine, __RLSReturnAddress
+0	17660	727		mov __D0fgets_inline_main, __RLSReturn
+0	17660	729		mov __fgets_7qG2_str_7qG2_000_inline_main, __RLSOutput
+0	5348	731	#line 5348 "NXCDefs.h"
+0	17659	731	#line 17659 "NXCDefs.h"
+0	17659	731	#line 17659 "NXCDefs.h"
+0	17661	731	#line 17661 "NXCDefs.h"
+0	17662	731		strcat __strbuffgets_inline_main, __fgets_7qG2_str_7qG2_000_inline_main
+0	17661	735	#line 17661 "NXCDefs.h"
+0	17661	735	#line 17661 "NXCDefs.h"
+0	375	735	#line 375 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	376	735		mov __main_7qG2_line_7qG2_000, __fgets_7qG2_str_7qG2_000_inline_main
+0	375	737	#line 375 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	376	737		mov __strretvalmain, __strbuffgets_inline_main
+0	375	739	#line 375 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	375	739	#line 375 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	376	739		strcat __strbufmain, __main_7qG2_line_7qG2_000
+0	375	743	#line 375 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	376	743		set __D0main, 0
+0	376	746	#line 376 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	377	746		index __main_7qG2_charat_7qG2_000, __strbufmain, __D0main
+0	376	750	#line 376 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	376	750	#line 376 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	376	750	#line 376 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	376	750	#line 376 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	377	750	#line 377 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	377	750	#line 377 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	378	750		sub __main_7qG2_dest_7qG2_000, __main_7qG2_charat_7qG2_000, __constVal48
+0	377	754	#line 377 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	377	754	#line 377 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	377	754	#line 377 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	377	754	#line 377 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	378	754	#line 378 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	378	754	#line 378 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	379	754		mul __main_7qG2_dest_7qG2_000, __main_7qG2_dest_7qG2_000, __constVal5
+0	378	758	#line 378 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	378	758	#line 378 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	378	758	#line 378 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	379	758		strcat __strbufmain, __main_7qG2_line_7qG2_000
+0	378	762	#line 378 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	379	762		set __D0main, 2
+0	379	765	#line 379 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	380	765		index __main_7qG2_charat_7qG2_000, __strbufmain, __D0main
+0	379	769	#line 379 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	379	769	#line 379 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	379	769	#line 379 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	379	769	#line 379 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	379	769	#line 379 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	379	769	#line 379 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	380	769		add __signed_stack_001main, __main_7qG2_dest_7qG2_000, __main_7qG2_charat_7qG2_000
+0	379	773	#line 379 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	381	773	#line 381 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	381	773	#line 381 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	382	773		sub __main_7qG2_dest_7qG2_000, __signed_stack_001main, __constVal48
+0	381	777	#line 381 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	381	777	#line 381 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	381	777	#line 381 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	381	777	#line 381 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	17590	777	#line 17590 "NXCDefs.h"
+0	17591	777	#pragma macro 5
+0	17591	777		mov __FCArgs.FileHandle, __main_7qG2_fd_7qG2_000
+0	17591	779		syscall 5, __FCArgs
+0	5445	782	#line 5445 "NXCDefs.h"
+0	17590	782	#line 17590 "NXCDefs.h"
+0	17590	782	#line 17590 "NXCDefs.h"
+0	17590	782	#line 17590 "NXCDefs.h"
+0	448	782	#line 448 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	448	782	#line 448 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	448	782	#line 448 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	449	782		set __D0main, 1000
+0	448	785	#line 448 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	449	785	#pragma macro 8
+0	449	785		syscall 24, __RandomArgs
+0	449	788		mov __RandomTmp, __RandomArgs.Result
+0	449	790		add __RandomTmp, __RandomArgs.Result, __constVal32768
+0	449	794		mul __RandomTmp, __RandomTmp, __D0main
+0	449	798		div __RandomTmp, __RandomTmp, __constVal65536
+0	5462	802	#line 5462 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	448	802	#line 448 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	448	802	#line 448 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	448	802	#line 448 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	449	802		add __signed_stack_001main, __RandomTmp, __constVal200
+0	448	806	#line 448 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	448	806	#line 448 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	449	806		set __signed_stack_002main, 400
+0	448	809	#line 448 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	448	809	#line 448 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	449	809		set __signed_stack_003main, 3
+0	448	812	#line 448 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	448	812	#line 448 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	449	812		set __D0main, 0
+0	460	815	#line 460 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	461	815		acquire __SPTArgsMutex
+0	460	816	#line 460 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	461	816		mov __SPTArgs.Frequency, __signed_stack_001main
+0	460	818	#line 460 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	461	818		mov __SPTArgs.Duration, __signed_stack_002main
+0	460	820	#line 460 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	461	820		mov __SPTArgs.Volume, __signed_stack_003main
+0	460	822	#line 460 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	461	822		mov __SPTArgs.Loop, __D0main
+0	460	824	#line 460 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	461	824		syscall 10, __SPTArgs
+0	460	827	#line 460 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	461	827		mov __D0main, __SPTArgs.Result
+0	460	829	#line 460 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	461	829		release __SPTArgsMutex
+0	460	830	#line 460 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	460	830	#line 460 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	461	830		set __signed_stack_001main, 2
+0	460	833	#line 460 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	460	833	#line 460 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	461	833		set __signed_stack_002main, 0
+0	460	836	#line 460 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	460	836	#line 460 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	461	836		index __ArrHelper__main_73_0, __main_7qG2_guess_7qG2_000, __signed_stack_002main
+0	460	840	#line 460 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	460	840	#line 460 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	460	840	#line 460 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	460	840	#line 460 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	461	840		mul __signed_stack_002main, __ArrHelper__main_73_0, __constVal5
+0	460	844	#line 460 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	460	844	#line 460 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	461	844		set __signed_stack_003main, 1
+0	460	847	#line 460 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	460	847	#line 460 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	461	847		index __ArrHelper__main_73_0, __main_7qG2_guess_7qG2_000, __signed_stack_003main
+0	460	851	#line 460 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	460	851	#line 460 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	461	851		add __move_to_7qG2_s_7qG2_000, __signed_stack_002main, __ArrHelper__main_73_0
+0	460	855	#line 460 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	460	855	#line 460 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	461	855		mov __move_to_7qG2_f_7qG2_000, __main_7qG2_target_7qG2_000
+0	460	857	#line 460 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	460	857	#line 460 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	461	857		set __signed_stack_002main, 2
+0	460	860	#line 460 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	460	860	#line 460 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	461	860		index __ArrHelper__main_73_0, __main_7qG2_guess_7qG2_000, __signed_stack_002main
+0	460	864	#line 460 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	461	864		mov __move_to_7qG2_h_7qG2_000, __ArrHelper__main_73_0
+0	460	866	#line 460 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	461	866	#line 461 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	462	866		subcall move_to, __move_to_return
+0	461	868	#line 461 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	462	868		mov __D0main, __D0move_to
+0	461	870	#line 461 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	462	870		replace __main_7qG2_guess_7qG2_000, __main_7qG2_guess_7qG2_000, __signed_stack_001main, __D0main
+0	461	875	#line 461 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	461	875	#line 461 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	462	875		set __D0main, 1000
+0	461	878	#line 461 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	462	878	#pragma macro 8
+0	462	878		syscall 24, __RandomArgs
+0	462	881		mov __RandomTmp, __RandomArgs.Result
+0	462	883		add __RandomTmp, __RandomArgs.Result, __constVal32768
+0	462	887		mul __RandomTmp, __RandomTmp, __D0main
+0	462	891		div __RandomTmp, __RandomTmp, __constVal65536
+0	5580	895	#line 5580 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	461	895	#line 461 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	461	895	#line 461 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	461	895	#line 461 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	462	895		add __signed_stack_001main, __RandomTmp, __constVal200
+0	461	899	#line 461 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	461	899	#line 461 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	462	899		set __signed_stack_002main, 400
+0	461	902	#line 461 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	461	902	#line 461 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	462	902		set __signed_stack_003main, 3
+0	461	905	#line 461 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	461	905	#line 461 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	462	905		set __D0main, 0
+0	462	908	#line 462 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	463	908		acquire __SPTArgsMutex
+0	462	909	#line 462 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	463	909		mov __SPTArgs.Frequency, __signed_stack_001main
+0	462	911	#line 462 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	463	911		mov __SPTArgs.Duration, __signed_stack_002main
+0	462	913	#line 462 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	463	913		mov __SPTArgs.Volume, __signed_stack_003main
+0	462	915	#line 462 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	463	915		mov __SPTArgs.Loop, __D0main
+0	462	917	#line 462 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	463	917		syscall 10, __SPTArgs
+0	462	920	#line 462 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	463	920		mov __D0main, __SPTArgs.Result
+0	462	922	#line 462 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	463	922		release __SPTArgsMutex
+0	462	923	#line 462 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	462	923	#line 462 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	463	923		mov __move_to_7qG2_s_7qG2_000, __main_7qG2_target_7qG2_000
+0	462	925	#line 462 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	462	925	#line 462 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	463	925		mov __move_to_7qG2_f_7qG2_000, __main_7qG2_dest_7qG2_000
+0	462	927	#line 462 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	462	927	#line 462 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	463	927		set __signed_stack_001main, 2
+0	462	930	#line 462 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	462	930	#line 462 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	463	930		index __ArrHelper__main_73_0, __main_7qG2_guess_7qG2_000, __signed_stack_001main
+0	462	934	#line 462 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	463	934		mov __move_to_7qG2_h_7qG2_000, __ArrHelper__main_73_0
+0	462	936	#line 462 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	463	936	#line 463 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	464	936		subcall move_to, __move_to_return
+0	463	938	#line 463 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	463	938	#line 463 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	463	938	#line 463 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	464	938		set __D0main, 1000
+0	463	941	#line 463 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	464	941	#pragma macro 8
+0	464	941		syscall 24, __RandomArgs
+0	464	944		mov __RandomTmp, __RandomArgs.Result
+0	464	946		add __RandomTmp, __RandomArgs.Result, __constVal32768
+0	464	950		mul __RandomTmp, __RandomTmp, __D0main
+0	464	954		div __RandomTmp, __RandomTmp, __constVal65536
+0	5660	958	#line 5660 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	463	958	#line 463 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	463	958	#line 463 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	463	958	#line 463 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	464	958		add __signed_stack_001main, __RandomTmp, __constVal200
+0	463	962	#line 463 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	463	962	#line 463 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	464	962		set __signed_stack_002main, 400
+0	463	965	#line 463 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	463	965	#line 463 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	464	965		set __signed_stack_003main, 3
+0	463	968	#line 463 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	463	968	#line 463 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	464	968		set __D0main, 0
+0	464	971	#line 464 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	465	971		acquire __SPTArgsMutex
+0	464	972	#line 464 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	465	972		mov __SPTArgs.Frequency, __signed_stack_001main
+0	464	974	#line 464 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	465	974		mov __SPTArgs.Duration, __signed_stack_002main
+0	464	976	#line 464 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	465	976		mov __SPTArgs.Volume, __signed_stack_003main
+0	464	978	#line 464 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	465	978		mov __SPTArgs.Loop, __D0main
+0	464	980	#line 464 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	465	980		syscall 10, __SPTArgs
+0	464	983	#line 464 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	465	983		mov __D0main, __SPTArgs.Result
+0	464	985	#line 464 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	465	985		release __SPTArgsMutex
+0	464	986	#line 464 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+0	465	986		exit -1, -1
+1	4885	0		setin __constVal1, __ResetSensorPort, 5
+1	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	4889	11		subret ____ResetSensorSubroutine_return
+2	8048	0		arrinit __RLSOutput, __constVal0, __constVal1
+2	8049	4		set __RLSByteCount, 0
+2	8051	7		set __FReadArgs.Length, 1
+2	8052	10		mov __RLSBuffer, __RLSOutput
+2	8053	12		syscall 3, __FReadArgs
+2	8054	15		mov __RLSReturn, __FReadArgs.Result
+2	8055	17		brtst 5, __RLSStringDone, __RLSReturn
+2	8056	20		index __FReadTmpByte, __FReadArgs.Buffer, 65535
+2	8057	24		brcmp 4, __RLSStringDone, __FReadTmpByte, __constVal10
+2	8058	28		brcmp 4, __RLSStringSkip, __FReadTmpByte, __constVal13
+2	8059	32		strcat __RLSOutput, __RLSBuffer, __FReadArgs.Buffer
+2	8060	37		add __RLSByteCount, __RLSByteCount, __constVal1
+2	8061	41		brcmp 3, __RLSStringDone, __RLSByteCount, __RLSMaxBytes
+2	8063	45		jmp __RLSStringLoop
+2	8065	47		subret __RLSReturnAddress
+3	17699	0	#line 17699 "NXCDefs.h"
+3	17700	0		mov __fopen_7qG2_result_7qG2_000, __constVal37632
+3	17699	2	#line 17699 "NXCDefs.h"
+3	17700	2	#line 17700 "NXCDefs.h"
+3	17701	2		strcat __strbuffopen, __fopen_7qG2_mode_7qG2_000
+3	17702	6		brcmp 4, __NXC_Label_291, __constStr0006, __strbuffopen
+3	17703	10		brcmp 4, __NXC_Label_294, __constStr0007, __strbuffopen
+3	17704	14		brcmp 4, __NXC_Label_299, __constStr0008, __strbuffopen
+3	17705	18		jmp __NXC_Label_290
+3	17702	20	#line 17702 "NXCDefs.h"
+3	17702	20	#line 17702 "NXCDefs.h"
+3	17703	20	#pragma macro 7
+3	17703	20		mov __FOArgs.Filename, __fopen_7qG2_filename_7qG2_000
+3	17703	22		syscall 0, __FOArgs
+3	17703	25		mov __fopen_7qG2_fsize_7qG2_000, __FOArgs.Length
+3	17703	27		mov __fopen_7qG2_handle_7qG2_000, __FOArgs.FileHandle
+3	17703	29		mov __fopen_7qG2_result_7qG2_000, __FOArgs.Result
+3	3862	31	#line 3862 "NXCDefs.h"
+3	17702	31	#line 17702 "NXCDefs.h"
+3	17702	31	#line 17702 "NXCDefs.h"
+3	17702	31	#line 17702 "NXCDefs.h"
+3	17704	31	#line 17704 "NXCDefs.h"
+3	17705	31		jmp __NXC_Label_290
+3	17704	33	#line 17704 "NXCDefs.h"
+3	17705	33	#line 17705 "NXCDefs.h"
+3	17706	33	#line 17706 "NXCDefs.h"
+3	17707	33		mov __fopen_7qG2_fsize_7qG2_000, __fopen_default_size
+3	17706	35	#line 17706 "NXCDefs.h"
+3	17706	35	#line 17706 "NXCDefs.h"
+3	17706	35	#line 17706 "NXCDefs.h"
+3	17707	35	#pragma macro 7
+3	17707	35		mov __FOArgs.Filename, __fopen_7qG2_filename_7qG2_000
+3	17707	37		mov __FOArgs.Length, __fopen_7qG2_fsize_7qG2_000
+3	17707	39		syscall 1, __FOArgs
+3	17707	42		mov __fopen_7qG2_handle_7qG2_000, __FOArgs.FileHandle
+3	17707	44		mov __fopen_7qG2_result_7qG2_000, __FOArgs.Result
+3	3882	46	#line 3882 "NXCDefs.h"
+3	17706	46	#line 17706 "NXCDefs.h"
+3	17706	46	#line 17706 "NXCDefs.h"
+3	17706	46	#line 17706 "NXCDefs.h"
+3	17708	46	#line 17708 "NXCDefs.h"
+3	17709	46		jmp __NXC_Label_290
+3	17708	48	#line 17708 "NXCDefs.h"
+3	17709	48	#line 17709 "NXCDefs.h"
+3	17709	48	#line 17709 "NXCDefs.h"
+3	17710	48	#pragma macro 7
+3	17710	48		mov __FOArgs.Filename, __fopen_7qG2_filename_7qG2_000
+3	17710	50		syscall 2, __FOArgs
+3	17710	53		mov __fopen_7qG2_fsize_7qG2_000, __FOArgs.Length
+3	17710	55		mov __fopen_7qG2_handle_7qG2_000, __FOArgs.FileHandle
+3	17710	57		mov __fopen_7qG2_result_7qG2_000, __FOArgs.Result
+3	3895	59	#line 3895 "NXCDefs.h"
+3	17709	59	#line 17709 "NXCDefs.h"
+3	17709	59	#line 17709 "NXCDefs.h"
+3	17709	59	#line 17709 "NXCDefs.h"
+3	17711	59	#line 17711 "NXCDefs.h"
+3	17711	59	#line 17711 "NXCDefs.h"
+3	17712	59	#line 17712 "NXCDefs.h"
+3	17712	59	#line 17712 "NXCDefs.h"
+3	17713	59		mov __signed_stack_001fopen, __fopen_7qG2_result_7qG2_000
+3	17712	61	#line 17712 "NXCDefs.h"
+3	17713	61	#line 17713 "NXCDefs.h"
+3	17714	61		set __D0fopen, 0
+3	17713	64	#line 17713 "NXCDefs.h"
+3	17714	64		cmp 5, __zffopen, __signed_stack_001fopen, __D0fopen
+3	17713	68	#line 17713 "NXCDefs.h"
+3	17714	68		mov __D0fopen, __zffopen
+3	17713	70	#line 17713 "NXCDefs.h"
+3	17714	70		brtst 4, __NXC_Label_304, __zffopen
+3	17714	73	#line 17714 "NXCDefs.h"
+3	17715	73		set __fopen_7qG2_handle_7qG2_000, 0
+3	17714	76	#line 17714 "NXCDefs.h"
+3	17714	76	#line 17714 "NXCDefs.h"
+3	17714	76	#line 17714 "NXCDefs.h"
+3	17715	76	#line 17715 "NXCDefs.h"
+3	17716	76		mov __DU0fopen, __fopen_7qG2_handle_7qG2_000
+3	17715	78	#line 17715 "NXCDefs.h"
+3	17716	78		subret __fopen_return
+3	17715	80	#line 17715 "NXCDefs.h"
+3	17724	80	#line 17724 "NXCDefs.h"
+3	17725	80		subret __fopen_return
+4	181	0	#line 181 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	181	0	#line 181 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	182	0	#line 182 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	182	0	#line 182 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	182	0	#line 182 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	182	0	#line 182 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	182	0	#line 182 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	182	0	#line 182 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	183	0	#line 183 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	183	0	#line 183 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	183	0	#line 183 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	183	0	#line 183 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	183	0	#line 183 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	183	0	#line 183 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	184	0	#line 184 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	184	0	#line 184 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	184	0	#line 184 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	184	0	#line 184 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	184	0	#line 184 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	184	0	#line 184 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	187	0	#line 187 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	187	0	#line 187 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	187	0	#line 187 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	187	0	#line 187 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	187	0	#line 187 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	187	0	#line 187 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	188	0	#line 188 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	188	0	#line 188 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	188	0	#line 188 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	188	0	#line 188 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	188	0	#line 188 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	188	0	#line 188 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	189	0	#line 189 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	189	0	#line 189 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	189	0	#line 189 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	189	0	#line 189 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	201	0	#line 201 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	201	0	#line 201 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	201	0	#line 201 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	202	0	#line 202 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	203	0		mov __D0move_to, __move_to_7qG2_h_7qG2_000
+4	202	2	#line 202 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	203	2		subret __move_to_return
+4	202	4	#line 202 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	212	4	#line 212 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+4	213	4		subret __move_to_return
+5	467	0	#line 467 "C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc"
+5	468	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc
+1	__ResetSensorSubroutine	989	NXTDefs.h
+2	__readStringLine	1002	NXTDefs.h
+3	fopen	1051	NXCDefs.h
+4	move_to	1133	C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc
+5	__initialize_global_data	1139	C:\Users\ladmin\Downloads\Distro\pfilter prob.nxc
