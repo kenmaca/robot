@@ -21,6 +21,16 @@
 #define SOUTH 102
 #define WEST 103
 
+#define BLACK 
+#define GREEN
+#define BLUE
+#define WHITE
+#define YELLOW
+#define RED
+
+#define LEFT_90 90
+#define RIGHT_90 -90
+
 /* macros for diagonal directions */
 #define NORTHEAST 1000
 #define SOUTHEAST 1001
@@ -91,6 +101,27 @@ struct intersection{
 /* function prototypes, to be added if needed
 */
 
+// make 5 sensor measurments and return the colour scaned. 
+int colour() {
+
+  char scans, i, col, n; 
+  int pitch[6];
+  n = 5;
+  pitch = {233, 466, 932, 1865, 3729, 7458};
+
+  for (i=0; i < n; i++) {
+    scans += SENSOR_1;
+  }
+
+  col = (char) scans / n;
+
+  PlayToneEx(pitch[col], 400);
+
+  return col;
+
+
+}
+
 /* Subroutine which moves the robot forward from one intersection to the next
 */
 sub move_robot(){
@@ -125,7 +156,18 @@ intersection scan_surroundings(){
     // direction of the robot.
     //
     ////////////////////////////////////////////////////////////////////////////
-
+    rotate(RIGHT_90, 1);
+    rsense.NE = colour();
+    rotate(LEFT_90, -1);
+    rotate(LEFT_90, -1);
+    rsense.SE = colour();
+    rotate(RIGHT_90, 1);
+    rotate(RIGHT_90, -1);
+    rsense.SW = colour();
+    rotate(LEFT_90, 1);
+    rotate(LEFT_90, 1);
+    rsense.NW = colour();
+    rotate(RIGHT_90, -1);
     return rsense;
 }
 
