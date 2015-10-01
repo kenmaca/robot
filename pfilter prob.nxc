@@ -66,6 +66,7 @@
 #define BREAK true
 #define LEFT_90 90
 #define RIGHT_90 -90
+#define ST_P 45
 
 /* Represents a single particle.
 
@@ -104,17 +105,18 @@ struct intersection {
 */
 int colour() {
     char scans, i, col, n; 
-    int pitch[6];
+
 
     n = 5;
-    pitch = {233, 466, 932, 1865, 3729, 7458};
+    int pitch [6] = {233, 466, 932, 1865, 3729, 7458};
 
+    SetSensorColorFull(IN_3);
     for (i=0; i < n; i++) {
-        scans += SENSOR_1;
+        scans += SENSOR_3;
     }
 
-    col = (char) scans / n;
-    PlayToneEx(pitch[col], 400);
+    col =  scans / n;
+    PlayTone(pitch[col], 400);
     return col;
 }
 
@@ -128,13 +130,13 @@ int colour() {
    @param left The direction that the left wheel should move in (-1, 0, or 1)
    @param right The direction that the right wheel should move in (-1, 0, or 1)
 */
-sub drive(float distance, char left, char right) {
+sub drive(long distance, char left, char right) {
 
     // both forward
     if ((left > 0) && (right > 0)) {
         RotateMotorEx(
             OUT_BC, SPEED, 
-            left * right * distance * WHEEL_RATIO, 
+            distance * WHEEL_RATIO,
             0, true, BREAK
         );
 
@@ -142,7 +144,7 @@ sub drive(float distance, char left, char right) {
     } else if ((left < 0) && (right < 0)) {
         RotateMotorEx(
             OUT_BC, SPEED, 
-            left * right * distance * WHEEL_RATIO, 
+            distance * WHEEL_RATIO,
             0, true, BREAK
         );
 
@@ -165,33 +167,33 @@ sub drive(float distance, char left, char right) {
     // left forward only
     } else if (left > 0) {
         RotateMotorEx(
-            OUT_BC, SPEED, 
-            left * distance * WHEEL_RATIO, 
-            44, true, BREAK
+            OUT_C, SPEED,
+            distance * WHEEL_RATIO,
+            0, false, BREAK
         );
       
     // left backwards only
     } else if (left < 0) {
         RotateMotorEx(
-            OUT_BC, SPEED, 
-            left * distance * WHEEL_RATIO, 
-            -44, true, BREAK
+            OUT_C, SPEED,
+            distance * WHEEL_RATIO,
+            0, false, BREAK
         );
 
     // right forward only
     } else if (right > 0) {
         RotateMotorEx(
-            OUT_BC, SPEED, 
-            right * distance * WHEEL_RATIO, 
-            44, true, BREAK
+            OUT_B, SPEED,
+            distance * WHEEL_RATIO,
+            0, false, BREAK
         );
 
     // right backwards only
     } else if (right < 0) {
         RotateMotorEx(
-            OUT_BC, SPEED, 
-            right * distance * WHEEL_RATIO, 
-            -44, true, BREAK
+            OUT_B, SPEED,
+            distance * WHEEL_RATIO,
+            0, false, BREAK
         );
     }
 }
@@ -204,7 +206,7 @@ sub drive(float distance, char left, char right) {
    @param degrees The number of degrees to pivot this robot is heading to.
    @param mode The mode (-1, 0, or 1)
 */
-sub rotate(float degrees, char mode) {
+sub rotate(long degrees, char mode) {
 
     // pivot left on sensor (left backwards, right forward)
     if ((degrees > 0) && (mode == 0)) {
@@ -313,7 +315,7 @@ sub change_direction(int orig, int new) {
             break;
     }
 }
-
+          /**
 task to_road() {
     while((colour() != BLACK) || (colour() != YELLOW)) {
         OnRev(OUT_BC);
@@ -370,7 +372,7 @@ sub align() {
         rotate(70*dir*-1,0);
       }
 }
-
+            **/
 
 /* Given a start coordinate, finish coordinate, and a heading, this function
     moves the robot from the start to finish.
@@ -472,8 +474,12 @@ int sense(intersection map[], int x, int y, int dir, int heading) {
 task main() {
 
     // test run
-    SetSensorColorFull(S3);
-    rotate(180, 1);
+
+    /*while(true){
+        rotate(90, 0);
+    } */
+    //drive(10,1,1);
+    scan_surroundings();
     Stop(true);
 
     // holds map data
