@@ -314,6 +314,64 @@ sub change_direction(int orig, int new) {
     }
 }
 
+task to_road() {
+    while((colour() != BLACK) || (colour() != YELLOW)) {
+        OnRev(OUT_BC);
+    }
+    Off(OUT_BC);
+}
+
+task trace() {
+    long step = 2.0;
+    black_count = 0;
+    
+    while(colour() == BLACK){
+      black_count += 1;
+      drive(step, 1, 1);
+      wait(500);
+    }
+    align();
+    //black_count = 0; //reset black count incase robot gets off the road
+    drive(step,1,1);
+    if(colour() == WHITE) {
+      align();
+    }
+
+    black_count = 0;
+    while(colour() == BLACK){
+      black_count += 1;
+      drive(step, 1, 1);
+      wait(500);
+    }
+    
+}
+
+
+sub align() {
+      rotate(90, 0);
+      dir = 1; //means you turned left 
+      drive(step, 1, 1);
+      if(colour() != BLACK) {
+        rotate(-180, 0);
+        dir = -1; //means you turned right
+        drive(step*2, 1, 1);
+      }
+      if(black_count < 3) {
+        drive(step*2, 1, 1); //try 2 or 3 steps since you're not coming in too steep
+        rotate(20*dir*-1,0);
+      }
+      else if (black_count >=3 && black_count <=5) {
+        drive(step, 1, 1);
+        rotate(45*dir*-1,0);
+      }
+
+      else{
+        drive(step*2, 1, 1);
+        rotate(70*dir*-1,0);
+      }
+}
+
+
 /* Given a start coordinate, finish coordinate, and a heading, this function
     moves the robot from the start to finish.
    
