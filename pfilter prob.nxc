@@ -60,7 +60,7 @@
 
 // movement
 #define SPEED 20
-#define WHEEL_RATIO 26.52582384
+#define WHEEL_RATIO 0.03761
 #define SENSOR_PIVOT_RATIO 0.08847781
 #define WHEEL_PIVOT_RATIO 0.11301644
 #define BREAK true
@@ -136,7 +136,7 @@ sub drive(long distance, char left, char right) {
     if ((left > 0) && (right > 0)) {
         RotateMotorEx(
             OUT_BC, SPEED, 
-            distance * WHEEL_RATIO,
+            distance / WHEEL_RATIO,
             0, true, BREAK
         );
 
@@ -144,7 +144,7 @@ sub drive(long distance, char left, char right) {
     } else if ((left < 0) && (right < 0)) {
         RotateMotorEx(
             OUT_BC, SPEED, 
-            distance * WHEEL_RATIO,
+            distance / WHEEL_RATIO,
             0, true, BREAK
         );
 
@@ -152,7 +152,7 @@ sub drive(long distance, char left, char right) {
     } else if ((left > 0) && (right < 0)) {
         RotateMotorEx(
             OUT_BC, SPEED, 
-            distance * WHEEL_RATIO, 
+            distance / WHEEL_RATIO,
             100, true, BREAK
         );
 
@@ -160,7 +160,7 @@ sub drive(long distance, char left, char right) {
     } else if ((left < 0) && (right > 0)) {
         RotateMotorEx(
             OUT_BC, SPEED, 
-            distance * WHEEL_RATIO, 
+            distance / WHEEL_RATIO,
             -100, true, BREAK
         );
 
@@ -168,7 +168,7 @@ sub drive(long distance, char left, char right) {
     } else if (left > 0) {
         RotateMotorEx(
             OUT_C, SPEED,
-            distance * WHEEL_RATIO,
+            distance / WHEEL_RATIO,
             0, false, BREAK
         );
       
@@ -176,7 +176,7 @@ sub drive(long distance, char left, char right) {
     } else if (left < 0) {
         RotateMotorEx(
             OUT_C, SPEED,
-            distance * WHEEL_RATIO,
+            left * distance / WHEEL_RATIO,
             0, false, BREAK
         );
 
@@ -184,7 +184,7 @@ sub drive(long distance, char left, char right) {
     } else if (right > 0) {
         RotateMotorEx(
             OUT_B, SPEED,
-            distance * WHEEL_RATIO,
+            distance / WHEEL_RATIO,
             0, false, BREAK
         );
 
@@ -192,7 +192,7 @@ sub drive(long distance, char left, char right) {
     } else if (right < 0) {
         RotateMotorEx(
             OUT_B, SPEED,
-            distance * WHEEL_RATIO,
+            right * distance / WHEEL_RATIO,
             0, false, BREAK
         );
     }
@@ -222,15 +222,15 @@ sub rotate(long degrees, char mode) {
 
     // pivot right on right wheel (left wheel forward)
     } else if ((degrees < 0) && (mode == 1)) {
-        drive(degrees * WHEEL_PIVOT_RATIO, 1, 0);
+        drive((-1) * degrees * WHEEL_PIVOT_RATIO, 1, 0);
 
     // pivot left on right wheel (left wheel backwards)
     } else if ((degrees > 0) && (mode == -1)) {
         drive(degrees * WHEEL_PIVOT_RATIO, -1, 0);
 
     // pivot right on left wheel (right wheel backwards)
-    } else if ((degrees > 0) && (mode == -1)) {
-        drive(degrees * WHEEL_PIVOT_RATIO, 0, -1);
+    } else if ((degrees < 0) && (mode == -1)) {
+        drive((-1) * degrees * WHEEL_PIVOT_RATIO, 0, -1);
     }
 }
 
@@ -479,6 +479,8 @@ task main() {
         rotate(90, 0);
     } */
     //drive(10,1,1);
+    //rotate(-90, 1);
+    //rotate(90, -1);
     scan_surroundings();
     Stop(true);
 

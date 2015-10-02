@@ -7,7 +7,7 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 4	__signed_stack_001drive	6	1	16	4	40
 5	__rotate_theAngle5	5	1	20	4	2
 6	__float_stack_002drive	10	1	24	4	16
-7	__signed_stack_002drive	6	1	28	4	8
+7	__signed_stack_002drive	6	1	28	4	12
 8	__rotate_angle5	6	1	32	4	8
 9	__fopen_default_size	5	0	36	4	1
 10	__constVal37632	6	0	40	4	1
@@ -15,7 +15,7 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 12	__signed_stack_003main	6	1	48	4	8
 13	__signed_stack_002main	6	1	52	4	20
 14	__signed_stack_002rotate	6	1	56	4	12
-15	__signed_stack_001rotate	6	1	60	4	24
+15	__signed_stack_001rotate	6	1	60	4	28
 16	__signed_stack_003colour	6	1	64	4	2
 17	__D0drive	6	1	68	4	44
 18	__D0colour	6	1	72	4	13
@@ -39,7 +39,7 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 36	__drive_7qG2_distance_7qG2_000	6	1	144	4	14
 37	__rotate_theAngle1	5	1	148	4	2
 38	__rotate_angle2	6	1	152	4	6
-39	__constValf26P52582384	10	0	156	4	8
+39	__constValf0P03761	10	0	156	4	8
 40	__constValf0P08847781	10	0	160	4	2
 41	__constVal65536	6	0	164	4	3
 42	__rotate_7qG2_degrees_7qG2_000	6	1	168	4	20
@@ -74,7 +74,7 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 71	__zfcolour	1	1	227	1	3
 72	__constVal12	2	0	228	1	4
 73	__constVal60	2	0	229	1	1
-74	__constValNeg1	2	0	230	1	10
+74	__constValNeg1	2	0	230	1	12
 75	__PFTmp	1	1	231	1	1
 76	__zfdrive	1	1	232	1	40
 77	__colour_7qG2_col_7qG2_000	2	1	233	1	3
@@ -94,9 +94,9 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 91	__constVal96	2	0	247	1	8
 92	__zfrotate	1	1	248	1	42
 93	__move_to_return	1	1	249	1	5
-94	__drive_7qG2_left_7qG2_000	2	1	250	1	12
+94	__drive_7qG2_left_7qG2_000	2	1	250	1	13
 95	____initialize_global_data_return	1	1	251	1	3
-96	__drive_7qG2_right_7qG2_000	2	1	252	1	12
+96	__drive_7qG2_right_7qG2_000	2	1	252	1	13
 97	__constValNeg100	2	0	253	1	1
 98	__rotate_theRS2	1	1	254	1	3
 99	__rotate_theRM2	1	1	255	1	4
@@ -275,31 +275,31 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 272	__fopen_7qG2_filename_7qG2_000.__fopen_7qG2_filename_7qG2_000_type	1	0	0	1	0
 #SOURCES
 Clump	Line	PC	Source
-0	481	0	#line 481 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	482	0		subcall __initialize_global_data, ____initialize_global_data_return
-0	481	2	#line 481 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	482	2	#line 482 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	483	2		subcall scan_surroundings, __scan_surroundings_return
-0	482	4	#line 482 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	482	4	#line 482 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	483	4		set __D0main, 1
-0	485	7	#line 485 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	486	7		stop __D0main
-0	485	9	#line 485 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	488	9	#line 488 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	488	9	#line 488 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	489	9		arrinit __main_7qG2_map_7qG2_000, ____main_7qG2_map_7qG2_000_0, __constVal15
-0	491	13	#line 491 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	492	13		arrinit __main_7qG2_guess_7qG2_000, __constVal0, __constVal3
-0	494	17	#line 494 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	494	17	#line 494 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	500	17	#line 500 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	500	17	#line 500 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	501	17		arrinit __main_7qG2_list_7qG2_000, ____main_7qG2_list_7qG2_000_0, __constVal60
-0	503	21	#line 503 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	518	21	#line 518 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	519	21		set __SetSensorColorFull_7qG2_port_7qG2_000_inline_main, 0
-0	518	24	#line 518 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	483	0	#line 483 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	484	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	483	2	#line 483 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	484	2	#line 484 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	485	2		subcall scan_surroundings, __scan_surroundings_return
+0	484	4	#line 484 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	484	4	#line 484 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	485	4		set __D0main, 1
+0	487	7	#line 487 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	488	7		stop __D0main
+0	487	9	#line 487 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	490	9	#line 490 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	490	9	#line 490 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	491	9		arrinit __main_7qG2_map_7qG2_000, ____main_7qG2_map_7qG2_000_0, __constVal15
+0	493	13	#line 493 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	494	13		arrinit __main_7qG2_guess_7qG2_000, __constVal0, __constVal3
+0	496	17	#line 496 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	496	17	#line 496 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	502	17	#line 502 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	502	17	#line 502 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	503	17		arrinit __main_7qG2_list_7qG2_000, ____main_7qG2_list_7qG2_000_0, __constVal60
+0	505	21	#line 505 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	520	21	#line 520 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	521	21		set __SetSensorColorFull_7qG2_port_7qG2_000_inline_main, 0
+0	520	24	#line 520 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 0	3802	24	#line 3802 "NXCDefs.h"
 0	3803	24	#pragma macro 6
 0	3803	24		setin __constVal13, __SetSensorColorFull_7qG2_port_7qG2_000_inline_main, 0
@@ -308,330 +308,330 @@ Clump	Line	PC	Source
 0	3803	33		mov __ResetSensorPort, __SetSensorColorFull_7qG2_port_7qG2_000_inline_main
 0	3803	35		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
 0	3803	38		release __ResetSensorMutex
-0	6071	39	#line 6071 "NXCDefs.h"
+0	6099	39	#line 6099 "NXCDefs.h"
 0	3802	39	#line 3802 "NXCDefs.h"
-0	522	39	#line 522 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	522	39	#line 522 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	523	39		set __main_7qG2_i_7qG2_000, 0
-0	522	42	#line 522 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	522	42	#line 522 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	523	42		mov __signed_stack_001main, __main_7qG2_i_7qG2_000
-0	522	44	#line 522 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	522	44	#line 522 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	523	44		set __D0main, 60
-0	522	47	#line 522 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	523	47		cmp 0, __zfmain, __signed_stack_001main, __D0main
-0	522	51	#line 522 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	523	51		mov __D0main, __zfmain
-0	522	53	#line 522 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	523	53		brtst 4, __NXC_Label_802, __zfmain
-0	522	56	#line 522 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	523	56		jmp __NXC_Label_803
-0	522	58	#line 522 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	522	58	#line 522 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	522	58	#line 522 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	522	58	#line 522 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	523	58		add __main_7qG2_i_7qG2_000, __main_7qG2_i_7qG2_000, __constVal4
-0	522	62	#line 522 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	523	62	#line 523 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	524	62		jmp __NXC_Label_801
-0	523	64	#line 523 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	524	64		mov __signed_stack_001main, __main_7qG2_i_7qG2_000
-0	523	66	#line 523 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	523	66	#line 523 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	524	66		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
-0	523	70	#line 523 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	523	70	#line 523 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	523	70	#line 523 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	523	70	#line 523 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	524	70		div __signed_stack_002main, __main_7qG2_i_7qG2_000, __constVal4
-0	523	74	#line 523 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	524	74	#line 524 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	524	74	#line 524 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	525	74		mod __ArrHelper__mainparticle_219_0.x, __signed_stack_002main, __constVal3
-0	524	78	#line 524 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	524	78	#line 524 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	525	78		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
-0	524	83	#line 524 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	524	83	#line 524 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	525	83		mov __signed_stack_001main, __main_7qG2_i_7qG2_000
-0	524	85	#line 524 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	524	85	#line 524 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	525	85		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
-0	524	89	#line 524 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	524	89	#line 524 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	524	89	#line 524 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	525	89	#line 525 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	526	89		div __ArrHelper__mainparticle_219_0.y, __main_7qG2_i_7qG2_000, __constVal12
-0	525	93	#line 525 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	525	93	#line 525 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	526	93		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
-0	525	98	#line 525 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	525	98	#line 525 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	526	98		mov __signed_stack_001main, __main_7qG2_i_7qG2_000
-0	525	100	#line 525 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	525	100	#line 525 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	526	100		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
-0	526	104	#line 526 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	527	104		set __ArrHelper__mainparticle_219_0.theta, 100
-0	526	107	#line 526 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	526	107	#line 526 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	527	107		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
-0	526	112	#line 526 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	526	112	#line 526 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	527	112		mov __signed_stack_001main, __main_7qG2_i_7qG2_000
-0	526	114	#line 526 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	526	114	#line 526 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	527	114		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
-0	527	118	#line 527 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	528	118		mov __ArrHelper__mainparticle_219_0.prob, __constValf0P0166666667
-0	527	121	#line 527 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	527	121	#line 527 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	528	121		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
-0	527	126	#line 527 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	527	126	#line 527 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	527	126	#line 527 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	527	126	#line 527 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	527	126	#line 527 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	528	126		add __signed_stack_001main, __main_7qG2_i_7qG2_000, __constVal1
-0	527	130	#line 527 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	527	130	#line 527 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	528	130		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
-0	527	134	#line 527 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	527	134	#line 527 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	527	134	#line 527 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	527	134	#line 527 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	528	134		div __signed_stack_002main, __main_7qG2_i_7qG2_000, __constVal4
-0	527	138	#line 527 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	528	138	#line 528 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	528	138	#line 528 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	529	138		mod __ArrHelper__mainparticle_219_0.x, __signed_stack_002main, __constVal3
-0	528	142	#line 528 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	528	142	#line 528 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	529	142		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
-0	528	147	#line 528 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	528	147	#line 528 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	528	147	#line 528 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	528	147	#line 528 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	528	147	#line 528 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	529	147		add __signed_stack_001main, __main_7qG2_i_7qG2_000, __constVal1
-0	528	151	#line 528 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	528	151	#line 528 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	529	151		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
-0	528	155	#line 528 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	528	155	#line 528 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	528	155	#line 528 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	529	155	#line 529 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	530	155		div __ArrHelper__mainparticle_219_0.y, __main_7qG2_i_7qG2_000, __constVal12
-0	529	159	#line 529 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	529	159	#line 529 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	530	159		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
-0	529	164	#line 529 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	529	164	#line 529 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	529	164	#line 529 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	529	164	#line 529 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	529	164	#line 529 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	530	164		add __signed_stack_001main, __main_7qG2_i_7qG2_000, __constVal1
-0	529	168	#line 529 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	529	168	#line 529 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	530	168		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
-0	530	172	#line 530 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	531	172		set __ArrHelper__mainparticle_219_0.theta, 102
-0	530	175	#line 530 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	530	175	#line 530 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	531	175		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
-0	530	180	#line 530 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	530	180	#line 530 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	530	180	#line 530 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	530	180	#line 530 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	530	180	#line 530 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	531	180		add __signed_stack_001main, __main_7qG2_i_7qG2_000, __constVal1
-0	530	184	#line 530 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	530	184	#line 530 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	531	184		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
-0	531	188	#line 531 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	532	188		mov __ArrHelper__mainparticle_219_0.prob, __constValf0P0166666667
-0	531	191	#line 531 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	531	191	#line 531 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	532	191		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
-0	531	196	#line 531 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	531	196	#line 531 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	531	196	#line 531 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	531	196	#line 531 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	531	196	#line 531 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	532	196		add __signed_stack_001main, __main_7qG2_i_7qG2_000, __constVal2
-0	531	200	#line 531 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	531	200	#line 531 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	532	200		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
-0	531	204	#line 531 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	531	204	#line 531 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	531	204	#line 531 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	531	204	#line 531 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	532	204		div __signed_stack_002main, __main_7qG2_i_7qG2_000, __constVal4
-0	531	208	#line 531 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	532	208	#line 532 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	532	208	#line 532 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	533	208		mod __ArrHelper__mainparticle_219_0.x, __signed_stack_002main, __constVal3
-0	532	212	#line 532 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	532	212	#line 532 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	533	212		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
-0	532	217	#line 532 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	532	217	#line 532 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	532	217	#line 532 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	532	217	#line 532 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	532	217	#line 532 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	533	217		add __signed_stack_001main, __main_7qG2_i_7qG2_000, __constVal2
-0	532	221	#line 532 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	532	221	#line 532 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	533	221		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
-0	532	225	#line 532 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	532	225	#line 532 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	532	225	#line 532 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	533	225	#line 533 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	534	225		div __ArrHelper__mainparticle_219_0.y, __main_7qG2_i_7qG2_000, __constVal12
-0	533	229	#line 533 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	533	229	#line 533 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	534	229		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
-0	533	234	#line 533 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	533	234	#line 533 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	533	234	#line 533 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	533	234	#line 533 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	533	234	#line 533 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	534	234		add __signed_stack_001main, __main_7qG2_i_7qG2_000, __constVal2
-0	533	238	#line 533 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	533	238	#line 533 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	534	238		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
-0	534	242	#line 534 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	535	242		set __ArrHelper__mainparticle_219_0.theta, 101
-0	534	245	#line 534 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	534	245	#line 534 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	535	245		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
-0	534	250	#line 534 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	534	250	#line 534 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	534	250	#line 534 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	534	250	#line 534 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	534	250	#line 534 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	535	250		add __signed_stack_001main, __main_7qG2_i_7qG2_000, __constVal2
-0	534	254	#line 534 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	534	254	#line 534 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	535	254		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
-0	535	258	#line 535 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	536	258		mov __ArrHelper__mainparticle_219_0.prob, __constValf0P0166666667
-0	535	261	#line 535 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	535	261	#line 535 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	536	261		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
-0	535	266	#line 535 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	535	266	#line 535 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	535	266	#line 535 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	535	266	#line 535 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	535	266	#line 535 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	536	266		add __signed_stack_001main, __main_7qG2_i_7qG2_000, __constVal3
-0	535	270	#line 535 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	535	270	#line 535 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	536	270		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
-0	535	274	#line 535 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	535	274	#line 535 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	535	274	#line 535 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	535	274	#line 535 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	536	274		div __signed_stack_002main, __main_7qG2_i_7qG2_000, __constVal4
-0	535	278	#line 535 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	536	278	#line 536 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	536	278	#line 536 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	537	278		mod __ArrHelper__mainparticle_219_0.x, __signed_stack_002main, __constVal3
-0	536	282	#line 536 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	536	282	#line 536 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	537	282		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
-0	536	287	#line 536 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	536	287	#line 536 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	536	287	#line 536 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	536	287	#line 536 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	536	287	#line 536 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	537	287		add __signed_stack_001main, __main_7qG2_i_7qG2_000, __constVal3
-0	536	291	#line 536 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	536	291	#line 536 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	537	291		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
-0	536	295	#line 536 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	536	295	#line 536 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	536	295	#line 536 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	537	295	#line 537 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	538	295		div __ArrHelper__mainparticle_219_0.y, __main_7qG2_i_7qG2_000, __constVal12
-0	537	299	#line 537 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	537	299	#line 537 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	538	299		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
-0	537	304	#line 537 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	537	304	#line 537 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	537	304	#line 537 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	537	304	#line 537 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	537	304	#line 537 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	538	304		add __signed_stack_001main, __main_7qG2_i_7qG2_000, __constVal3
-0	537	308	#line 537 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	537	308	#line 537 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	538	308		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
-0	538	312	#line 538 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	539	312		set __ArrHelper__mainparticle_219_0.theta, 103
-0	538	315	#line 538 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	538	315	#line 538 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	539	315		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
-0	538	320	#line 538 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	538	320	#line 538 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	538	320	#line 538 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	538	320	#line 538 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	538	320	#line 538 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	539	320		add __signed_stack_001main, __main_7qG2_i_7qG2_000, __constVal3
-0	538	324	#line 538 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	538	324	#line 538 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	539	324		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
-0	539	328	#line 539 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	540	328		mov __ArrHelper__mainparticle_219_0.prob, __constValf0P0166666667
-0	539	331	#line 539 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	539	331	#line 539 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	540	331		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
-0	539	336	#line 539 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	563	336	#line 563 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	564	336		jmp __NXC_Label_804
-0	563	338	#line 563 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	563	338	#line 563 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	564	338		strcat __strbufmain, __constStr0009
-0	563	342	#line 563 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	564	342		mov __fopen_7qG2_filename_7qG2_000, __strbufmain
-0	563	344	#line 563 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	564	344		strcat __strbufmain, __constStr0006
-0	563	348	#line 563 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	564	348		mov __fopen_7qG2_mode_7qG2_000, __strbufmain
-0	566	350	#line 566 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	567	350		subcall fopen, __fopen_return
-0	566	352	#line 566 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	567	352		mov __main_7qG2_fd_7qG2_000, __DU0fopen
-0	566	354	#line 566 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	566	354	#line 566 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	566	354	#line 566 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	567	354		set __main_7qG2_i_7qG2_000, 0
-0	566	357	#line 566 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	566	357	#line 566 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	567	357		mov __signed_stack_001main, __main_7qG2_i_7qG2_000
-0	566	359	#line 566 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	566	359	#line 566 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	567	359		set __D0main, 15
-0	566	362	#line 566 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	567	362		cmp 0, __zfmain, __signed_stack_001main, __D0main
-0	566	366	#line 566 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	567	366		mov __D0main, __zfmain
-0	566	368	#line 566 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	567	368		brtst 4, __NXC_Label_902, __zfmain
-0	566	371	#line 566 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	567	371		jmp __NXC_Label_903
-0	566	373	#line 566 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	567	373		add __main_7qG2_i_7qG2_000, __main_7qG2_i_7qG2_000, __constVal1
-0	567	377	#line 567 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	568	377		jmp __NXC_Label_901
-0	567	379	#line 567 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	568	379		mov __fgets_7qG2_str_7qG2_000_inline_main, __main_7qG2_line_7qG2_000
-0	567	381	#line 567 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	568	381		set __fgets_7qG2_num_7qG2_000_inline_main, 10
-0	567	384	#line 567 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	567	384	#line 567 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	568	384		mov __fgets_7qG2_handle_7qG2_000_inline_main, __main_7qG2_fd_7qG2_000
-0	567	386	#line 567 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	524	39	#line 524 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	524	39	#line 524 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	525	39		set __main_7qG2_i_7qG2_000, 0
+0	524	42	#line 524 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	524	42	#line 524 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	525	42		mov __signed_stack_001main, __main_7qG2_i_7qG2_000
+0	524	44	#line 524 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	524	44	#line 524 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	525	44		set __D0main, 60
+0	524	47	#line 524 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	525	47		cmp 0, __zfmain, __signed_stack_001main, __D0main
+0	524	51	#line 524 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	525	51		mov __D0main, __zfmain
+0	524	53	#line 524 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	525	53		brtst 4, __NXC_Label_806, __zfmain
+0	524	56	#line 524 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	525	56		jmp __NXC_Label_807
+0	524	58	#line 524 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	524	58	#line 524 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	524	58	#line 524 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	524	58	#line 524 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	525	58		add __main_7qG2_i_7qG2_000, __main_7qG2_i_7qG2_000, __constVal4
+0	524	62	#line 524 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	525	62	#line 525 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	526	62		jmp __NXC_Label_805
+0	525	64	#line 525 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	526	64		mov __signed_stack_001main, __main_7qG2_i_7qG2_000
+0	525	66	#line 525 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	525	66	#line 525 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	526	66		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
+0	525	70	#line 525 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	525	70	#line 525 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	525	70	#line 525 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	525	70	#line 525 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	526	70		div __signed_stack_002main, __main_7qG2_i_7qG2_000, __constVal4
+0	525	74	#line 525 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	526	74	#line 526 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	526	74	#line 526 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	527	74		mod __ArrHelper__mainparticle_219_0.x, __signed_stack_002main, __constVal3
+0	526	78	#line 526 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	526	78	#line 526 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	527	78		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
+0	526	83	#line 526 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	526	83	#line 526 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	527	83		mov __signed_stack_001main, __main_7qG2_i_7qG2_000
+0	526	85	#line 526 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	526	85	#line 526 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	527	85		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
+0	526	89	#line 526 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	526	89	#line 526 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	526	89	#line 526 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	527	89	#line 527 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	528	89		div __ArrHelper__mainparticle_219_0.y, __main_7qG2_i_7qG2_000, __constVal12
+0	527	93	#line 527 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	527	93	#line 527 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	528	93		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
+0	527	98	#line 527 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	527	98	#line 527 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	528	98		mov __signed_stack_001main, __main_7qG2_i_7qG2_000
+0	527	100	#line 527 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	527	100	#line 527 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	528	100		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
+0	528	104	#line 528 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	529	104		set __ArrHelper__mainparticle_219_0.theta, 100
+0	528	107	#line 528 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	528	107	#line 528 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	529	107		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
+0	528	112	#line 528 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	528	112	#line 528 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	529	112		mov __signed_stack_001main, __main_7qG2_i_7qG2_000
+0	528	114	#line 528 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	528	114	#line 528 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	529	114		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
+0	529	118	#line 529 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	530	118		mov __ArrHelper__mainparticle_219_0.prob, __constValf0P0166666667
+0	529	121	#line 529 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	529	121	#line 529 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	530	121		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
+0	529	126	#line 529 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	529	126	#line 529 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	529	126	#line 529 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	529	126	#line 529 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	529	126	#line 529 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	530	126		add __signed_stack_001main, __main_7qG2_i_7qG2_000, __constVal1
+0	529	130	#line 529 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	529	130	#line 529 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	530	130		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
+0	529	134	#line 529 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	529	134	#line 529 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	529	134	#line 529 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	529	134	#line 529 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	530	134		div __signed_stack_002main, __main_7qG2_i_7qG2_000, __constVal4
+0	529	138	#line 529 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	530	138	#line 530 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	530	138	#line 530 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	531	138		mod __ArrHelper__mainparticle_219_0.x, __signed_stack_002main, __constVal3
+0	530	142	#line 530 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	530	142	#line 530 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	531	142		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
+0	530	147	#line 530 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	530	147	#line 530 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	530	147	#line 530 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	530	147	#line 530 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	530	147	#line 530 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	531	147		add __signed_stack_001main, __main_7qG2_i_7qG2_000, __constVal1
+0	530	151	#line 530 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	530	151	#line 530 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	531	151		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
+0	530	155	#line 530 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	530	155	#line 530 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	530	155	#line 530 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	531	155	#line 531 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	532	155		div __ArrHelper__mainparticle_219_0.y, __main_7qG2_i_7qG2_000, __constVal12
+0	531	159	#line 531 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	531	159	#line 531 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	532	159		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
+0	531	164	#line 531 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	531	164	#line 531 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	531	164	#line 531 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	531	164	#line 531 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	531	164	#line 531 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	532	164		add __signed_stack_001main, __main_7qG2_i_7qG2_000, __constVal1
+0	531	168	#line 531 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	531	168	#line 531 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	532	168		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
+0	532	172	#line 532 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	533	172		set __ArrHelper__mainparticle_219_0.theta, 102
+0	532	175	#line 532 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	532	175	#line 532 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	533	175		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
+0	532	180	#line 532 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	532	180	#line 532 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	532	180	#line 532 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	532	180	#line 532 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	532	180	#line 532 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	533	180		add __signed_stack_001main, __main_7qG2_i_7qG2_000, __constVal1
+0	532	184	#line 532 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	532	184	#line 532 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	533	184		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
+0	533	188	#line 533 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	534	188		mov __ArrHelper__mainparticle_219_0.prob, __constValf0P0166666667
+0	533	191	#line 533 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	533	191	#line 533 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	534	191		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
+0	533	196	#line 533 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	533	196	#line 533 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	533	196	#line 533 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	533	196	#line 533 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	533	196	#line 533 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	534	196		add __signed_stack_001main, __main_7qG2_i_7qG2_000, __constVal2
+0	533	200	#line 533 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	533	200	#line 533 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	534	200		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
+0	533	204	#line 533 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	533	204	#line 533 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	533	204	#line 533 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	533	204	#line 533 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	534	204		div __signed_stack_002main, __main_7qG2_i_7qG2_000, __constVal4
+0	533	208	#line 533 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	534	208	#line 534 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	534	208	#line 534 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	535	208		mod __ArrHelper__mainparticle_219_0.x, __signed_stack_002main, __constVal3
+0	534	212	#line 534 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	534	212	#line 534 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	535	212		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
+0	534	217	#line 534 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	534	217	#line 534 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	534	217	#line 534 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	534	217	#line 534 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	534	217	#line 534 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	535	217		add __signed_stack_001main, __main_7qG2_i_7qG2_000, __constVal2
+0	534	221	#line 534 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	534	221	#line 534 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	535	221		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
+0	534	225	#line 534 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	534	225	#line 534 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	534	225	#line 534 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	535	225	#line 535 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	536	225		div __ArrHelper__mainparticle_219_0.y, __main_7qG2_i_7qG2_000, __constVal12
+0	535	229	#line 535 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	535	229	#line 535 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	536	229		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
+0	535	234	#line 535 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	535	234	#line 535 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	535	234	#line 535 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	535	234	#line 535 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	535	234	#line 535 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	536	234		add __signed_stack_001main, __main_7qG2_i_7qG2_000, __constVal2
+0	535	238	#line 535 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	535	238	#line 535 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	536	238		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
+0	536	242	#line 536 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	537	242		set __ArrHelper__mainparticle_219_0.theta, 101
+0	536	245	#line 536 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	536	245	#line 536 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	537	245		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
+0	536	250	#line 536 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	536	250	#line 536 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	536	250	#line 536 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	536	250	#line 536 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	536	250	#line 536 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	537	250		add __signed_stack_001main, __main_7qG2_i_7qG2_000, __constVal2
+0	536	254	#line 536 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	536	254	#line 536 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	537	254		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
+0	537	258	#line 537 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	538	258		mov __ArrHelper__mainparticle_219_0.prob, __constValf0P0166666667
+0	537	261	#line 537 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	537	261	#line 537 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	538	261		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
+0	537	266	#line 537 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	537	266	#line 537 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	537	266	#line 537 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	537	266	#line 537 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	537	266	#line 537 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	538	266		add __signed_stack_001main, __main_7qG2_i_7qG2_000, __constVal3
+0	537	270	#line 537 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	537	270	#line 537 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	538	270		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
+0	537	274	#line 537 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	537	274	#line 537 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	537	274	#line 537 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	537	274	#line 537 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	538	274		div __signed_stack_002main, __main_7qG2_i_7qG2_000, __constVal4
+0	537	278	#line 537 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	538	278	#line 538 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	538	278	#line 538 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	539	278		mod __ArrHelper__mainparticle_219_0.x, __signed_stack_002main, __constVal3
+0	538	282	#line 538 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	538	282	#line 538 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	539	282		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
+0	538	287	#line 538 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	538	287	#line 538 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	538	287	#line 538 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	538	287	#line 538 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	538	287	#line 538 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	539	287		add __signed_stack_001main, __main_7qG2_i_7qG2_000, __constVal3
+0	538	291	#line 538 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	538	291	#line 538 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	539	291		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
+0	538	295	#line 538 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	538	295	#line 538 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	538	295	#line 538 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	539	295	#line 539 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	540	295		div __ArrHelper__mainparticle_219_0.y, __main_7qG2_i_7qG2_000, __constVal12
+0	539	299	#line 539 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	539	299	#line 539 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	540	299		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
+0	539	304	#line 539 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	539	304	#line 539 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	539	304	#line 539 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	539	304	#line 539 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	539	304	#line 539 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	540	304		add __signed_stack_001main, __main_7qG2_i_7qG2_000, __constVal3
+0	539	308	#line 539 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	539	308	#line 539 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	540	308		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
+0	540	312	#line 540 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	541	312		set __ArrHelper__mainparticle_219_0.theta, 103
+0	540	315	#line 540 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	540	315	#line 540 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	541	315		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
+0	540	320	#line 540 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	540	320	#line 540 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	540	320	#line 540 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	540	320	#line 540 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	540	320	#line 540 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	541	320		add __signed_stack_001main, __main_7qG2_i_7qG2_000, __constVal3
+0	540	324	#line 540 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	540	324	#line 540 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	541	324		index __ArrHelper__mainparticle_219_0, __main_7qG2_list_7qG2_000, __signed_stack_001main
+0	541	328	#line 541 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	542	328		mov __ArrHelper__mainparticle_219_0.prob, __constValf0P0166666667
+0	541	331	#line 541 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	541	331	#line 541 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	542	331		replace __main_7qG2_list_7qG2_000, __main_7qG2_list_7qG2_000, __signed_stack_001main, __ArrHelper__mainparticle_219_0
+0	541	336	#line 541 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	565	336	#line 565 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	566	336		jmp __NXC_Label_808
+0	565	338	#line 565 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	565	338	#line 565 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	566	338		strcat __strbufmain, __constStr0009
+0	565	342	#line 565 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	566	342		mov __fopen_7qG2_filename_7qG2_000, __strbufmain
+0	565	344	#line 565 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	566	344		strcat __strbufmain, __constStr0006
+0	565	348	#line 565 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	566	348		mov __fopen_7qG2_mode_7qG2_000, __strbufmain
+0	568	350	#line 568 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	569	350		subcall fopen, __fopen_return
+0	568	352	#line 568 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	569	352		mov __main_7qG2_fd_7qG2_000, __DU0fopen
+0	568	354	#line 568 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	568	354	#line 568 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	568	354	#line 568 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	569	354		set __main_7qG2_i_7qG2_000, 0
+0	568	357	#line 568 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	568	357	#line 568 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	569	357		mov __signed_stack_001main, __main_7qG2_i_7qG2_000
+0	568	359	#line 568 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	568	359	#line 568 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	569	359		set __D0main, 15
+0	568	362	#line 568 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	569	362		cmp 0, __zfmain, __signed_stack_001main, __D0main
+0	568	366	#line 568 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	569	366		mov __D0main, __zfmain
+0	568	368	#line 568 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	569	368		brtst 4, __NXC_Label_906, __zfmain
+0	568	371	#line 568 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	569	371		jmp __NXC_Label_907
+0	568	373	#line 568 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	569	373		add __main_7qG2_i_7qG2_000, __main_7qG2_i_7qG2_000, __constVal1
+0	569	377	#line 569 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	570	377		jmp __NXC_Label_905
+0	569	379	#line 569 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	570	379		mov __fgets_7qG2_str_7qG2_000_inline_main, __main_7qG2_line_7qG2_000
+0	569	381	#line 569 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	570	381		set __fgets_7qG2_num_7qG2_000_inline_main, 10
+0	569	384	#line 569 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	569	384	#line 569 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	570	384		mov __fgets_7qG2_handle_7qG2_000_inline_main, __main_7qG2_fd_7qG2_000
+0	569	386	#line 569 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 0	17659	386	#line 17659 "NXCDefs.h"
 0	17660	386	#pragma macro 7
 0	17660	386		mov __FReadArgs.FileHandle, __main_7qG2_fd_7qG2_000
@@ -639,143 +639,143 @@ Clump	Line	PC	Source
 0	17660	390		subcall __readStringLine, __RLSReturnAddress
 0	17660	393		mov __D0fgets_inline_main, __RLSReturn
 0	17660	395		mov __fgets_7qG2_str_7qG2_000_inline_main, __RLSOutput
-0	6622	397	#line 6622 "NXCDefs.h"
+0	6650	397	#line 6650 "NXCDefs.h"
 0	17659	397	#line 17659 "NXCDefs.h"
 0	17659	397	#line 17659 "NXCDefs.h"
 0	17661	397	#line 17661 "NXCDefs.h"
 0	17662	397		strcat __strbuffgets_inline_main, __fgets_7qG2_str_7qG2_000_inline_main
 0	17661	401	#line 17661 "NXCDefs.h"
 0	17661	401	#line 17661 "NXCDefs.h"
-0	571	401	#line 571 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	572	401		mov __main_7qG2_line_7qG2_000, __fgets_7qG2_str_7qG2_000_inline_main
-0	571	403	#line 571 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	572	403		mov __strretvalmain, __strbuffgets_inline_main
-0	571	405	#line 571 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	571	405	#line 571 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	572	405		set __main_7qG2_j_7qG2_000, 0
-0	571	408	#line 571 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	571	408	#line 571 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	572	408		mov __signed_stack_001main, __main_7qG2_j_7qG2_000
-0	571	410	#line 571 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	571	410	#line 571 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	572	410		set __D0main, 7
-0	571	413	#line 571 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	572	413		cmp 0, __zfmain, __signed_stack_001main, __D0main
-0	571	417	#line 571 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	572	417		mov __D0main, __zfmain
-0	571	419	#line 571 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	572	419		brtst 4, __NXC_Label_914, __zfmain
-0	571	422	#line 571 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	572	422		jmp __NXC_Label_915
-0	571	424	#line 571 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	571	424	#line 571 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	571	424	#line 571 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	571	424	#line 571 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	572	424		add __main_7qG2_j_7qG2_000, __main_7qG2_j_7qG2_000, __constVal2
-0	571	428	#line 571 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	572	428	#line 572 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	573	428		jmp __NXC_Label_913
-0	572	430	#line 572 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	573	430		strcat __strbufmain, __main_7qG2_line_7qG2_000
-0	572	434	#line 572 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	573	434		mov __D0main, __main_7qG2_j_7qG2_000
-0	573	436	#line 573 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	574	436		index __main_7qG2_charat_7qG2_000, __strbufmain, __D0main
-0	573	440	#line 573 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	573	440	#line 573 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	573	440	#line 573 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	574	440		mov __D0main, __main_7qG2_j_7qG2_000
-0	577	442		brcmp 4, __NXC_Label_930, __constVal0, __D0main
-0	578	446		brcmp 4, __NXC_Label_935, __constVal2, __D0main
-0	579	450		brcmp 4, __NXC_Label_940, __constVal4, __D0main
-0	580	454		brcmp 4, __NXC_Label_945, __constVal6, __D0main
-0	581	458		jmp __NXC_Label_929
-0	575	460	#line 575 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	575	460	#line 575 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	576	460		mov __signed_stack_001main, __main_7qG2_i_7qG2_000
-0	575	462	#line 575 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	575	462	#line 575 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	576	462		index __ArrHelper__mainintersection_219_0, __main_7qG2_map_7qG2_000, __signed_stack_001main
-0	575	466	#line 575 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	575	466	#line 575 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	576	466	#line 576 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	576	466	#line 576 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	577	466		sub __ArrHelper__mainintersection_219_0.NE, __main_7qG2_charat_7qG2_000, __constVal48
-0	576	470	#line 576 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	576	470	#line 576 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	577	470		replace __main_7qG2_map_7qG2_000, __main_7qG2_map_7qG2_000, __signed_stack_001main, __ArrHelper__mainintersection_219_0
-0	576	475	#line 576 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	573	401	#line 573 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	574	401		mov __main_7qG2_line_7qG2_000, __fgets_7qG2_str_7qG2_000_inline_main
+0	573	403	#line 573 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	574	403		mov __strretvalmain, __strbuffgets_inline_main
+0	573	405	#line 573 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	573	405	#line 573 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	574	405		set __main_7qG2_j_7qG2_000, 0
+0	573	408	#line 573 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	573	408	#line 573 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	574	408		mov __signed_stack_001main, __main_7qG2_j_7qG2_000
+0	573	410	#line 573 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	573	410	#line 573 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	574	410		set __D0main, 7
+0	573	413	#line 573 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	574	413		cmp 0, __zfmain, __signed_stack_001main, __D0main
+0	573	417	#line 573 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	574	417		mov __D0main, __zfmain
+0	573	419	#line 573 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	574	419		brtst 4, __NXC_Label_918, __zfmain
+0	573	422	#line 573 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	574	422		jmp __NXC_Label_919
+0	573	424	#line 573 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	573	424	#line 573 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	573	424	#line 573 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	573	424	#line 573 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	574	424		add __main_7qG2_j_7qG2_000, __main_7qG2_j_7qG2_000, __constVal2
+0	573	428	#line 573 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	574	428	#line 574 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	575	428		jmp __NXC_Label_917
+0	574	430	#line 574 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	575	430		strcat __strbufmain, __main_7qG2_line_7qG2_000
+0	574	434	#line 574 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	575	434		mov __D0main, __main_7qG2_j_7qG2_000
+0	575	436	#line 575 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	576	436		index __main_7qG2_charat_7qG2_000, __strbufmain, __D0main
+0	575	440	#line 575 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	575	440	#line 575 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	575	440	#line 575 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	576	440		mov __D0main, __main_7qG2_j_7qG2_000
+0	579	442		brcmp 4, __NXC_Label_934, __constVal0, __D0main
+0	580	446		brcmp 4, __NXC_Label_939, __constVal2, __D0main
+0	581	450		brcmp 4, __NXC_Label_944, __constVal4, __D0main
+0	582	454		brcmp 4, __NXC_Label_949, __constVal6, __D0main
+0	583	458		jmp __NXC_Label_933
+0	577	460	#line 577 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	577	460	#line 577 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	578	460		mov __signed_stack_001main, __main_7qG2_i_7qG2_000
+0	577	462	#line 577 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	577	462	#line 577 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	578	462		index __ArrHelper__mainintersection_219_0, __main_7qG2_map_7qG2_000, __signed_stack_001main
+0	577	466	#line 577 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	577	466	#line 577 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	578	466	#line 578 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	578	466	#line 578 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	579	466		sub __ArrHelper__mainintersection_219_0.NE, __main_7qG2_charat_7qG2_000, __constVal48
+0	578	470	#line 578 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	578	470	#line 578 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	579	470		replace __main_7qG2_map_7qG2_000, __main_7qG2_map_7qG2_000, __signed_stack_001main, __ArrHelper__mainintersection_219_0
 0	578	475	#line 578 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	579	475		jmp __NXC_Label_929
-0	578	477	#line 578 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	579	477	#line 579 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	579	477	#line 579 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	580	477		mov __signed_stack_001main, __main_7qG2_i_7qG2_000
-0	579	479	#line 579 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	579	479	#line 579 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	580	479		index __ArrHelper__mainintersection_219_0, __main_7qG2_map_7qG2_000, __signed_stack_001main
-0	579	483	#line 579 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	579	483	#line 579 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	580	483	#line 580 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	580	483	#line 580 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	581	483		sub __ArrHelper__mainintersection_219_0.SE, __main_7qG2_charat_7qG2_000, __constVal48
-0	580	487	#line 580 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	580	487	#line 580 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	581	487		replace __main_7qG2_map_7qG2_000, __main_7qG2_map_7qG2_000, __signed_stack_001main, __ArrHelper__mainintersection_219_0
-0	580	492	#line 580 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	580	475	#line 580 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	581	475		jmp __NXC_Label_933
+0	580	477	#line 580 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	581	477	#line 581 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	581	477	#line 581 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	582	477		mov __signed_stack_001main, __main_7qG2_i_7qG2_000
+0	581	479	#line 581 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	581	479	#line 581 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	582	479		index __ArrHelper__mainintersection_219_0, __main_7qG2_map_7qG2_000, __signed_stack_001main
+0	581	483	#line 581 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	581	483	#line 581 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	582	483	#line 582 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	582	483	#line 582 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	583	483		sub __ArrHelper__mainintersection_219_0.SE, __main_7qG2_charat_7qG2_000, __constVal48
+0	582	487	#line 582 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	582	487	#line 582 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	583	487		replace __main_7qG2_map_7qG2_000, __main_7qG2_map_7qG2_000, __signed_stack_001main, __ArrHelper__mainintersection_219_0
 0	582	492	#line 582 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	583	492		jmp __NXC_Label_929
-0	582	494	#line 582 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	583	494	#line 583 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	583	494	#line 583 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	584	494		mov __signed_stack_001main, __main_7qG2_i_7qG2_000
-0	583	496	#line 583 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	583	496	#line 583 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	584	496		index __ArrHelper__mainintersection_219_0, __main_7qG2_map_7qG2_000, __signed_stack_001main
-0	583	500	#line 583 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	583	500	#line 583 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	584	500	#line 584 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	584	500	#line 584 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	585	500		sub __ArrHelper__mainintersection_219_0.SW, __main_7qG2_charat_7qG2_000, __constVal48
-0	584	504	#line 584 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	584	504	#line 584 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	585	504		replace __main_7qG2_map_7qG2_000, __main_7qG2_map_7qG2_000, __signed_stack_001main, __ArrHelper__mainintersection_219_0
-0	584	509	#line 584 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	584	492	#line 584 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	585	492		jmp __NXC_Label_933
+0	584	494	#line 584 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	585	494	#line 585 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	585	494	#line 585 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	586	494		mov __signed_stack_001main, __main_7qG2_i_7qG2_000
+0	585	496	#line 585 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	585	496	#line 585 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	586	496		index __ArrHelper__mainintersection_219_0, __main_7qG2_map_7qG2_000, __signed_stack_001main
+0	585	500	#line 585 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	585	500	#line 585 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	586	500	#line 586 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	586	500	#line 586 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	587	500		sub __ArrHelper__mainintersection_219_0.SW, __main_7qG2_charat_7qG2_000, __constVal48
+0	586	504	#line 586 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	586	504	#line 586 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	587	504		replace __main_7qG2_map_7qG2_000, __main_7qG2_map_7qG2_000, __signed_stack_001main, __ArrHelper__mainintersection_219_0
 0	586	509	#line 586 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	587	509		jmp __NXC_Label_929
-0	586	511	#line 586 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	587	511	#line 587 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	587	511	#line 587 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	588	511		mov __signed_stack_001main, __main_7qG2_i_7qG2_000
-0	587	513	#line 587 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	587	513	#line 587 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	588	513		index __ArrHelper__mainintersection_219_0, __main_7qG2_map_7qG2_000, __signed_stack_001main
-0	587	517	#line 587 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	587	517	#line 587 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	588	517	#line 588 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	588	517	#line 588 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	589	517		sub __ArrHelper__mainintersection_219_0.NW, __main_7qG2_charat_7qG2_000, __constVal48
-0	588	521	#line 588 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	588	521	#line 588 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	589	521		replace __main_7qG2_map_7qG2_000, __main_7qG2_map_7qG2_000, __signed_stack_001main, __ArrHelper__mainintersection_219_0
-0	588	526	#line 588 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	589	526	#line 589 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	589	526	#line 589 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	588	509	#line 588 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	589	509		jmp __NXC_Label_933
+0	588	511	#line 588 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	589	511	#line 589 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	589	511	#line 589 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	590	511		mov __signed_stack_001main, __main_7qG2_i_7qG2_000
+0	589	513	#line 589 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	589	513	#line 589 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	590	513		index __ArrHelper__mainintersection_219_0, __main_7qG2_map_7qG2_000, __signed_stack_001main
+0	589	517	#line 589 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	589	517	#line 589 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	590	517	#line 590 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	590	517	#line 590 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	591	517		sub __ArrHelper__mainintersection_219_0.NW, __main_7qG2_charat_7qG2_000, __constVal48
+0	590	521	#line 590 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	590	521	#line 590 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	591	521		replace __main_7qG2_map_7qG2_000, __main_7qG2_map_7qG2_000, __signed_stack_001main, __ArrHelper__mainintersection_219_0
+0	590	526	#line 590 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 0	591	526	#line 591 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	594	526	#line 594 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	595	526		jmp __NXC_Label_916
-0	594	528	#line 594 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	594	528	#line 594 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	595	528		jmp __NXC_Label_904
-0	594	530	#line 594 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	594	530	#line 594 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	595	530		mov __fgets_7qG2_str_7qG2_000_inline_main, __main_7qG2_line_7qG2_000
-0	594	532	#line 594 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	595	532		set __fgets_7qG2_num_7qG2_000_inline_main, 10
-0	594	535	#line 594 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	594	535	#line 594 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	595	535		mov __fgets_7qG2_handle_7qG2_000_inline_main, __main_7qG2_fd_7qG2_000
-0	594	537	#line 594 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	591	526	#line 591 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	593	526	#line 593 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	596	526	#line 596 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	597	526		jmp __NXC_Label_920
+0	596	528	#line 596 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	596	528	#line 596 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	597	528		jmp __NXC_Label_908
+0	596	530	#line 596 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	596	530	#line 596 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	597	530		mov __fgets_7qG2_str_7qG2_000_inline_main, __main_7qG2_line_7qG2_000
+0	596	532	#line 596 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	597	532		set __fgets_7qG2_num_7qG2_000_inline_main, 10
+0	596	535	#line 596 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	596	535	#line 596 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	597	535		mov __fgets_7qG2_handle_7qG2_000_inline_main, __main_7qG2_fd_7qG2_000
+0	596	537	#line 596 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 0	17659	537	#line 17659 "NXCDefs.h"
 0	17660	537	#pragma macro 7
 0	17660	537		mov __FReadArgs.FileHandle, __main_7qG2_fd_7qG2_000
@@ -783,67 +783,67 @@ Clump	Line	PC	Source
 0	17660	541		subcall __readStringLine, __RLSReturnAddress
 0	17660	544		mov __D0fgets_inline_main, __RLSReturn
 0	17660	546		mov __fgets_7qG2_str_7qG2_000_inline_main, __RLSOutput
-0	6835	548	#line 6835 "NXCDefs.h"
+0	6863	548	#line 6863 "NXCDefs.h"
 0	17659	548	#line 17659 "NXCDefs.h"
 0	17659	548	#line 17659 "NXCDefs.h"
 0	17661	548	#line 17661 "NXCDefs.h"
 0	17662	548		strcat __strbuffgets_inline_main, __fgets_7qG2_str_7qG2_000_inline_main
 0	17661	552	#line 17661 "NXCDefs.h"
 0	17661	552	#line 17661 "NXCDefs.h"
-0	595	552	#line 595 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	596	552		mov __main_7qG2_line_7qG2_000, __fgets_7qG2_str_7qG2_000_inline_main
-0	595	554	#line 595 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	596	554		mov __strretvalmain, __strbuffgets_inline_main
-0	595	556	#line 595 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	595	556	#line 595 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	596	556		strcat __strbufmain, __main_7qG2_line_7qG2_000
-0	595	560	#line 595 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	596	560		set __D0main, 0
-0	596	563	#line 596 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	597	563		index __main_7qG2_charat_7qG2_000, __strbufmain, __D0main
-0	596	567	#line 596 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	596	567	#line 596 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	596	567	#line 596 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	596	567	#line 596 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	599	567	#line 599 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	599	567	#line 599 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	600	567		sub __main_7qG2_target_7qG2_000, __main_7qG2_charat_7qG2_000, __constVal48
-0	599	571	#line 599 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	599	571	#line 599 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	599	571	#line 599 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	599	571	#line 599 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	600	571	#line 600 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	600	571	#line 600 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	601	571		mul __main_7qG2_target_7qG2_000, __main_7qG2_target_7qG2_000, __constVal5
-0	600	575	#line 600 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	600	575	#line 600 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	600	575	#line 600 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	601	575		strcat __strbufmain, __main_7qG2_line_7qG2_000
-0	600	579	#line 600 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	601	579		set __D0main, 2
-0	603	582	#line 603 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	604	582		index __main_7qG2_charat_7qG2_000, __strbufmain, __D0main
-0	603	586	#line 603 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	603	586	#line 603 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	603	586	#line 603 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	603	586	#line 603 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	603	586	#line 603 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	603	586	#line 603 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	604	586		add __signed_stack_001main, __main_7qG2_target_7qG2_000, __main_7qG2_charat_7qG2_000
-0	603	590	#line 603 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	607	590	#line 607 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	607	590	#line 607 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	608	590		sub __main_7qG2_target_7qG2_000, __signed_stack_001main, __constVal48
-0	607	594	#line 607 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	607	594	#line 607 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	607	594	#line 607 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	608	594		mov __fgets_7qG2_str_7qG2_000_inline_main, __main_7qG2_line_7qG2_000
-0	607	596	#line 607 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	608	596		set __fgets_7qG2_num_7qG2_000_inline_main, 10
-0	607	599	#line 607 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	607	599	#line 607 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	608	599		mov __fgets_7qG2_handle_7qG2_000_inline_main, __main_7qG2_fd_7qG2_000
-0	607	601	#line 607 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	597	552	#line 597 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	598	552		mov __main_7qG2_line_7qG2_000, __fgets_7qG2_str_7qG2_000_inline_main
+0	597	554	#line 597 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	598	554		mov __strretvalmain, __strbuffgets_inline_main
+0	597	556	#line 597 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	597	556	#line 597 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	598	556		strcat __strbufmain, __main_7qG2_line_7qG2_000
+0	597	560	#line 597 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	598	560		set __D0main, 0
+0	598	563	#line 598 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	599	563		index __main_7qG2_charat_7qG2_000, __strbufmain, __D0main
+0	598	567	#line 598 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	598	567	#line 598 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	598	567	#line 598 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	598	567	#line 598 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	601	567	#line 601 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	601	567	#line 601 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	602	567		sub __main_7qG2_target_7qG2_000, __main_7qG2_charat_7qG2_000, __constVal48
+0	601	571	#line 601 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	601	571	#line 601 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	601	571	#line 601 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	601	571	#line 601 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	602	571	#line 602 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	602	571	#line 602 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	603	571		mul __main_7qG2_target_7qG2_000, __main_7qG2_target_7qG2_000, __constVal5
+0	602	575	#line 602 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	602	575	#line 602 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	602	575	#line 602 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	603	575		strcat __strbufmain, __main_7qG2_line_7qG2_000
+0	602	579	#line 602 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	603	579		set __D0main, 2
+0	605	582	#line 605 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	606	582		index __main_7qG2_charat_7qG2_000, __strbufmain, __D0main
+0	605	586	#line 605 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	605	586	#line 605 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	605	586	#line 605 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	605	586	#line 605 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	605	586	#line 605 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	605	586	#line 605 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	606	586		add __signed_stack_001main, __main_7qG2_target_7qG2_000, __main_7qG2_charat_7qG2_000
+0	605	590	#line 605 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	609	590	#line 609 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	609	590	#line 609 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	610	590		sub __main_7qG2_target_7qG2_000, __signed_stack_001main, __constVal48
+0	609	594	#line 609 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	609	594	#line 609 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	609	594	#line 609 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	610	594		mov __fgets_7qG2_str_7qG2_000_inline_main, __main_7qG2_line_7qG2_000
+0	609	596	#line 609 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	610	596		set __fgets_7qG2_num_7qG2_000_inline_main, 10
+0	609	599	#line 609 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	609	599	#line 609 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	610	599		mov __fgets_7qG2_handle_7qG2_000_inline_main, __main_7qG2_fd_7qG2_000
+0	609	601	#line 609 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 0	17659	601	#line 17659 "NXCDefs.h"
 0	17660	601	#pragma macro 7
 0	17660	601		mov __FReadArgs.FileHandle, __main_7qG2_fd_7qG2_000
@@ -851,251 +851,251 @@ Clump	Line	PC	Source
 0	17660	605		subcall __readStringLine, __RLSReturnAddress
 0	17660	608		mov __D0fgets_inline_main, __RLSReturn
 0	17660	610		mov __fgets_7qG2_str_7qG2_000_inline_main, __RLSOutput
-0	6936	612	#line 6936 "NXCDefs.h"
+0	6964	612	#line 6964 "NXCDefs.h"
 0	17659	612	#line 17659 "NXCDefs.h"
 0	17659	612	#line 17659 "NXCDefs.h"
 0	17661	612	#line 17661 "NXCDefs.h"
 0	17662	612		strcat __strbuffgets_inline_main, __fgets_7qG2_str_7qG2_000_inline_main
 0	17661	616	#line 17661 "NXCDefs.h"
 0	17661	616	#line 17661 "NXCDefs.h"
-0	608	616	#line 608 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	609	616		mov __main_7qG2_line_7qG2_000, __fgets_7qG2_str_7qG2_000_inline_main
-0	608	618	#line 608 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	609	618		mov __strretvalmain, __strbuffgets_inline_main
-0	608	620	#line 608 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	608	620	#line 608 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	609	620		strcat __strbufmain, __main_7qG2_line_7qG2_000
-0	608	624	#line 608 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	609	624		set __D0main, 0
-0	609	627	#line 609 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	610	627		index __main_7qG2_charat_7qG2_000, __strbufmain, __D0main
-0	609	631	#line 609 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	609	631	#line 609 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	609	631	#line 609 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	609	631	#line 609 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	612	631	#line 612 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	612	631	#line 612 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	613	631		sub __main_7qG2_dest_7qG2_000, __main_7qG2_charat_7qG2_000, __constVal48
-0	612	635	#line 612 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	612	635	#line 612 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	612	635	#line 612 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	612	635	#line 612 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	613	635	#line 613 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	613	635	#line 613 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	614	635		mul __main_7qG2_dest_7qG2_000, __main_7qG2_dest_7qG2_000, __constVal5
-0	613	639	#line 613 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	613	639	#line 613 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	613	639	#line 613 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	614	639		strcat __strbufmain, __main_7qG2_line_7qG2_000
-0	613	643	#line 613 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	614	643		set __D0main, 2
-0	616	646	#line 616 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	617	646		index __main_7qG2_charat_7qG2_000, __strbufmain, __D0main
-0	616	650	#line 616 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	616	650	#line 616 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	616	650	#line 616 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	616	650	#line 616 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	616	650	#line 616 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	616	650	#line 616 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	617	650		add __signed_stack_001main, __main_7qG2_dest_7qG2_000, __main_7qG2_charat_7qG2_000
-0	616	654	#line 616 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	619	654	#line 619 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	619	654	#line 619 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	620	654		sub __main_7qG2_dest_7qG2_000, __signed_stack_001main, __constVal48
-0	619	658	#line 619 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	619	658	#line 619 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	619	658	#line 619 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	619	658	#line 619 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	610	616	#line 610 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	611	616		mov __main_7qG2_line_7qG2_000, __fgets_7qG2_str_7qG2_000_inline_main
+0	610	618	#line 610 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	611	618		mov __strretvalmain, __strbuffgets_inline_main
+0	610	620	#line 610 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	610	620	#line 610 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	611	620		strcat __strbufmain, __main_7qG2_line_7qG2_000
+0	610	624	#line 610 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	611	624		set __D0main, 0
+0	611	627	#line 611 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	612	627		index __main_7qG2_charat_7qG2_000, __strbufmain, __D0main
+0	611	631	#line 611 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	611	631	#line 611 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	611	631	#line 611 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	611	631	#line 611 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	614	631	#line 614 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	614	631	#line 614 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	615	631		sub __main_7qG2_dest_7qG2_000, __main_7qG2_charat_7qG2_000, __constVal48
+0	614	635	#line 614 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	614	635	#line 614 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	614	635	#line 614 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	614	635	#line 614 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	615	635	#line 615 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	615	635	#line 615 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	616	635		mul __main_7qG2_dest_7qG2_000, __main_7qG2_dest_7qG2_000, __constVal5
+0	615	639	#line 615 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	615	639	#line 615 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	615	639	#line 615 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	616	639		strcat __strbufmain, __main_7qG2_line_7qG2_000
+0	615	643	#line 615 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	616	643		set __D0main, 2
+0	618	646	#line 618 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	619	646		index __main_7qG2_charat_7qG2_000, __strbufmain, __D0main
+0	618	650	#line 618 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	618	650	#line 618 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	618	650	#line 618 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	618	650	#line 618 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	618	650	#line 618 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	618	650	#line 618 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	619	650		add __signed_stack_001main, __main_7qG2_dest_7qG2_000, __main_7qG2_charat_7qG2_000
+0	618	654	#line 618 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	621	654	#line 621 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	621	654	#line 621 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	622	654		sub __main_7qG2_dest_7qG2_000, __signed_stack_001main, __constVal48
+0	621	658	#line 621 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	621	658	#line 621 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	621	658	#line 621 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	621	658	#line 621 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 0	17590	658	#line 17590 "NXCDefs.h"
 0	17591	658	#pragma macro 5
 0	17591	658		mov __FCArgs.FileHandle, __main_7qG2_fd_7qG2_000
 0	17591	660		syscall 5, __FCArgs
-0	7033	663	#line 7033 "NXCDefs.h"
+0	7061	663	#line 7061 "NXCDefs.h"
 0	17590	663	#line 17590 "NXCDefs.h"
 0	17590	663	#line 17590 "NXCDefs.h"
 0	17590	663	#line 17590 "NXCDefs.h"
-0	687	663	#line 687 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	687	663	#line 687 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	687	663	#line 687 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	688	663		set __D0main, 1000
-0	687	666	#line 687 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	688	666	#pragma macro 8
-0	688	666		syscall 24, __RandomArgs
-0	688	669		mov __RandomTmp, __RandomArgs.Result
-0	688	672		add __RandomTmp, __RandomArgs.Result, __constVal32768
-0	688	676		mul __RandomTmp, __RandomTmp, __D0main
-0	688	680		div __RandomTmp, __RandomTmp, __constVal65536
-0	7050	684	#line 7050 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	687	684	#line 687 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	687	684	#line 687 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	687	684	#line 687 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	688	684		add __signed_stack_001main, __RandomTmp, __constVal200
-0	687	688	#line 687 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	687	688	#line 687 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	688	688		set __signed_stack_002main, 400
-0	687	691	#line 687 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	687	691	#line 687 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	688	691		set __signed_stack_003main, 3
-0	687	694	#line 687 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	687	694	#line 687 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	688	694		set __D0main, 0
-0	700	697	#line 700 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	701	697		acquire __SPTArgsMutex
-0	700	698	#line 700 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	701	698		mov __SPTArgs.Frequency, __signed_stack_001main
-0	700	701	#line 700 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	701	701		mov __SPTArgs.Duration, __signed_stack_002main
-0	700	704	#line 700 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	701	704		mov __SPTArgs.Volume, __signed_stack_003main
-0	700	707	#line 700 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	701	707		mov __SPTArgs.Loop, __D0main
-0	700	710	#line 700 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	701	710		syscall 10, __SPTArgs
-0	700	713	#line 700 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	701	713		mov __D0main, __SPTArgs.Result
-0	700	716	#line 700 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	701	716		release __SPTArgsMutex
-0	700	717	#line 700 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	700	717	#line 700 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	701	717		set __signed_stack_001main, 2
-0	700	720	#line 700 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	700	720	#line 700 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	701	720		set __signed_stack_002main, 0
-0	700	723	#line 700 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	700	723	#line 700 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	701	723		index __ArrHelper__main_73_0, __main_7qG2_guess_7qG2_000, __signed_stack_002main
-0	700	727	#line 700 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	700	727	#line 700 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	700	727	#line 700 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	700	727	#line 700 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	701	727		mul __signed_stack_002main, __ArrHelper__main_73_0, __constVal5
-0	700	731	#line 700 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	700	731	#line 700 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	701	731		set __signed_stack_003main, 1
-0	700	734	#line 700 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	700	734	#line 700 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	701	734		index __ArrHelper__main_73_0, __main_7qG2_guess_7qG2_000, __signed_stack_003main
-0	700	738	#line 700 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	700	738	#line 700 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	701	738		add __move_to_7qG2_s_7qG2_000, __signed_stack_002main, __ArrHelper__main_73_0
-0	700	742	#line 700 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	700	742	#line 700 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	701	742		mov __move_to_7qG2_f_7qG2_000, __main_7qG2_target_7qG2_000
-0	700	744	#line 700 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	700	744	#line 700 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	701	744		set __signed_stack_002main, 2
-0	700	747	#line 700 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	700	747	#line 700 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	701	747		index __ArrHelper__main_73_0, __main_7qG2_guess_7qG2_000, __signed_stack_002main
-0	700	751	#line 700 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	701	751		mov __move_to_7qG2_h_7qG2_000, __ArrHelper__main_73_0
-0	700	753	#line 700 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	701	753	#line 701 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	702	753		subcall move_to, __move_to_return
-0	701	755	#line 701 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	702	755		mov __D0main, __D0move_to
-0	701	757	#line 701 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	702	757		replace __main_7qG2_guess_7qG2_000, __main_7qG2_guess_7qG2_000, __signed_stack_001main, __D0main
-0	701	762	#line 701 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	701	762	#line 701 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	702	762		set __D0main, 1000
-0	701	765	#line 701 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	702	765	#pragma macro 8
-0	702	765		syscall 24, __RandomArgs
-0	702	768		mov __RandomTmp, __RandomArgs.Result
-0	702	771		add __RandomTmp, __RandomArgs.Result, __constVal32768
-0	702	775		mul __RandomTmp, __RandomTmp, __D0main
-0	702	779		div __RandomTmp, __RandomTmp, __constVal65536
-0	7168	783	#line 7168 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	701	783	#line 701 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	701	783	#line 701 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	701	783	#line 701 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	702	783		add __signed_stack_001main, __RandomTmp, __constVal200
-0	701	787	#line 701 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	701	787	#line 701 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	702	787		set __signed_stack_002main, 400
-0	701	790	#line 701 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	701	790	#line 701 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	702	790		set __signed_stack_003main, 3
-0	701	793	#line 701 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	701	793	#line 701 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	702	793		set __D0main, 0
-0	702	796	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	703	796		acquire __SPTArgsMutex
-0	702	797	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	703	797		mov __SPTArgs.Frequency, __signed_stack_001main
-0	702	800	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	703	800		mov __SPTArgs.Duration, __signed_stack_002main
-0	702	803	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	703	803		mov __SPTArgs.Volume, __signed_stack_003main
-0	702	806	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	703	806		mov __SPTArgs.Loop, __D0main
-0	702	809	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	703	809		syscall 10, __SPTArgs
-0	702	812	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	703	812		mov __D0main, __SPTArgs.Result
-0	702	815	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	703	815		release __SPTArgsMutex
-0	702	816	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	702	816	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	703	816		mov __move_to_7qG2_s_7qG2_000, __main_7qG2_target_7qG2_000
-0	702	818	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	702	818	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	703	818		mov __move_to_7qG2_f_7qG2_000, __main_7qG2_dest_7qG2_000
-0	702	820	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	702	820	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	703	820		set __signed_stack_001main, 2
-0	702	823	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	702	823	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	703	823		index __ArrHelper__main_73_0, __main_7qG2_guess_7qG2_000, __signed_stack_001main
-0	702	827	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	703	827		mov __move_to_7qG2_h_7qG2_000, __ArrHelper__main_73_0
-0	702	829	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	703	829	#line 703 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	704	829		subcall move_to, __move_to_return
-0	703	831	#line 703 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	703	831	#line 703 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	703	831	#line 703 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	704	831		set __D0main, 1000
-0	703	834	#line 703 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	704	834	#pragma macro 8
-0	704	834		syscall 24, __RandomArgs
-0	704	837		mov __RandomTmp, __RandomArgs.Result
-0	704	840		add __RandomTmp, __RandomArgs.Result, __constVal32768
-0	704	844		mul __RandomTmp, __RandomTmp, __D0main
-0	704	848		div __RandomTmp, __RandomTmp, __constVal65536
-0	7248	852	#line 7248 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	703	852	#line 703 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	703	852	#line 703 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	703	852	#line 703 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	704	852		add __signed_stack_001main, __RandomTmp, __constVal200
-0	703	856	#line 703 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	703	856	#line 703 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	704	856		set __signed_stack_002main, 400
-0	703	859	#line 703 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	703	859	#line 703 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	704	859		set __signed_stack_003main, 3
-0	703	862	#line 703 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	703	862	#line 703 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	704	862		set __D0main, 0
-0	704	865	#line 704 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	705	865		acquire __SPTArgsMutex
-0	704	866	#line 704 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	705	866		mov __SPTArgs.Frequency, __signed_stack_001main
-0	704	869	#line 704 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	705	869		mov __SPTArgs.Duration, __signed_stack_002main
-0	704	872	#line 704 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	705	872		mov __SPTArgs.Volume, __signed_stack_003main
-0	704	875	#line 704 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	705	875		mov __SPTArgs.Loop, __D0main
-0	704	878	#line 704 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	705	878		syscall 10, __SPTArgs
-0	704	881	#line 704 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	705	881		mov __D0main, __SPTArgs.Result
-0	704	884	#line 704 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	705	884		release __SPTArgsMutex
-0	704	885	#line 704 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	705	885		exit -1, -1
+0	689	663	#line 689 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	689	663	#line 689 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	689	663	#line 689 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	690	663		set __D0main, 1000
+0	689	666	#line 689 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	690	666	#pragma macro 8
+0	690	666		syscall 24, __RandomArgs
+0	690	669		mov __RandomTmp, __RandomArgs.Result
+0	690	672		add __RandomTmp, __RandomArgs.Result, __constVal32768
+0	690	676		mul __RandomTmp, __RandomTmp, __D0main
+0	690	680		div __RandomTmp, __RandomTmp, __constVal65536
+0	7078	684	#line 7078 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	689	684	#line 689 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	689	684	#line 689 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	689	684	#line 689 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	690	684		add __signed_stack_001main, __RandomTmp, __constVal200
+0	689	688	#line 689 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	689	688	#line 689 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	690	688		set __signed_stack_002main, 400
+0	689	691	#line 689 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	689	691	#line 689 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	690	691		set __signed_stack_003main, 3
+0	689	694	#line 689 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	689	694	#line 689 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	690	694		set __D0main, 0
+0	702	697	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	703	697		acquire __SPTArgsMutex
+0	702	698	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	703	698		mov __SPTArgs.Frequency, __signed_stack_001main
+0	702	701	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	703	701		mov __SPTArgs.Duration, __signed_stack_002main
+0	702	704	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	703	704		mov __SPTArgs.Volume, __signed_stack_003main
+0	702	707	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	703	707		mov __SPTArgs.Loop, __D0main
+0	702	710	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	703	710		syscall 10, __SPTArgs
+0	702	713	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	703	713		mov __D0main, __SPTArgs.Result
+0	702	716	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	703	716		release __SPTArgsMutex
+0	702	717	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	702	717	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	703	717		set __signed_stack_001main, 2
+0	702	720	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	702	720	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	703	720		set __signed_stack_002main, 0
+0	702	723	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	702	723	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	703	723		index __ArrHelper__main_73_0, __main_7qG2_guess_7qG2_000, __signed_stack_002main
+0	702	727	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	702	727	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	702	727	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	702	727	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	703	727		mul __signed_stack_002main, __ArrHelper__main_73_0, __constVal5
+0	702	731	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	702	731	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	703	731		set __signed_stack_003main, 1
+0	702	734	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	702	734	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	703	734		index __ArrHelper__main_73_0, __main_7qG2_guess_7qG2_000, __signed_stack_003main
+0	702	738	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	702	738	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	703	738		add __move_to_7qG2_s_7qG2_000, __signed_stack_002main, __ArrHelper__main_73_0
+0	702	742	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	702	742	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	703	742		mov __move_to_7qG2_f_7qG2_000, __main_7qG2_target_7qG2_000
+0	702	744	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	702	744	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	703	744		set __signed_stack_002main, 2
+0	702	747	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	702	747	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	703	747		index __ArrHelper__main_73_0, __main_7qG2_guess_7qG2_000, __signed_stack_002main
+0	702	751	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	703	751		mov __move_to_7qG2_h_7qG2_000, __ArrHelper__main_73_0
+0	702	753	#line 702 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	703	753	#line 703 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	704	753		subcall move_to, __move_to_return
+0	703	755	#line 703 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	704	755		mov __D0main, __D0move_to
+0	703	757	#line 703 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	704	757		replace __main_7qG2_guess_7qG2_000, __main_7qG2_guess_7qG2_000, __signed_stack_001main, __D0main
+0	703	762	#line 703 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	703	762	#line 703 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	704	762		set __D0main, 1000
+0	703	765	#line 703 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	704	765	#pragma macro 8
+0	704	765		syscall 24, __RandomArgs
+0	704	768		mov __RandomTmp, __RandomArgs.Result
+0	704	771		add __RandomTmp, __RandomArgs.Result, __constVal32768
+0	704	775		mul __RandomTmp, __RandomTmp, __D0main
+0	704	779		div __RandomTmp, __RandomTmp, __constVal65536
+0	7196	783	#line 7196 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	703	783	#line 703 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	703	783	#line 703 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	703	783	#line 703 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	704	783		add __signed_stack_001main, __RandomTmp, __constVal200
+0	703	787	#line 703 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	703	787	#line 703 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	704	787		set __signed_stack_002main, 400
+0	703	790	#line 703 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	703	790	#line 703 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	704	790		set __signed_stack_003main, 3
+0	703	793	#line 703 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	703	793	#line 703 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	704	793		set __D0main, 0
+0	704	796	#line 704 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	705	796		acquire __SPTArgsMutex
+0	704	797	#line 704 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	705	797		mov __SPTArgs.Frequency, __signed_stack_001main
+0	704	800	#line 704 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	705	800		mov __SPTArgs.Duration, __signed_stack_002main
+0	704	803	#line 704 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	705	803		mov __SPTArgs.Volume, __signed_stack_003main
+0	704	806	#line 704 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	705	806		mov __SPTArgs.Loop, __D0main
+0	704	809	#line 704 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	705	809		syscall 10, __SPTArgs
+0	704	812	#line 704 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	705	812		mov __D0main, __SPTArgs.Result
+0	704	815	#line 704 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	705	815		release __SPTArgsMutex
+0	704	816	#line 704 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	704	816	#line 704 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	705	816		mov __move_to_7qG2_s_7qG2_000, __main_7qG2_target_7qG2_000
+0	704	818	#line 704 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	704	818	#line 704 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	705	818		mov __move_to_7qG2_f_7qG2_000, __main_7qG2_dest_7qG2_000
+0	704	820	#line 704 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	704	820	#line 704 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	705	820		set __signed_stack_001main, 2
+0	704	823	#line 704 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	704	823	#line 704 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	705	823		index __ArrHelper__main_73_0, __main_7qG2_guess_7qG2_000, __signed_stack_001main
+0	704	827	#line 704 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	705	827		mov __move_to_7qG2_h_7qG2_000, __ArrHelper__main_73_0
+0	704	829	#line 704 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	705	829	#line 705 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	706	829		subcall move_to, __move_to_return
+0	705	831	#line 705 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	705	831	#line 705 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	705	831	#line 705 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	706	831		set __D0main, 1000
+0	705	834	#line 705 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	706	834	#pragma macro 8
+0	706	834		syscall 24, __RandomArgs
+0	706	837		mov __RandomTmp, __RandomArgs.Result
+0	706	840		add __RandomTmp, __RandomArgs.Result, __constVal32768
+0	706	844		mul __RandomTmp, __RandomTmp, __D0main
+0	706	848		div __RandomTmp, __RandomTmp, __constVal65536
+0	7276	852	#line 7276 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	705	852	#line 705 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	705	852	#line 705 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	705	852	#line 705 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	706	852		add __signed_stack_001main, __RandomTmp, __constVal200
+0	705	856	#line 705 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	705	856	#line 705 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	706	856		set __signed_stack_002main, 400
+0	705	859	#line 705 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	705	859	#line 705 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	706	859		set __signed_stack_003main, 3
+0	705	862	#line 705 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	705	862	#line 705 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	706	862		set __D0main, 0
+0	706	865	#line 706 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	707	865		acquire __SPTArgsMutex
+0	706	866	#line 706 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	707	866		mov __SPTArgs.Frequency, __signed_stack_001main
+0	706	869	#line 706 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	707	869		mov __SPTArgs.Duration, __signed_stack_002main
+0	706	872	#line 706 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	707	872		mov __SPTArgs.Volume, __signed_stack_003main
+0	706	875	#line 706 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	707	875		mov __SPTArgs.Loop, __D0main
+0	706	878	#line 706 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	707	878		syscall 10, __SPTArgs
+0	706	881	#line 706 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	707	881		mov __D0main, __SPTArgs.Result
+0	706	884	#line 706 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	707	884		release __SPTArgsMutex
+0	706	885	#line 706 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	707	885		exit -1, -1
 1	4529	0		brtst 4, __rotate_Done1, __rotate_angle1
 1	4530	3		set ____RotateMotor1_sign_tmp, 0
 1	4530	6		brtst EQ, __sign_1, __rotate_angle1
@@ -1449,7 +1449,7 @@ Clump	Line	PC	Source
 8	138	38	#line 138 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 8	139	38	#line 139 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 8	139	38	#line 139 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	140	38		mul __float_stack_002drive, __drive_7qG2_distance_7qG2_000, __constValf26P52582384
+8	140	38		div __float_stack_002drive, __drive_7qG2_distance_7qG2_000, __constValf0P03761
 8	139	42	#line 139 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 8	139	42	#line 139 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 8	140	42		mov __float_stack_003drive, __constVal0
@@ -1509,7 +1509,7 @@ Clump	Line	PC	Source
 8	146	112	#line 146 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 8	147	112	#line 147 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 8	147	112	#line 147 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	148	112		mul __float_stack_002drive, __drive_7qG2_distance_7qG2_000, __constValf26P52582384
+8	148	112		div __float_stack_002drive, __drive_7qG2_distance_7qG2_000, __constValf0P03761
 8	147	116	#line 147 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 8	147	116	#line 147 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 8	148	116		mov __float_stack_003drive, __constVal0
@@ -1569,7 +1569,7 @@ Clump	Line	PC	Source
 8	154	186	#line 154 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 8	155	186	#line 155 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 8	155	186	#line 155 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	156	186		mul __float_stack_002drive, __drive_7qG2_distance_7qG2_000, __constValf26P52582384
+8	156	186		div __float_stack_002drive, __drive_7qG2_distance_7qG2_000, __constValf0P03761
 8	155	190	#line 155 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 8	155	190	#line 155 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 8	156	190		mov __float_stack_003drive, __constVal100
@@ -1629,7 +1629,7 @@ Clump	Line	PC	Source
 8	162	260	#line 162 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 8	163	260	#line 163 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 8	163	260	#line 163 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	164	260		mul __float_stack_002drive, __drive_7qG2_distance_7qG2_000, __constValf26P52582384
+8	164	260		div __float_stack_002drive, __drive_7qG2_distance_7qG2_000, __constValf0P03761
 8	163	264	#line 163 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 8	163	264	#line 163 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 8	164	264		mov __float_stack_003drive, __constValNeg100
@@ -1673,7 +1673,7 @@ Clump	Line	PC	Source
 8	170	312	#line 170 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 8	171	312	#line 171 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 8	171	312	#line 171 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	172	312		mul __float_stack_002drive, __drive_7qG2_distance_7qG2_000, __constValf26P52582384
+8	172	312		div __float_stack_002drive, __drive_7qG2_distance_7qG2_000, __constValf0P03761
 8	171	316	#line 171 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 8	171	316	#line 171 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 8	172	316		mov __float_stack_003drive, __constVal0
@@ -1715,130 +1715,138 @@ Clump	Line	PC	Source
 8	178	367	#line 178 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 8	178	367	#line 178 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 8	178	367	#line 178 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	179	367	#line 179 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	179	367	#line 179 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	180	367		mul __float_stack_002drive, __drive_7qG2_distance_7qG2_000, __constValf26P52582384
+8	178	367	#line 178 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	178	367	#line 178 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	179	367		mul __signed_stack_002drive, __drive_7qG2_left_7qG2_000, __drive_7qG2_distance_7qG2_000
+8	178	371	#line 178 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 8	179	371	#line 179 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 8	179	371	#line 179 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	180	371		mov __float_stack_003drive, __constVal0
-8	179	374	#line 179 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	179	374	#line 179 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	180	374		mov __float_stack_004drive, __constVal0
-8	179	377	#line 179 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	180	377	#line 180 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	181	377		mov __DF0drive, __constVal1
-8	183	380	#line 183 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	184	380	#pragma macro 33
-8	184	380		arrbuild __rotate_ports2, __constVal2
-8	184	384		mov __rotate_power2, __signed_stack_001drive
-8	184	386		mov __rotate_angle2, __float_stack_002drive
-8	184	388		mov __rotate_turnpct2, __float_stack_003drive
-8	184	390		mov __rotate_sync2, __float_stack_004drive
-8	184	392		mov __rotate_stop2, __DF0drive
-8	184	394		mov __rotate_theRVP2, __constVal32
-8	184	396		mov __rotate_theRVI2, __constVal0
-8	184	398		mov __rotate_theRVD2, __constVal96
-8	184	400		subcall __RotateMotor2, ____RotateMotor2_return
-8	4985	403	#line 4985 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	183	403	#line 183 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	183	403	#line 183 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	184	403		jmp __NXC_Label_616
-8	183	405	#line 183 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	184	405		mov __signed_stack_001drive, __drive_7qG2_right_7qG2_000
+8	180	371		div __float_stack_002drive, __signed_stack_002drive, __constValf0P03761
+8	179	375	#line 179 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	179	375	#line 179 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	180	375		mov __float_stack_003drive, __constVal0
+8	179	378	#line 179 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	179	378	#line 179 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	180	378		mov __float_stack_004drive, __constVal0
+8	179	381	#line 179 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	180	381	#line 180 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	181	381		mov __DF0drive, __constVal1
+8	183	384	#line 183 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	184	384	#pragma macro 33
+8	184	384		arrbuild __rotate_ports2, __constVal2
+8	184	388		mov __rotate_power2, __signed_stack_001drive
+8	184	390		mov __rotate_angle2, __float_stack_002drive
+8	184	392		mov __rotate_turnpct2, __float_stack_003drive
+8	184	394		mov __rotate_sync2, __float_stack_004drive
+8	184	396		mov __rotate_stop2, __DF0drive
+8	184	398		mov __rotate_theRVP2, __constVal32
+8	184	400		mov __rotate_theRVI2, __constVal0
+8	184	402		mov __rotate_theRVD2, __constVal96
+8	184	404		subcall __RotateMotor2, ____RotateMotor2_return
+8	4991	407	#line 4991 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 8	183	407	#line 183 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 8	183	407	#line 183 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	184	407		set __D0drive, 0
-8	183	410	#line 183 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	184	410		cmp 1, __zfdrive, __signed_stack_001drive, __D0drive
+8	184	407		jmp __NXC_Label_616
+8	183	409	#line 183 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	184	409		mov __signed_stack_001drive, __drive_7qG2_right_7qG2_000
+8	183	411	#line 183 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	183	411	#line 183 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	184	411		set __D0drive, 0
 8	183	414	#line 183 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	184	414		mov __D0drive, __zfdrive
-8	184	416	#line 184 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	185	416		brtst 4, __NXC_Label_619, __zfdrive
-8	186	419	#line 186 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	187	419		set __signed_stack_001drive, 20
-8	186	422	#line 186 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	186	422	#line 186 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	186	422	#line 186 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	187	422	#line 187 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	187	422	#line 187 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	188	422		mul __float_stack_002drive, __drive_7qG2_distance_7qG2_000, __constValf26P52582384
+8	184	414		cmp 1, __zfdrive, __signed_stack_001drive, __D0drive
+8	183	418	#line 183 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	184	418		mov __D0drive, __zfdrive
+8	184	420	#line 184 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	185	420		brtst 4, __NXC_Label_619, __zfdrive
+8	186	423	#line 186 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	187	423		set __signed_stack_001drive, 20
+8	186	426	#line 186 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	186	426	#line 186 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	186	426	#line 186 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 8	187	426	#line 187 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 8	187	426	#line 187 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	188	426		mov __float_stack_003drive, __constVal0
-8	187	429	#line 187 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	187	429	#line 187 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	188	429		mov __float_stack_004drive, __constVal0
-8	187	432	#line 187 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	188	432	#line 188 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	189	432		mov __DF0drive, __constVal1
-8	191	435	#line 191 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	192	435	#pragma macro 33
-8	192	435		arrbuild __rotate_ports1, __constVal1
-8	192	439		mov __rotate_power1, __signed_stack_001drive
-8	192	441		mov __rotate_angle1, __float_stack_002drive
-8	192	443		mov __rotate_turnpct1, __float_stack_003drive
-8	192	445		mov __rotate_sync1, __float_stack_004drive
-8	192	447		mov __rotate_stop1, __DF0drive
-8	192	449		mov __rotate_theRVP1, __constVal32
-8	192	451		mov __rotate_theRVI1, __constVal0
-8	192	453		mov __rotate_theRVD1, __constVal96
-8	192	455		subcall __RotateMotor1, ____RotateMotor1_return
-8	5039	458	#line 5039 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	191	458	#line 191 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	191	458	#line 191 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	192	458		jmp __NXC_Label_630
-8	191	460	#line 191 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	192	460		mov __signed_stack_001drive, __drive_7qG2_right_7qG2_000
+8	188	426		div __float_stack_002drive, __drive_7qG2_distance_7qG2_000, __constValf0P03761
+8	187	430	#line 187 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	187	430	#line 187 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	188	430		mov __float_stack_003drive, __constVal0
+8	187	433	#line 187 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	187	433	#line 187 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	188	433		mov __float_stack_004drive, __constVal0
+8	187	436	#line 187 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	188	436	#line 188 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	189	436		mov __DF0drive, __constVal1
+8	191	439	#line 191 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	192	439	#pragma macro 33
+8	192	439		arrbuild __rotate_ports1, __constVal1
+8	192	443		mov __rotate_power1, __signed_stack_001drive
+8	192	445		mov __rotate_angle1, __float_stack_002drive
+8	192	447		mov __rotate_turnpct1, __float_stack_003drive
+8	192	449		mov __rotate_sync1, __float_stack_004drive
+8	192	451		mov __rotate_stop1, __DF0drive
+8	192	453		mov __rotate_theRVP1, __constVal32
+8	192	455		mov __rotate_theRVI1, __constVal0
+8	192	457		mov __rotate_theRVD1, __constVal96
+8	192	459		subcall __RotateMotor1, ____RotateMotor1_return
+8	5045	462	#line 5045 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 8	191	462	#line 191 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 8	191	462	#line 191 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	192	462		set __D0drive, 0
-8	191	465	#line 191 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	192	465		cmp 0, __zfdrive, __signed_stack_001drive, __D0drive
+8	192	462		jmp __NXC_Label_630
+8	191	464	#line 191 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	192	464		mov __signed_stack_001drive, __drive_7qG2_right_7qG2_000
+8	191	466	#line 191 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	191	466	#line 191 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	192	466		set __D0drive, 0
 8	191	469	#line 191 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	192	469		mov __D0drive, __zfdrive
-8	192	471	#line 192 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	193	471		brtst 4, __NXC_Label_633, __zfdrive
-8	194	474	#line 194 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	195	474		set __signed_stack_001drive, 20
-8	194	477	#line 194 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	194	477	#line 194 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	194	477	#line 194 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	195	477	#line 195 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	195	477	#line 195 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	196	477		mul __float_stack_002drive, __drive_7qG2_distance_7qG2_000, __constValf26P52582384
-8	195	481	#line 195 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	195	481	#line 195 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	196	481		mov __float_stack_003drive, __constVal0
-8	195	484	#line 195 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	195	484	#line 195 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	196	484		mov __float_stack_004drive, __constVal0
-8	195	487	#line 195 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	196	487	#line 196 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	197	487		mov __DF0drive, __constVal1
-8	197	490	#line 197 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	198	490	#pragma macro 33
-8	198	490		arrbuild __rotate_ports1, __constVal1
-8	198	494		mov __rotate_power1, __signed_stack_001drive
-8	198	496		mov __rotate_angle1, __float_stack_002drive
-8	198	498		mov __rotate_turnpct1, __float_stack_003drive
-8	198	500		mov __rotate_sync1, __float_stack_004drive
-8	198	502		mov __rotate_stop1, __DF0drive
-8	198	504		mov __rotate_theRVP1, __constVal32
-8	198	506		mov __rotate_theRVI1, __constVal0
-8	198	508		mov __rotate_theRVD1, __constVal96
-8	198	510		subcall __RotateMotor1, ____RotateMotor1_return
-8	5093	513	#line 5093 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	197	513	#line 197 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	208	513	#line 208 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	208	513	#line 208 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	208	513	#line 208 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	208	513	#line 208 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	208	513	#line 208 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	208	513	#line 208 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	208	513	#line 208 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	208	513	#line 208 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	208	513	#line 208 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-8	209	513		subret __drive_return
+8	192	469		cmp 0, __zfdrive, __signed_stack_001drive, __D0drive
+8	191	473	#line 191 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	192	473		mov __D0drive, __zfdrive
+8	192	475	#line 192 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	193	475		brtst 4, __NXC_Label_633, __zfdrive
+8	194	478	#line 194 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	195	478		set __signed_stack_001drive, 20
+8	194	481	#line 194 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	194	481	#line 194 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	194	481	#line 194 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	194	481	#line 194 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	194	481	#line 194 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	195	481		mul __signed_stack_002drive, __drive_7qG2_right_7qG2_000, __drive_7qG2_distance_7qG2_000
+8	194	485	#line 194 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	195	485	#line 195 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	195	485	#line 195 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	196	485		div __float_stack_002drive, __signed_stack_002drive, __constValf0P03761
+8	195	489	#line 195 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	195	489	#line 195 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	196	489		mov __float_stack_003drive, __constVal0
+8	195	492	#line 195 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	195	492	#line 195 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	196	492		mov __float_stack_004drive, __constVal0
+8	195	495	#line 195 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	196	495	#line 196 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	197	495		mov __DF0drive, __constVal1
+8	197	498	#line 197 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	198	498	#pragma macro 33
+8	198	498		arrbuild __rotate_ports1, __constVal1
+8	198	502		mov __rotate_power1, __signed_stack_001drive
+8	198	504		mov __rotate_angle1, __float_stack_002drive
+8	198	506		mov __rotate_turnpct1, __float_stack_003drive
+8	198	508		mov __rotate_sync1, __float_stack_004drive
+8	198	510		mov __rotate_stop1, __DF0drive
+8	198	512		mov __rotate_theRVP1, __constVal32
+8	198	514		mov __rotate_theRVI1, __constVal0
+8	198	516		mov __rotate_theRVD1, __constVal96
+8	198	518		subcall __RotateMotor1, ____RotateMotor1_return
+8	5105	521	#line 5105 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	197	521	#line 197 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	208	521	#line 208 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	208	521	#line 208 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	208	521	#line 208 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	208	521	#line 208 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	208	521	#line 208 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	208	521	#line 208 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	208	521	#line 208 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	208	521	#line 208 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	208	521	#line 208 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+8	209	521		subret __drive_return
 9	211	0	#line 211 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 9	212	0		mov __signed_stack_001rotate, __rotate_7qG2_degrees_7qG2_000
 9	211	2	#line 211 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
@@ -2002,113 +2010,121 @@ Clump	Line	PC	Source
 9	224	176	#line 224 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 9	224	176	#line 224 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 9	224	176	#line 224 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	225	176		mul __drive_7qG2_distance_7qG2_000, __rotate_7qG2_degrees_7qG2_000, __constValf0P11301644
+9	225	176		mul __signed_stack_001rotate, __constValNeg1, __rotate_7qG2_degrees_7qG2_000
 9	224	180	#line 224 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 9	224	180	#line 224 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	225	180		mov __drive_7qG2_left_7qG2_000, __constVal1
-9	224	182	#line 224 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	224	182	#line 224 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	225	182		mov __drive_7qG2_right_7qG2_000, __constVal0
+9	224	180	#line 224 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	225	180		mul __drive_7qG2_distance_7qG2_000, __signed_stack_001rotate, __constValf0P11301644
 9	224	184	#line 224 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	227	184	#line 227 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	228	184		subcall drive, __drive_return
-9	227	186	#line 227 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	227	186	#line 227 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	228	186		jmp __NXC_Label_699
+9	224	184	#line 224 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	225	184		mov __drive_7qG2_left_7qG2_000, __constVal1
+9	224	186	#line 224 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	224	186	#line 224 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	225	186		mov __drive_7qG2_right_7qG2_000, __constVal0
+9	224	188	#line 224 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 9	227	188	#line 227 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	228	188		mov __signed_stack_001rotate, __rotate_7qG2_degrees_7qG2_000
+9	228	188		subcall drive, __drive_return
 9	227	190	#line 227 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 9	227	190	#line 227 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	228	190		set __D0rotate, 0
-9	227	193	#line 227 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	228	193		cmp 1, __zfrotate, __signed_stack_001rotate, __D0rotate
+9	228	190		jmp __NXC_Label_701
+9	227	192	#line 227 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	228	192		mov __signed_stack_001rotate, __rotate_7qG2_degrees_7qG2_000
+9	227	194	#line 227 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	227	194	#line 227 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	228	194		set __D0rotate, 0
 9	227	197	#line 227 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	228	197		mov __D0rotate, __zfrotate
-9	227	199	#line 227 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	228	199		brtst 4, __NXC_Label_701, __zfrotate
-9	227	202	#line 227 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	228	202		mov __signed_stack_001rotate, __D0rotate
-9	227	204	#line 227 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	228	204		mov __signed_stack_002rotate, __rotate_7qG2_mode_7qG2_000
+9	228	197		cmp 1, __zfrotate, __signed_stack_001rotate, __D0rotate
+9	227	201	#line 227 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	228	201		mov __D0rotate, __zfrotate
+9	227	203	#line 227 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	228	203		brtst 4, __NXC_Label_703, __zfrotate
 9	227	206	#line 227 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	227	206	#line 227 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	228	206		mov __D0rotate, __constValNeg1
+9	228	206		mov __signed_stack_001rotate, __D0rotate
 9	227	208	#line 227 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	228	208		cmp 4, __zfrotate, __signed_stack_002rotate, __D0rotate
+9	228	208		mov __signed_stack_002rotate, __rotate_7qG2_mode_7qG2_000
+9	227	210	#line 227 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	227	210	#line 227 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	228	210		mov __D0rotate, __constValNeg1
 9	227	212	#line 227 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	227	212	#line 227 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	228	212		and __D0rotate, __signed_stack_001rotate, __zfrotate
-9	228	216	#line 228 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	229	216		tst 5, __zfrotate, __D0rotate
-9	228	219	#line 228 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	229	219		brtst 4, __NXC_Label_706, __zfrotate
-9	228	222	#line 228 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	228	222	#line 228 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	228	222	#line 228 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	228	222	#line 228 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	229	222		mul __drive_7qG2_distance_7qG2_000, __rotate_7qG2_degrees_7qG2_000, __constValf0P11301644
+9	228	212		cmp 4, __zfrotate, __signed_stack_002rotate, __D0rotate
+9	227	216	#line 227 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	227	216	#line 227 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	228	216		and __D0rotate, __signed_stack_001rotate, __zfrotate
+9	228	220	#line 228 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	229	220		tst 5, __zfrotate, __D0rotate
+9	228	223	#line 228 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	229	223		brtst 4, __NXC_Label_708, __zfrotate
 9	228	226	#line 228 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 9	228	226	#line 228 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	229	226		mov __drive_7qG2_left_7qG2_000, __constValNeg1
-9	228	228	#line 228 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	228	228	#line 228 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	229	228		mov __drive_7qG2_right_7qG2_000, __constVal0
+9	228	226	#line 228 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	228	226	#line 228 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	229	226		mul __drive_7qG2_distance_7qG2_000, __rotate_7qG2_degrees_7qG2_000, __constValf0P11301644
 9	228	230	#line 228 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	231	230	#line 231 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	232	230		subcall drive, __drive_return
-9	231	232	#line 231 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	231	232	#line 231 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	232	232		jmp __NXC_Label_713
+9	228	230	#line 228 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	229	230		mov __drive_7qG2_left_7qG2_000, __constValNeg1
+9	228	232	#line 228 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	228	232	#line 228 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	229	232		mov __drive_7qG2_right_7qG2_000, __constVal0
+9	228	234	#line 228 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 9	231	234	#line 231 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	232	234		mov __signed_stack_001rotate, __rotate_7qG2_degrees_7qG2_000
+9	232	234		subcall drive, __drive_return
 9	231	236	#line 231 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 9	231	236	#line 231 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	232	236		set __D0rotate, 0
-9	231	239	#line 231 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	232	239		cmp 1, __zfrotate, __signed_stack_001rotate, __D0rotate
+9	232	236		jmp __NXC_Label_715
+9	231	238	#line 231 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	232	238		mov __signed_stack_001rotate, __rotate_7qG2_degrees_7qG2_000
+9	231	240	#line 231 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	231	240	#line 231 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	232	240		set __D0rotate, 0
 9	231	243	#line 231 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	232	243		mov __D0rotate, __zfrotate
-9	231	245	#line 231 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	232	245		brtst 4, __NXC_Label_715, __zfrotate
-9	231	248	#line 231 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	232	248		mov __signed_stack_001rotate, __D0rotate
-9	231	250	#line 231 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	232	250		mov __signed_stack_002rotate, __rotate_7qG2_mode_7qG2_000
+9	232	243		cmp 0, __zfrotate, __signed_stack_001rotate, __D0rotate
+9	231	247	#line 231 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	232	247		mov __D0rotate, __zfrotate
+9	231	249	#line 231 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	232	249		brtst 4, __NXC_Label_717, __zfrotate
 9	231	252	#line 231 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	231	252	#line 231 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	232	252		mov __D0rotate, __constValNeg1
+9	232	252		mov __signed_stack_001rotate, __D0rotate
 9	231	254	#line 231 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	232	254		cmp 4, __zfrotate, __signed_stack_002rotate, __D0rotate
+9	232	254		mov __signed_stack_002rotate, __rotate_7qG2_mode_7qG2_000
+9	231	256	#line 231 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	231	256	#line 231 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	232	256		mov __D0rotate, __constValNeg1
 9	231	258	#line 231 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	231	258	#line 231 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	232	258		and __D0rotate, __signed_stack_001rotate, __zfrotate
-9	232	262	#line 232 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	233	262		tst 5, __zfrotate, __D0rotate
-9	232	265	#line 232 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	233	265		brtst 4, __NXC_Label_720, __zfrotate
-9	232	268	#line 232 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	232	268	#line 232 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	232	268	#line 232 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	232	268	#line 232 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	233	268		mul __drive_7qG2_distance_7qG2_000, __rotate_7qG2_degrees_7qG2_000, __constValf0P11301644
+9	232	258		cmp 4, __zfrotate, __signed_stack_002rotate, __D0rotate
+9	231	262	#line 231 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	231	262	#line 231 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	232	262		and __D0rotate, __signed_stack_001rotate, __zfrotate
+9	232	266	#line 232 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	233	266		tst 5, __zfrotate, __D0rotate
+9	232	269	#line 232 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	233	269		brtst 4, __NXC_Label_722, __zfrotate
 9	232	272	#line 232 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 9	232	272	#line 232 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	233	272		mov __drive_7qG2_left_7qG2_000, __constVal0
-9	232	274	#line 232 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	232	274	#line 232 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	233	274		mov __drive_7qG2_right_7qG2_000, __constValNeg1
+9	232	272	#line 232 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	232	272	#line 232 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	233	272		mul __signed_stack_001rotate, __constValNeg1, __rotate_7qG2_degrees_7qG2_000
 9	232	276	#line 232 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	233	276	#line 233 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	234	276		subcall drive, __drive_return
-9	233	278	#line 233 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	238	278	#line 238 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	238	278	#line 238 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	238	278	#line 238 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	238	278	#line 238 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	238	278	#line 238 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	238	278	#line 238 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	238	278	#line 238 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-9	239	278		subret __rotate_return
+9	232	276	#line 232 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	232	276	#line 232 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	233	276		mul __drive_7qG2_distance_7qG2_000, __signed_stack_001rotate, __constValf0P11301644
+9	232	280	#line 232 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	232	280	#line 232 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	233	280		mov __drive_7qG2_left_7qG2_000, __constVal0
+9	232	282	#line 232 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	232	282	#line 232 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	233	282		mov __drive_7qG2_right_7qG2_000, __constValNeg1
+9	232	284	#line 232 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	233	284	#line 233 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	234	284		subcall drive, __drive_return
+9	233	286	#line 233 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	238	286	#line 238 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	238	286	#line 238 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	238	286	#line 238 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	238	286	#line 238 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	238	286	#line 238 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	238	286	#line 238 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	238	286	#line 238 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+9	239	286		subret __rotate_return
 10	272	0	#line 272 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 10	273	0		mov __rotate_7qG2_degrees_7qG2_000, __constValNeg90
 10	272	2	#line 272 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
@@ -2257,8 +2273,8 @@ Clump	Line	PC	Source
 11	412	4	#line 412 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 11	421	4	#line 421 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 11	422	4		subret __move_to_return
-12	707	0	#line 707 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-12	708	0		subret ____initialize_global_data_return
+12	709	0	#line 709 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+12	710	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
 0	main	0	C:\Users\ken\Desktop\C85\pfilter prob.nxc
@@ -2270,7 +2286,7 @@ Clump	Name	Offset	File
 6	fopen	1458	NXCDefs.h
 7	colour	1549	C:\Users\ken\Desktop\C85\pfilter prob.nxc
 8	drive	1660	C:\Users\ken\Desktop\C85\pfilter prob.nxc
-9	rotate	2175	C:\Users\ken\Desktop\C85\pfilter prob.nxc
-10	scan_surroundings	2455	C:\Users\ken\Desktop\C85\pfilter prob.nxc
-11	move_to	2535	C:\Users\ken\Desktop\C85\pfilter prob.nxc
-12	__initialize_global_data	2541	C:\Users\ken\Desktop\C85\pfilter prob.nxc
+9	rotate	2183	C:\Users\ken\Desktop\C85\pfilter prob.nxc
+10	scan_surroundings	2471	C:\Users\ken\Desktop\C85\pfilter prob.nxc
+11	move_to	2551	C:\Users\ken\Desktop\C85\pfilter prob.nxc
+12	__initialize_global_data	2557	C:\Users\ken\Desktop\C85\pfilter prob.nxc
