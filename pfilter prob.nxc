@@ -43,7 +43,7 @@
 
 /* macros for probability sensing
 
-    THRESHOLD - a decimal value in (0,1). Determines when a particle is 
+    THRESHOLD - a decimal value in (0,1). Determines when a particle is
         likely enough to be the robot's position
 
     MATCH - a decimal value in (0,1). How much to affect the probability
@@ -63,10 +63,11 @@
 #define WHEEL_RATIO 0.03761
 #define SENSOR_PIVOT_RATIO 0.08847781
 #define WHEEL_PIVOT_RATIO 0.162018
-#define BREAK false
+#define BREAK true
 #define LEFT_90 90
 #define RIGHT_90 -90
 #define ST_P 45
+#define STEP 1
 
 /* Represents a single particle.
 
@@ -134,13 +135,13 @@ int colour() {
     return col;
 }
 
-/* Drives the robot distance centimeters. If distance is negative, the robot
+/* Drives the robot distance millimeters. If distance is negative, the robot
    is moved backwards. The left wheel is moved forward if left is specified
    as 1, backwards as -1, and stationary as 0. Similarly for the right wheel.
    Using negative distance with a negative left/right toggle will move
    forwards (but don't do this).
    
-   @param distance The centimeters that this robot should travel.
+   @param distance The millimeters that this robot should travel.
    @param left The direction that the left wheel should move in (-1, 0, or 1)
    @param right The direction that the right wheel should move in (-1, 0, or 1)
 */
@@ -248,6 +249,23 @@ sub rotate(long degrees, char mode) {
     }
 }
 
+int measure(char mode, bool backtrack) {
+    int initial = colour();
+    int current = initial;
+    int length = 0;
+
+    while(initial == current) {
+                  length = length + STEP;
+                  current = colour();
+                  drive(STEP, 1, 1);
+                  NumOut(0, 0, length);
+    }
+    
+    // drive back to original position
+    if (backtrack) drive(-1 * length, 1, 1);
+    return length;
+}
+
 /* Subroutine which moves the robot forward from one intersection to the next
 */
 sub move_robot() {
@@ -349,6 +367,7 @@ sub change_direction(int orig, int new) {
 
 */
 
+/*
 sub follow() {
     int dist = measure(0, false);
     int col = colour();
@@ -358,7 +377,7 @@ sub follow() {
     else {
          align(dist);
     }
-}
+} */
 
           /**
 task to_road() {
@@ -396,6 +415,7 @@ task trace() {
 }
            */
 
+/*
 sub align(int dist) {
       rotate(90, 0);
       dir = 1; //means you turned left 
@@ -419,6 +439,7 @@ sub align(int dist) {
         rotate(70*dir*(-1),0);
       }
 }
+*/
 
 /* Given a start coordinate, finish coordinate, and a heading, this function
     moves the robot from the start to finish.
@@ -532,7 +553,11 @@ task main() {
     //rotate(90, -1);
     //scan_surroundings();
     //Stop(true);
-    follow();
+    //follow();
     //Stop(true);
+    
+    while(true) {
+        NumOut(10, 10, measure(0, true));
+    }
 
 }
