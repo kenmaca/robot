@@ -62,7 +62,7 @@
 #define SPEED 20
 #define WHEEL_RATIO 0.03761
 #define SENSOR_PIVOT_RATIO 0.08847781
-#define WHEEL_PIVOT_RATIO 0.11301644
+#define WHEEL_PIVOT_RATIO 0.162018
 #define BREAK true
 #define LEFT_90 90
 #define RIGHT_90 -90
@@ -481,7 +481,8 @@ task main() {
     //drive(10,1,1);
     //rotate(-90, 1);
     //rotate(90, -1);
-    scan_surroundings();
+    //scan_surroundings();
+    drive(1, 1, 1);
     Stop(true);
 
     // holds map data
