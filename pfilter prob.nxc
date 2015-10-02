@@ -60,14 +60,13 @@
 
 // movement
 #define SPEED 20
-#define WHEEL_RATIO 0.03761
-#define SENSOR_PIVOT_RATIO 0.08847781
-#define WHEEL_PIVOT_RATIO 0.162018
-#define BREAK true
+#define WHEEL_RATIO 0.3799
+#define SENSOR_PIVOT_RATIO 0.85935
+#define WHEEL_PIVOT_RATIO 1.5271
 #define LEFT_90 90
 #define RIGHT_90 -90
 #define ST_P 45
-#define STEP 1
+#define STEP 5
 
 /* Represents a single particle.
 
@@ -145,14 +144,14 @@ int colour() {
    @param left The direction that the left wheel should move in (-1, 0, or 1)
    @param right The direction that the right wheel should move in (-1, 0, or 1)
 */
-sub drive(long distance, char left, char right) {
+sub drive(long distance, char left, char right, bool brake) {
 
     // both forward
     if ((left > 0) && (right > 0)) {
         RotateMotorEx(
             OUT_BC, SPEED, 
             distance / WHEEL_RATIO,
-            0, true, BREAK
+            0, true, brake
         );
 
     // both backward
@@ -160,7 +159,7 @@ sub drive(long distance, char left, char right) {
         RotateMotorEx(
             OUT_BC, SPEED, 
             distance / WHEEL_RATIO,
-            0, true, BREAK
+            0, true, brake
         );
 
     // left forward, right backwards
@@ -168,7 +167,7 @@ sub drive(long distance, char left, char right) {
         RotateMotorEx(
             OUT_BC, SPEED, 
             distance / WHEEL_RATIO,
-            100, true, BREAK
+            100, true, brake
         );
 
     // left backwards, right forwards
@@ -176,7 +175,7 @@ sub drive(long distance, char left, char right) {
         RotateMotorEx(
             OUT_BC, SPEED, 
             distance / WHEEL_RATIO,
-            -100, true, BREAK
+            -100, true, brake
         );
 
     // left forward only
@@ -184,7 +183,7 @@ sub drive(long distance, char left, char right) {
         RotateMotorEx(
             OUT_C, SPEED,
             distance / WHEEL_RATIO,
-            0, false, BREAK
+            0, false, brake
         );
       
     // left backwards only
@@ -192,7 +191,7 @@ sub drive(long distance, char left, char right) {
         RotateMotorEx(
             OUT_C, SPEED,
             left * distance / WHEEL_RATIO,
-            0, false, BREAK
+            0, false, brake
         );
 
     // right forward only
@@ -200,7 +199,7 @@ sub drive(long distance, char left, char right) {
         RotateMotorEx(
             OUT_B, SPEED,
             distance / WHEEL_RATIO,
-            0, false, BREAK
+            0, false, brake
         );
 
     // right backwards only
@@ -208,7 +207,7 @@ sub drive(long distance, char left, char right) {
         RotateMotorEx(
             OUT_B, SPEED,
             right * distance / WHEEL_RATIO,
-            0, false, BREAK
+            0, false, brake
         );
     }
 }
@@ -225,28 +224,30 @@ sub rotate(long degrees, char mode) {
 
     // pivot left on sensor (left backwards, right forward)
     if ((degrees > 0) && (mode == 0)) {
-        drive(degrees * SENSOR_PIVOT_RATIO, -1, 1);
+        drive(degrees * SENSOR_PIVOT_RATIO, -1, 1, true);
 
     // pivot right on sensor (left forward, right backwards)
     } else if ((degrees < 0) && (mode == 0)) {
-        drive(degrees * SENSOR_PIVOT_RATIO, 1, -1);
+        drive(degrees * SENSOR_PIVOT_RATIO, 1, -1, true);
 
     // pivot left on left wheel (right wheel forward)
     } else if ((degrees > 0) && (mode == 1)) {
-        drive(degrees * WHEEL_PIVOT_RATIO, 0, 1);
+        drive(degrees * WHEEL_PIVOT_RATIO, 0, 1, true);
 
     // pivot right on right wheel (left wheel forward)
     } else if ((degrees < 0) && (mode == 1)) {
-        drive((-1) * degrees * WHEEL_PIVOT_RATIO, 1, 0);
+        drive((-1) * degrees * WHEEL_PIVOT_RATIO, 1, 0, true);
 
     // pivot left on right wheel (left wheel backwards)
     } else if ((degrees > 0) && (mode == -1)) {
-        drive(degrees * WHEEL_PIVOT_RATIO, -1, 0);
+        drive(degrees * WHEEL_PIVOT_RATIO, -1, 0, true);
 
     // pivot right on left wheel (right wheel backwards)
     } else if ((degrees < 0) && (mode == -1)) {
-        drive((-1) * degrees * WHEEL_PIVOT_RATIO, 0, -1);
+        drive((-1) * degrees * WHEEL_PIVOT_RATIO, 0, -1, true);
     }
+    
+    Wait(2);
 }
 
 int measure(char mode, bool backtrack) {
@@ -257,12 +258,15 @@ int measure(char mode, bool backtrack) {
     while(initial == current) {
                   length = length + STEP;
                   current = colour();
-                  drive(STEP, 1, 1);
-                  NumOut(0, 0, length);
+                  drive(STEP, 1, 1, false);
     }
     
+    // back one immediate step to stay on original colour
+    // length = length - STEP;
+    // drive(-1 * STEP, 1, 1, true);
+    
     // drive back to original position
-    if (backtrack) drive(-1 * length, 1, 1);
+    if (backtrack) drive(-1 * length, 1, 1, true);
     return length;
 }
 
@@ -367,25 +371,40 @@ sub change_direction(int orig, int new) {
 
 */
 
-/*
+
+sub align(int dist) {
+      rotate(90, 0);
+      int dir = 1; //means you turned left
+      drive(10, 1, 1, true);
+      if (colour() != BLACK){
+         rotate(-180, 0);
+         dir = -1; //means you turned right
+         drive(15, 1, 1, true);
+      }
+
+      drive(11, 1, 1, true);
+      float theta = (67.5/dist);
+      float angle = 90 - theta;
+      rotate(angle*dir*(-1),0);
+}
+
 sub follow() {
     while (true) {
         int dist = measure(0, false);
         int col = colour();
         if (col == YELLOW) {
            scan_surroundings();
-           rotate(90*random(4),0);
+           rotate(90 ,0);
 
         }
-        else if (col = RED) {
+        else if (col == RED) {
             rotate(180, 0);
         }
-        else {
+        else if (col != BLACK) {
              align(dist);
         }
     }
-} */
-
+}
           /**
 task to_road() {
     while((colour() != BLACK) || (colour() != YELLOW)) {
@@ -421,36 +440,6 @@ task trace() {
     
 }
            */
-
-/*
-sub align(int dist) {
-      rotate(90, 0);
-      dir = 1; //means you turned left 
-      drive(1, 1, 1);
-      if (colour() != BLACK){
-         rotate(-180, 0);
-         dir = -1; //means you turned right
-         drive(2, 1, 1);
-      }
-      /*if(dist < 3) {
-        drive(step*2, 1, 1); //try 2 or 3 steps since you're not coming in too steep
-        rotate(20*dir*(-1),0);
-      }
-      else if (dist >=3 && dist <=5) {
-        drive(step, 1, 1);
-        rotate(45*dir*(-1),0);
-      }
-
-      else{
-        drive(step*2, 1, 1);
-        rotate(70*dir*(-1),0);
-      } */
-      drive(1.125, 1, 1);
-      theta = ((2.25/dist) - ((2.25/dist)(2.25/dist)(2.25/dist))/6);
-      angle = 90 - theta;
-      rotate(angle*dir*(-1),0);
-}
-*/
 
 /* Given a start coordinate, finish coordinate, and a heading, this function
     moves the robot from the start to finish.
@@ -567,8 +556,7 @@ task main() {
     //follow();
     //Stop(true);
     
-    while(true) {
-        NumOut(10, 10, measure(0, true));
-    }
+    //follow();
 
+    follow();
 }
