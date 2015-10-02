@@ -130,8 +130,8 @@ int colour() {
     }
 
     col = max_i;
-    PlayTone(pitch[col], 400);
-    return 0;
+    PlayToneEx(pitch[col], 400, 1, false);
+    return col;
 }
 
 /* Drives the robot distance centimeters. If distance is negative, the robot
@@ -332,14 +332,33 @@ sub change_direction(int orig, int new) {
 
 
 
-sub follow() {
-    int val = colour();
-    while (true) {
-          while (val == Black &&)
-    }
+/*sub follow() {
+    int val;
+    val = colour();
+
+          while ( val == BLACK) {
+                  drive(0.5,1,1);
+                val = colour();
+          }
+          
+          if (val == YELLOW) {
+             scan_surroundings();
+          }
+
 }
 
+*/
 
+sub follow() {
+    int dist = measure(0, false);
+    int col = colour();
+    if (col == YELLOW) {
+       scan_surroundings();
+    }
+    else {
+         align(dist);
+    }
+}
 
           /**
 task to_road() {
@@ -375,32 +394,31 @@ task trace() {
     }
     
 }
+           */
 
-
-sub align() {
+sub align(int dist) {
       rotate(90, 0);
       dir = 1; //means you turned left 
-      drive(step, 1, 1);
-      if(colour() != BLACK) {
-        rotate(-180, 0);
-        dir = -1; //means you turned right
-        drive(step*2, 1, 1);
+      drive(step*2, 1, 1);
+      if (colour() != BLACK){
+         rotate(-180, 0);
+         dir = -1; //means you turned right
+         drive(step*3, 1, 1);
       }
-      if(black_count < 3) {
+      if(dist < 3) {
         drive(step*2, 1, 1); //try 2 or 3 steps since you're not coming in too steep
-        rotate(20*dir*-1,0);
+        rotate(20*dir*(-1),0);
       }
-      else if (black_count >=3 && black_count <=5) {
+      else if (dist >=3 && dist <=5) {
         drive(step, 1, 1);
-        rotate(45*dir*-1,0);
+        rotate(45*dir*(-1),0);
       }
 
       else{
         drive(step*2, 1, 1);
-        rotate(70*dir*-1,0);
+        rotate(70*dir*(-1),0);
       }
 }
-            **/
 
 /* Given a start coordinate, finish coordinate, and a heading, this function
     moves the robot from the start to finish.
@@ -514,14 +532,7 @@ task main() {
     //rotate(90, -1);
     //scan_surroundings();
     //Stop(true);
-    drive(10,1,1);
-    colour();
-    drive(10,1,1);
-    colour();
-    drive(10,1,1);
-    colour();
-    drive(10,1,1);
-    colour();
+    follow();
     //Stop(true);
 
 }

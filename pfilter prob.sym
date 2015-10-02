@@ -4,208 +4,154 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 1	__float_stack_002drive	10	1	4	4	16
 2	__signed_stack_003colour	6	1	8	4	2
 3	__signed_stack_001drive	6	1	12	4	40
-4	__rotate_angle2	6	1	16	4	6
-5	__rotate_theAngle1	5	1	20	4	2
-6	__float_stack_003drive	10	1	24	4	16
+4	__float_stack_003drive	10	1	16	4	16
+5	__rotate_angle2	6	1	20	4	6
+6	__rotate_theAngle1	5	1	24	4	2
 7	__float_stack_004drive	10	1	28	4	16
-8	__signed_stack_002colour	6	1	32	4	8
-9	__rotate_angle5	6	1	36	4	8
-10	__D0colour	6	1	40	4	15
-11	__rotate_theAngle5	5	1	44	4	2
-12	__SPTArgsMutex	9	0	48	4	2
-13	__DF0drive	10	1	52	4	16
-14	__signed_stack_001colour	6	1	56	4	19
-15	__rotate_theAngle2	5	1	60	4	2
-16	__D0drive	6	1	64	4	44
-17	__drive_7qG2_distance_7qG2_000	6	1	68	4	12
-18	__constValf0P03761	10	0	72	4	8
-19	__rotate_angle1	6	1	76	4	6
-20	__rotate_OldRotCount2	4	1	80	2	2
-21	__rotate_RotCount2	4	1	82	2	4
-22	__rotate_OldRotCount1	4	1	84	2	2
-23	__colour_7qG2_max_i_7qG2_000	4	1	86	2	3
-24	__colour_7qG2_max_7qG2_000	4	1	88	2	3
-25	__ArrHelper__colour_73_0	4	1	90	2	6
-26	__rotate_RotCount1	4	1	92	2	4
-27	__constVal466	4	0	94	2	1
-28	__rotate_RotCount5	4	1	96	2	4
-29	__rotate_OldRotCount5	4	1	98	2	2
-30	__colour_7qG2_n_7qG2_000	4	1	100	2	2
-31	__constVal1865	4	0	102	2	1
-32	__constVal3729	4	0	104	2	1
-33	__constVal233	4	0	106	2	2
-34	__colour_7qG2_p_7qG2_000	4	1	108	2	3
-35	__constVal932	4	0	110	2	1
-36	__constVal7458	4	0	112	2	1
-37	__colour_7qG2_i_7qG2_001	4	1	114	2	11
-38	__ResetSensorPort	1	1	116	1	3
-39	____RotateMotor5_sign_tmp	2	1	117	1	4
-40	____RotateMotor2_sign_tmp	2	1	118	1	4
-41	____RotateMotor5_return	1	1	119	1	6
-42	__ResetSensorTmp	1	1	120	1	2
-43	____RotateMotor2_return	1	1	121	1	4
-44	__constVal50	2	0	122	1	3
-45	__constVal0	2	1	123	1	43
-46	____RotateMotor1_return	1	1	124	1	4
-47	____RotateMotor1_sign_tmp	2	1	125	1	4
-48	____initialize_global_data_return	1	1	126	1	3
-49	____ResetSensorSubroutine_return	1	1	127	1	3
-50	__zfdrive	1	1	128	1	40
-51	__drive_7qG2_right_7qG2_000	2	1	129	1	11
-52	__zfcolour	1	1	130	1	9
-53	__colour_return	1	1	131	1	7
-54	__SetSensorColorFull_7qG2_port_7qG2_000_inline_colour	1	1	132	1	4
-55	__drive_7qG2_left_7qG2_000	2	1	133	1	11
-56	__drive_return	1	1	134	1	6
-57	__constVal100	2	0	135	1	1
-58	__constVal13	2	0	136	1	1
-59	__constVal2	2	0	137	1	3
-60	__constVal96	2	0	138	1	8
-61	__PFTmp	1	1	139	1	1
-62	__constValNeg100	2	0	140	1	1
-63	__rotate_firstPort2	1	1	141	1	5
-64	__rotate_sync2	1	1	142	1	3
-65	__rotate_stop2	1	1	143	1	3
-66	__rotate_thePower1	2	1	144	1	4
-67	__rotate_theTurnPct1	2	1	145	1	4
-68	__rotate_power2	1	1	146	1	5
-69	__rotate_theRM2	1	1	147	1	4
-70	__rotate_theRS2	1	1	148	1	3
-71	__rotate_theRVP2	1	1	149	1	3
-72	__rotate_turnpct2	2	1	150	1	4
-73	__rotate_theUF2	1	1	151	1	6
-74	__rotate_theOM2	1	1	152	1	7
-75	__rotate_rs1	1	1	153	1	2
-76	__rotate_stop1	1	1	154	1	3
-77	__rotate_turnpct1	2	1	155	1	4
-78	__rotate_theUF1	1	1	156	1	6
-79	__rotate_power1	1	1	157	1	5
-80	__rotate_firstPort1	1	1	158	1	5
-81	__rotate_sync1	1	1	159	1	3
-82	__rotate_theRVP1	1	1	160	1	3
-83	__rotate_theRVI1	1	1	161	1	3
-84	__rotate_theRVD1	1	1	162	1	3
-85	__rotate_theOM1	1	1	163	1	7
-86	__rotate_theRM1	1	1	164	1	4
-87	__rotate_theRS1	1	1	165	1	3
-88	__rotate_theRM5	1	1	166	1	4
-89	__rotate_theRS5	1	1	167	1	3
-90	__rotate_theRVP5	1	1	168	1	5
-91	__rotate_turnpct5	2	1	169	1	6
-92	__rotate_theUF5	1	1	170	1	6
-93	__rotate_theOM5	1	1	171	1	7
-94	__rotate_theRVI5	1	1	172	1	5
-95	__rotate_theTurnPct5	2	1	173	1	4
-96	__constVal32	2	0	174	1	17
-97	__constVal1	2	0	175	1	16
-98	__rotate_theRVD5	1	1	176	1	5
-99	__rotate_rs5	1	1	177	1	2
-100	__rotate_thePower5	2	1	178	1	4
-101	__rotate_stop5	1	1	179	1	5
-102	__rotate_power5	1	1	180	1	7
-103	__rotate_theRVD2	1	1	181	1	3
-104	__rotate_theTurnPct2	2	1	182	1	4
-105	__rotate_rs2	1	1	183	1	2
-106	__rotate_thePower2	2	1	184	1	4
-107	__rotate_firstPort5	1	1	185	1	5
-108	__rotate_sync5	1	1	186	1	5
-109	__rotate_theRVI2	1	1	187	1	3
-110	__SPTArgs	8	0	5	8	6
-111	__SPTArgs.Result	2	1	188	1	6
-112	__SPTArgs.Frequency	3	1	190	2	6
-113	__SPTArgs.Duration	3	1	192	2	6
-114	__SPTArgs.Loop	1	1	194	1	6
-115	__SPTArgs.Volume	1	1	195	1	6
-116	__TextOutArgs	8	0	4	16	5
-117	__TextOutArgs.Result	2	1	196	1	5
-118	__TextOutArgs.Location	8	0	2	4	5
-119	__TextOutArgs.Location.X	4	1	200	2	5
-120	__TextOutArgs.Location.Y	4	1	202	2	5
-121	__TextOutArgs.Text	7	0	204	4	5
-122	__TextOutArgs.Text.Text_type	1	0	0	1	0
-123	__TextOutArgs.Options	5	1	208	4	5
-124	__OUT_BC	7	0	212	4	4
-125	__OUT_BC.__OUT_BC_type	1	0	0	1	0
-126	__rotate_ports1	7	0	214	4	7
-127	__rotate_ports1.__rotate_ports1_type	1	0	0	1	0
-128	__colour_7qG2_scans_7qG2_000	7	0	216	4	6
-129	__colour_7qG2_scans_7qG2_000.__colour_7qG2_scans_7qG2_000_type	4	0	0	2	0
-130	__colour_7qG2_pitch_7qG2_000	7	0	218	4	2
-131	__colour_7qG2_pitch_7qG2_000.__colour_7qG2_pitch_7qG2_000_type	4	0	0	2	0
-132	__rotate_ports5	7	0	220	4	9
-133	__rotate_ports5.__rotate_ports5_type	1	0	0	1	0
-134	__rotate_ports2	7	0	222	4	7
-135	__rotate_ports2.__rotate_ports2_type	1	0	0	1	0
+8	__signed_stack_001follow	6	1	32	4	2
+9	__signed_stack_002colour	6	1	36	4	8
+10	__D0colour	6	1	40	4	17
+11	__D0drive	6	1	44	4	44
+12	__rotate_theAngle5	5	1	48	4	2
+13	__SPTArgsMutex	9	0	52	4	2
+14	__DF0drive	10	1	56	4	16
+15	__signed_stack_001colour	6	1	60	4	19
+16	__rotate_theAngle2	5	1	64	4	2
+17	__D0follow	6	1	68	4	3
+18	__rotate_angle5	6	1	72	4	8
+19	__constValf0P03761	10	0	76	4	8
+20	__drive_7qG2_distance_7qG2_000	6	1	80	4	9
+21	__constValf0P5	10	0	84	4	1
+22	__rotate_angle1	6	1	88	4	6
+23	__rotate_RotCount2	4	1	92	2	4
+24	__constVal932	4	0	94	2	1
+25	__rotate_OldRotCount2	4	1	96	2	2
+26	__colour_7qG2_max_7qG2_000	4	1	98	2	3
+27	__rotate_RotCount1	4	1	100	2	4
+28	__rotate_RotCount5	4	1	102	2	4
+29	__ArrHelper__colour_73_0	4	1	104	2	6
+30	__constVal3729	4	0	106	2	1
+31	__constVal1865	4	0	108	2	1
+32	__follow_7qG2_val_7qG2_000	4	1	110	2	3
+33	__rotate_OldRotCount5	4	1	112	2	2
+34	__colour_7qG2_p_7qG2_000	4	1	114	2	3
+35	__constVal233	4	0	116	2	2
+36	__rotate_OldRotCount1	4	1	118	2	2
+37	__colour_7qG2_col_7qG2_000	4	1	120	2	2
+38	__colour_7qG2_n_7qG2_000	4	1	122	2	2
+39	__constVal466	4	0	124	2	1
+40	__colour_7qG2_i_7qG2_001	4	1	126	2	11
+41	__constVal7458	4	0	128	2	1
+42	__colour_7qG2_max_i_7qG2_000	4	1	130	2	4
+43	__constVal2	2	0	132	1	3
+44	__constVal13	2	0	133	1	1
+45	____RotateMotor2_return	1	1	134	1	4
+46	____RotateMotor5_sign_tmp	2	1	135	1	4
+47	____RotateMotor5_return	1	1	136	1	6
+48	____RotateMotor2_sign_tmp	2	1	137	1	4
+49	__ResetSensorPort	1	1	138	1	3
+50	____ResetSensorSubroutine_return	1	1	139	1	3
+51	____initialize_global_data_return	1	1	140	1	3
+52	__ResetSensorTmp	1	1	141	1	2
+53	__constVal100	2	0	142	1	1
+54	__drive_7qG2_right_7qG2_000	2	1	143	1	8
+55	__drive_return	1	1	144	1	3
+56	__zffollow	1	1	145	1	3
+57	__colour_return	1	1	146	1	5
+58	__SetSensorColorFull_7qG2_port_7qG2_000_inline_colour	1	1	147	1	4
+59	__drive_7qG2_left_7qG2_000	2	1	148	1	8
+60	__zfcolour	1	1	149	1	9
+61	__PFTmp	1	1	150	1	1
+62	__constValNeg100	2	0	151	1	1
+63	__constVal96	2	0	152	1	8
+64	__follow_return	1	1	153	1	3
+65	__zfdrive	1	1	154	1	40
+66	____RotateMotor1_sign_tmp	2	1	155	1	4
+67	__rotate_firstPort2	1	1	156	1	5
+68	__rotate_sync2	1	1	157	1	3
+69	__rotate_stop2	1	1	158	1	3
+70	__rotate_thePower1	2	1	159	1	4
+71	__rotate_theTurnPct1	2	1	160	1	4
+72	__rotate_power2	1	1	161	1	5
+73	__rotate_turnpct2	2	1	162	1	4
+74	__rotate_theRS2	1	1	163	1	3
+75	__rotate_theRVP2	1	1	164	1	3
+76	__rotate_theRVI2	1	1	165	1	3
+77	__rotate_theUF2	1	1	166	1	6
+78	__rotate_theOM2	1	1	167	1	7
+79	__rotate_theRM2	1	1	168	1	4
+80	__rotate_stop1	1	1	169	1	3
+81	__rotate_turnpct1	2	1	170	1	4
+82	__rotate_theUF1	1	1	171	1	6
+83	__rotate_power1	1	1	172	1	5
+84	__rotate_firstPort1	1	1	173	1	5
+85	__rotate_sync1	1	1	174	1	3
+86	__rotate_theOM1	1	1	175	1	7
+87	__rotate_theRVI1	1	1	176	1	3
+88	__rotate_theRVD1	1	1	177	1	3
+89	__rotate_rs1	1	1	178	1	2
+90	__rotate_theRM1	1	1	179	1	4
+91	__rotate_theRS1	1	1	180	1	3
+92	__rotate_theRVP1	1	1	181	1	3
+93	__rotate_theRVD2	1	1	182	1	3
+94	__constVal32	2	0	183	1	17
+95	__rotate_theRS5	1	1	184	1	3
+96	__rotate_theRM5	1	1	185	1	4
+97	__constVal1	2	0	186	1	18
+98	__rotate_theOM5	1	1	187	1	7
+99	__rotate_theRVP5	1	1	188	1	5
+100	__rotate_theTurnPct5	2	1	189	1	4
+101	__rotate_thePower5	2	1	190	1	4
+102	__rotate_rs5	1	1	191	1	2
+103	__rotate_theRVI5	1	1	192	1	5
+104	__rotate_theRVD5	1	1	193	1	5
+105	__rotate_theUF5	1	1	194	1	6
+106	__rotate_power5	1	1	195	1	7
+107	____RotateMotor1_return	1	1	196	1	4
+108	__rotate_theTurnPct2	2	1	197	1	4
+109	__rotate_rs2	1	1	198	1	2
+110	__rotate_thePower2	2	1	199	1	4
+111	__rotate_firstPort5	1	1	200	1	5
+112	__constVal50	2	0	201	1	3
+113	__constVal0	2	1	202	1	43
+114	__rotate_turnpct5	2	1	203	1	6
+115	__rotate_sync5	1	1	204	1	5
+116	__rotate_stop5	1	1	205	1	5
+117	__SPTArgs	8	0	5	8	6
+118	__SPTArgs.Result	2	1	208	1	6
+119	__SPTArgs.Frequency	3	1	210	2	6
+120	__SPTArgs.Duration	3	1	212	2	6
+121	__SPTArgs.Loop	1	1	214	1	6
+122	__SPTArgs.Volume	1	1	215	1	6
+123	__TextOutArgs	8	0	4	16	5
+124	__TextOutArgs.Result	2	1	216	1	5
+125	__TextOutArgs.Location	8	0	2	4	5
+126	__TextOutArgs.Location.X	4	1	220	2	5
+127	__TextOutArgs.Location.Y	4	1	222	2	5
+128	__TextOutArgs.Text	7	0	224	4	5
+129	__TextOutArgs.Text.Text_type	1	0	0	1	0
+130	__TextOutArgs.Options	5	1	228	4	5
+131	__rotate_ports1	7	0	232	4	7
+132	__rotate_ports1.__rotate_ports1_type	1	0	0	1	0
+133	__rotate_ports5	7	0	234	4	9
+134	__rotate_ports5.__rotate_ports5_type	1	0	0	1	0
+135	__OUT_BC	7	0	236	4	4
+136	__OUT_BC.__OUT_BC_type	1	0	0	1	0
+137	__rotate_ports2	7	0	238	4	7
+138	__rotate_ports2.__rotate_ports2_type	1	0	0	1	0
+139	__colour_7qG2_pitch_7qG2_000	7	0	240	4	2
+140	__colour_7qG2_pitch_7qG2_000.__colour_7qG2_pitch_7qG2_000_type	4	0	0	2	0
+141	__colour_7qG2_scans_7qG2_000	7	0	242	4	6
+142	__colour_7qG2_scans_7qG2_000.__colour_7qG2_scans_7qG2_000_type	4	0	0	2	0
 #SOURCES
 Clump	Line	PC	Source
-0	522	0	#line 522 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	523	0		subcall __initialize_global_data, ____initialize_global_data_return
-0	522	2	#line 522 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	522	2	#line 522 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	523	2		set __drive_7qG2_distance_7qG2_000, 10
-0	522	5	#line 522 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	522	5	#line 522 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	523	5		set __drive_7qG2_left_7qG2_000, 1
-0	522	8	#line 522 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	522	8	#line 522 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	523	8		set __drive_7qG2_right_7qG2_000, 1
-0	522	11	#line 522 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	523	11	#line 523 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	524	11		subcall drive, __drive_return
-0	523	13	#line 523 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	524	13	#line 524 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	525	13		subcall colour, __colour_return
-0	524	15	#line 524 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	524	15	#line 524 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	524	15	#line 524 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	525	15		set __drive_7qG2_distance_7qG2_000, 10
-0	524	18	#line 524 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	524	18	#line 524 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	525	18		set __drive_7qG2_left_7qG2_000, 1
-0	524	21	#line 524 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	524	21	#line 524 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	525	21		set __drive_7qG2_right_7qG2_000, 1
-0	524	24	#line 524 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	525	24	#line 525 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	526	24		subcall drive, __drive_return
-0	525	26	#line 525 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	526	26	#line 526 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	527	26		subcall colour, __colour_return
-0	526	28	#line 526 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	526	28	#line 526 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	526	28	#line 526 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	527	28		set __drive_7qG2_distance_7qG2_000, 10
-0	526	31	#line 526 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	526	31	#line 526 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	527	31		set __drive_7qG2_left_7qG2_000, 1
-0	526	34	#line 526 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	526	34	#line 526 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	527	34		set __drive_7qG2_right_7qG2_000, 1
-0	526	37	#line 526 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	527	37	#line 527 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	528	37		subcall drive, __drive_return
-0	527	39	#line 527 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	528	39	#line 528 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	529	39		subcall colour, __colour_return
-0	528	41	#line 528 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	528	41	#line 528 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	528	41	#line 528 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	529	41		set __drive_7qG2_distance_7qG2_000, 10
-0	528	44	#line 528 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	528	44	#line 528 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	529	44		set __drive_7qG2_left_7qG2_000, 1
-0	528	47	#line 528 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	528	47	#line 528 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	529	47		set __drive_7qG2_right_7qG2_000, 1
-0	528	50	#line 528 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	529	50	#line 529 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	530	50		subcall drive, __drive_return
-0	529	52	#line 529 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	532	52	#line 532 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	533	52		subcall colour, __colour_return
-0	532	54	#line 532 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	532	54	#line 532 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	533	54		exit -1, -1
+0	520	0	#line 520 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+0	521	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	520	2	#line 520 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+0	523	2	#line 523 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+0	524	2		subcall follow, __follow_return
+0	523	4	#line 523 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+0	524	4		exit -1, -1
 1	4529	0		brtst 4, __rotate_Done1, __rotate_angle1
 1	4530	3		set ____RotateMotor1_sign_tmp, 0
 1	4530	6		brtst EQ, __sign_1, __rotate_angle1
@@ -333,233 +279,234 @@ Clump	Line	PC	Source
 4	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
 4	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
 4	4889	11		subret ____ResetSensorSubroutine_return
-5	108	0	#line 108 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	108	0	#line 108 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	109	0		set __colour_7qG2_n_7qG2_000, 5
-5	108	3	#line 108 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	110	3	#line 110 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	108	3	#line 108 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	110	3	#line 110 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	111	3		arrbuild __colour_7qG2_scans_7qG2_000, __constVal0, __constVal0, __constVal0, __constVal0, __constVal0, __constVal0, __constVal0
-5	114	13	#line 114 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	114	13	#line 114 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	115	13		arrbuild __colour_7qG2_pitch_7qG2_000, __constVal233, __constVal466, __constVal932, __constVal1865, __constVal3729, __constVal7458, __constVal233
-5	114	23	#line 114 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	114	23	#line 114 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	115	23		set __SetSensorColorFull_7qG2_port_7qG2_000_inline_colour, 2
-5	114	26	#line 114 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	114	26	#line 114 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	3802	26	#line 3802 "NXCDefs.h"
 5	3803	26	#pragma macro 6
 5	3803	26		setin __constVal13, __SetSensorColorFull_7qG2_port_7qG2_000_inline_colour, 0
 5	3803	30		setin __constVal0, __SetSensorColorFull_7qG2_port_7qG2_000_inline_colour, 1
 5	3803	34		mov __ResetSensorPort, __SetSensorColorFull_7qG2_port_7qG2_000_inline_colour
 5	3803	36		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-5	4449	38	#line 4449 "NXCDefs.h"
+5	4353	38	#line 4353 "NXCDefs.h"
 5	3802	38	#line 3802 "NXCDefs.h"
-5	116	38	#line 116 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	116	38	#line 116 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	116	38	#line 116 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	116	38	#line 116 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	117	38		set __colour_7qG2_i_7qG2_001, 0
-5	116	41	#line 116 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	116	41	#line 116 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	116	41	#line 116 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	116	41	#line 116 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	117	41		mov __signed_stack_001colour, __colour_7qG2_i_7qG2_001
-5	116	43	#line 116 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	116	43	#line 116 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	116	43	#line 116 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	116	43	#line 116 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	117	43		mov __D0colour, __colour_7qG2_n_7qG2_000
-5	116	45	#line 116 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	116	45	#line 116 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	117	45		cmp 0, __zfcolour, __signed_stack_001colour, __D0colour
-5	116	49	#line 116 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	116	49	#line 116 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	117	49		mov __D0colour, __zfcolour
-5	116	51	#line 116 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	116	51	#line 116 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	117	51		brtst 4, __NXC_Label_494, __zfcolour
-5	116	54	#line 116 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	116	54	#line 116 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	117	54		jmp __NXC_Label_495
-5	116	56	#line 116 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	116	56	#line 116 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	117	56		add __colour_7qG2_i_7qG2_001, __colour_7qG2_i_7qG2_001, __constVal1
-5	117	60	#line 117 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	117	60	#line 117 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	118	60		jmp __NXC_Label_493
-5	117	62	#line 117 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	117	62	#line 117 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	118	62		getin __colour_7qG2_p_7qG2_000, __constVal2, 4
-5	117	66	#line 117 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	117	66	#line 117 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	117	66	#line 117 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	118	66	#line 118 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	117	66	#line 117 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	117	66	#line 117 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	117	66	#line 117 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	118	66	#line 118 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	119	66		set __signed_stack_001colour, 10
-5	118	69	#line 118 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	118	69	#line 118 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	118	69	#line 118 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	118	69	#line 118 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	119	69		set __signed_stack_002colour, 10
-5	118	72	#line 118 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	118	72	#line 118 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	118	72	#line 118 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	118	72	#line 118 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	119	72		mov __D0colour, __colour_7qG2_p_7qG2_000
-5	119	74	#line 119 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	119	74	#line 119 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	119	74	#line 119 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	119	74	#line 119 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	120	74		mov __TextOutArgs.Location.X, __signed_stack_001colour
-5	119	76	#line 119 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	119	76	#line 119 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	120	76		mov __TextOutArgs.Location.Y, __signed_stack_002colour
-5	119	78	#line 119 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	119	78	#line 119 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	120	78		set __TextOutArgs.Options, 0
-5	119	81	#line 119 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	119	81	#line 119 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	120	81		numtostr __TextOutArgs.Text, __D0colour
-5	119	84	#line 119 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	119	84	#line 119 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	120	84		syscall 13, __TextOutArgs
-5	119	87	#line 119 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	119	87	#line 119 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	119	87	#line 119 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	119	87	#line 119 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	119	87	#line 119 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	119	87	#line 119 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	119	87	#line 119 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	119	87	#line 119 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	120	87		mov __signed_stack_001colour, __colour_7qG2_p_7qG2_000
-5	119	89	#line 119 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	119	89	#line 119 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	119	89	#line 119 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	119	89	#line 119 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	120	89		index __signed_stack_002colour, __colour_7qG2_scans_7qG2_000, __signed_stack_001colour
-5	120	93	#line 120 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	120	93	#line 120 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	120	93	#line 120 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	120	93	#line 120 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	121	93		add __signed_stack_002colour, __signed_stack_002colour, __constVal1
-5	120	97	#line 120 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	120	97	#line 120 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	121	97		replace __colour_7qG2_scans_7qG2_000, __colour_7qG2_scans_7qG2_000, __signed_stack_001colour, __signed_stack_002colour
-5	120	102	#line 120 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	122	102	#line 122 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	120	102	#line 120 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	122	102	#line 122 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	123	102		jmp __NXC_Label_496
-5	122	104	#line 122 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	123	104	#line 123 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	122	104	#line 122 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	123	104	#line 123 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	124	104		set __colour_7qG2_max_i_7qG2_000, 0
-5	123	107	#line 123 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	124	107	#line 124 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	123	107	#line 123 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	124	107	#line 124 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	125	107		set __colour_7qG2_max_7qG2_000, 0
-5	124	110	#line 124 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	124	110	#line 124 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	124	110	#line 124 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	124	110	#line 124 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	125	110		set __colour_7qG2_i_7qG2_001, 0
-5	124	113	#line 124 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	124	113	#line 124 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	124	113	#line 124 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	124	113	#line 124 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	125	113		mov __signed_stack_001colour, __colour_7qG2_i_7qG2_001
-5	124	115	#line 124 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	124	115	#line 124 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	124	115	#line 124 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	124	115	#line 124 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	125	115		set __D0colour, 7
-5	124	118	#line 124 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	124	118	#line 124 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	125	118		cmp 0, __zfcolour, __signed_stack_001colour, __D0colour
-5	124	122	#line 124 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	124	122	#line 124 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	125	122		mov __D0colour, __zfcolour
-5	124	124	#line 124 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	124	124	#line 124 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	125	124		brtst 4, __NXC_Label_518, __zfcolour
-5	124	127	#line 124 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	124	127	#line 124 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	125	127		jmp __NXC_Label_519
-5	124	129	#line 124 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	124	129	#line 124 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	125	129		add __colour_7qG2_i_7qG2_001, __colour_7qG2_i_7qG2_001, __constVal1
-5	125	133	#line 125 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	125	133	#line 125 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	126	133		jmp __NXC_Label_517
-5	125	135	#line 125 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	125	135	#line 125 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	126	135		mov __signed_stack_001colour, __colour_7qG2_i_7qG2_001
-5	125	137	#line 125 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	125	137	#line 125 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	125	137	#line 125 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	125	137	#line 125 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	126	137		index __ArrHelper__colour_73_0, __colour_7qG2_scans_7qG2_000, __signed_stack_001colour
-5	125	141	#line 125 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	125	141	#line 125 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	126	141		mov __signed_stack_001colour, __ArrHelper__colour_73_0
-5	125	143	#line 125 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	125	143	#line 125 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	125	143	#line 125 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	125	143	#line 125 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	126	143		mov __D0colour, __colour_7qG2_max_7qG2_000
-5	125	145	#line 125 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	125	145	#line 125 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	126	145		cmp 1, __zfcolour, __signed_stack_001colour, __D0colour
-5	125	149	#line 125 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	125	149	#line 125 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	126	149		mov __D0colour, __zfcolour
-5	126	151	#line 126 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	126	151	#line 126 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	127	151		brtst 4, __NXC_Label_529, __zfcolour
-5	127	154	#line 127 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	127	154	#line 127 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	128	154		mov __colour_7qG2_max_i_7qG2_000, __colour_7qG2_i_7qG2_001
-5	127	156	#line 127 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	127	156	#line 127 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	127	156	#line 127 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	127	156	#line 127 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	127	156	#line 127 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	127	156	#line 127 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	128	156		mov __signed_stack_001colour, __colour_7qG2_i_7qG2_001
-5	127	158	#line 127 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	127	158	#line 127 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	127	158	#line 127 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	127	158	#line 127 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	128	158		index __ArrHelper__colour_73_0, __colour_7qG2_scans_7qG2_000, __signed_stack_001colour
-5	127	162	#line 127 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	127	162	#line 127 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	128	162		mov __colour_7qG2_max_7qG2_000, __ArrHelper__colour_73_0
-5	128	164	#line 128 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	128	164	#line 128 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	131	164	#line 131 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	131	164	#line 131 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	128	164	#line 128 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	128	164	#line 128 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	131	164	#line 131 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	131	164	#line 131 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 5	132	164		jmp __NXC_Label_520
-5	131	166	#line 131 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	132	166	#line 132 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	132	166	#line 132 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	132	166	#line 132 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	132	166	#line 132 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	133	166		mov __signed_stack_001colour, __colour_7qG2_max_i_7qG2_000
-5	132	168	#line 132 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	132	168	#line 132 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	133	168		index __ArrHelper__colour_73_0, __colour_7qG2_pitch_7qG2_000, __signed_stack_001colour
-5	132	172	#line 132 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	133	172		mov __signed_stack_001colour, __ArrHelper__colour_73_0
-5	132	174	#line 132 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	132	174	#line 132 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	133	174		set __signed_stack_002colour, 400
-5	132	177	#line 132 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	132	177	#line 132 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	133	177		set __signed_stack_003colour, 4
-5	132	180	#line 132 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	132	180	#line 132 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	133	180		set __D0colour, 0
-5	133	183	#line 133 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	134	183		acquire __SPTArgsMutex
-5	133	184	#line 133 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	134	184		mov __SPTArgs.Frequency, __signed_stack_001colour
-5	133	186	#line 133 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	134	186		mov __SPTArgs.Duration, __signed_stack_002colour
-5	133	188	#line 133 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	134	188		mov __SPTArgs.Volume, __signed_stack_003colour
-5	133	190	#line 133 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	134	190		mov __SPTArgs.Loop, __D0colour
-5	133	192	#line 133 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	134	192		syscall 10, __SPTArgs
-5	133	195	#line 133 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	134	195		mov __D0colour, __SPTArgs.Result
-5	133	197	#line 133 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	134	197		release __SPTArgsMutex
-5	133	198	#line 133 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	134	198	#line 134 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	135	198		set __D0colour, 0
-5	134	201	#line 134 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	135	201		subret __colour_return
-5	134	203	#line 134 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	146	203	#line 146 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	147	203		subret __colour_return
-6	149	0	#line 149 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	131	166	#line 131 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	132	166	#line 132 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	133	166		mov __colour_7qG2_col_7qG2_000, __colour_7qG2_max_i_7qG2_000
+5	132	168	#line 132 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	132	168	#line 132 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	132	168	#line 132 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	133	168		mov __signed_stack_001colour, __colour_7qG2_max_i_7qG2_000
+5	132	170	#line 132 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	132	170	#line 132 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	133	170		index __ArrHelper__colour_73_0, __colour_7qG2_pitch_7qG2_000, __signed_stack_001colour
+5	132	174	#line 132 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	133	174		mov __signed_stack_001colour, __ArrHelper__colour_73_0
+5	132	176	#line 132 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	132	176	#line 132 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	133	176		set __signed_stack_002colour, 400
+5	132	179	#line 132 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	132	179	#line 132 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	133	179		set __signed_stack_003colour, 1
+5	132	182	#line 132 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	132	182	#line 132 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	133	182		set __D0colour, 0
+5	133	185	#line 133 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	134	185		acquire __SPTArgsMutex
+5	133	186	#line 133 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	134	186		mov __SPTArgs.Frequency, __signed_stack_001colour
+5	133	188	#line 133 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	134	188		mov __SPTArgs.Duration, __signed_stack_002colour
+5	133	190	#line 133 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	134	190		mov __SPTArgs.Volume, __signed_stack_003colour
+5	133	192	#line 133 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	134	192		mov __SPTArgs.Loop, __D0colour
+5	133	194	#line 133 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	134	194		syscall 10, __SPTArgs
+5	133	197	#line 133 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	134	197		mov __D0colour, __SPTArgs.Result
+5	133	199	#line 133 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	134	199		release __SPTArgsMutex
+5	133	200	#line 133 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	134	200	#line 134 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	135	200		mov __D0colour, __colour_7qG2_col_7qG2_000
+5	134	202	#line 134 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	135	202		subret __colour_return
+5	134	204	#line 134 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	146	204	#line 146 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+5	147	204		subret __colour_return
+6	149	0	#line 149 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	150	0		mov __signed_stack_001drive, __drive_7qG2_left_7qG2_000
-6	149	2	#line 149 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	149	2	#line 149 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	149	2	#line 149 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	149	2	#line 149 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	150	2		set __D0drive, 0
-6	149	5	#line 149 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	149	5	#line 149 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	150	5		cmp 1, __zfdrive, __signed_stack_001drive, __D0drive
-6	149	9	#line 149 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	149	9	#line 149 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	150	9		mov __D0drive, __zfdrive
-6	149	11	#line 149 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	149	11	#line 149 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	150	11		brtst 4, __NXC_Label_551, __zfdrive
-6	149	14	#line 149 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	149	14	#line 149 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	150	14		mov __signed_stack_001drive, __D0drive
-6	149	16	#line 149 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	149	16	#line 149 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	150	16		mov __signed_stack_002drive, __drive_7qG2_right_7qG2_000
-6	149	18	#line 149 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	149	18	#line 149 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	149	18	#line 149 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	149	18	#line 149 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	150	18		set __D0drive, 0
-6	149	21	#line 149 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	149	21	#line 149 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	150	21		cmp 1, __zfdrive, __signed_stack_002drive, __D0drive
-6	149	25	#line 149 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	149	25	#line 149 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	149	25	#line 149 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	149	25	#line 149 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	150	25		and __D0drive, __signed_stack_001drive, __zfdrive
-6	150	29	#line 150 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	150	29	#line 150 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	151	29		tst 5, __zfdrive, __D0drive
-6	150	32	#line 150 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	150	32	#line 150 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	151	32		brtst 4, __NXC_Label_556, __zfdrive
-6	152	35	#line 152 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	152	35	#line 152 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	153	35		set __signed_stack_001drive, 20
-6	152	38	#line 152 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	152	38	#line 152 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	152	38	#line 152 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	153	38	#line 153 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	153	38	#line 153 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	152	38	#line 152 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	152	38	#line 152 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	152	38	#line 152 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	153	38	#line 153 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	153	38	#line 153 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	154	38		div __float_stack_002drive, __drive_7qG2_distance_7qG2_000, __constValf0P03761
-6	153	42	#line 153 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	153	42	#line 153 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	153	42	#line 153 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	153	42	#line 153 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	154	42		mov __float_stack_003drive, __constVal0
-6	153	44	#line 153 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	153	44	#line 153 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	153	44	#line 153 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	153	44	#line 153 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	154	44		mov __float_stack_004drive, __constVal1
-6	153	46	#line 153 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	154	46	#line 154 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	153	46	#line 153 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	154	46	#line 154 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	155	46		mov __DF0drive, __constVal0
-6	157	48	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	157	48	#line 157 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	158	48	#pragma macro 35
 6	158	48		mov __rotate_ports5, __OUT_BC
 6	158	50		mov __rotate_power5, __signed_stack_001drive
@@ -571,55 +518,55 @@ Clump	Line	PC	Source
 6	158	62		mov __rotate_theRVI5, __constVal0
 6	158	64		mov __rotate_theRVD5, __constVal96
 6	158	66		subcall __RotateMotor5, ____RotateMotor5_return
-6	4795	68	#line 4795 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	157	68	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	157	68	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	4699	68	#line 4699 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	157	68	#line 157 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	157	68	#line 157 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	158	68		jmp __NXC_Label_567
-6	157	70	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	157	70	#line 157 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	158	70		mov __signed_stack_001drive, __drive_7qG2_left_7qG2_000
-6	157	72	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	157	72	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	157	72	#line 157 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	157	72	#line 157 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	158	72		set __D0drive, 0
-6	157	75	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	157	75	#line 157 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	158	75		cmp 0, __zfdrive, __signed_stack_001drive, __D0drive
-6	157	79	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	157	79	#line 157 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	158	79		mov __D0drive, __zfdrive
-6	157	81	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	157	81	#line 157 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	158	81		brtst 4, __NXC_Label_569, __zfdrive
-6	157	84	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	157	84	#line 157 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	158	84		mov __signed_stack_001drive, __D0drive
-6	157	86	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	157	86	#line 157 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	158	86		mov __signed_stack_002drive, __drive_7qG2_right_7qG2_000
-6	157	88	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	157	88	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	157	88	#line 157 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	157	88	#line 157 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	158	88		set __D0drive, 0
-6	157	91	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	157	91	#line 157 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	158	91		cmp 0, __zfdrive, __signed_stack_002drive, __D0drive
-6	157	95	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	157	95	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	157	95	#line 157 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	157	95	#line 157 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	158	95		and __D0drive, __signed_stack_001drive, __zfdrive
-6	158	99	#line 158 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	158	99	#line 158 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	159	99		tst 5, __zfdrive, __D0drive
-6	158	102	#line 158 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	158	102	#line 158 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	159	102		brtst 4, __NXC_Label_574, __zfdrive
-6	160	105	#line 160 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	160	105	#line 160 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	161	105		set __signed_stack_001drive, 20
-6	160	108	#line 160 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	160	108	#line 160 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	160	108	#line 160 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	161	108	#line 161 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	161	108	#line 161 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	160	108	#line 160 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	160	108	#line 160 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	160	108	#line 160 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	161	108	#line 161 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	161	108	#line 161 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	162	108		div __float_stack_002drive, __drive_7qG2_distance_7qG2_000, __constValf0P03761
-6	161	112	#line 161 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	161	112	#line 161 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	161	112	#line 161 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	161	112	#line 161 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	162	112		mov __float_stack_003drive, __constVal0
-6	161	114	#line 161 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	161	114	#line 161 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	161	114	#line 161 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	161	114	#line 161 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	162	114		mov __float_stack_004drive, __constVal1
-6	161	116	#line 161 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	162	116	#line 162 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	161	116	#line 161 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	162	116	#line 162 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	163	116		mov __DF0drive, __constVal0
-6	165	118	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	165	118	#line 165 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	166	118	#pragma macro 35
 6	166	118		mov __rotate_ports5, __OUT_BC
 6	166	120		mov __rotate_power5, __signed_stack_001drive
@@ -631,55 +578,55 @@ Clump	Line	PC	Source
 6	166	132		mov __rotate_theRVI5, __constVal0
 6	166	134		mov __rotate_theRVD5, __constVal96
 6	166	136		subcall __RotateMotor5, ____RotateMotor5_return
-6	4871	138	#line 4871 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	165	138	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	165	138	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	4775	138	#line 4775 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	165	138	#line 165 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	165	138	#line 165 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	166	138		jmp __NXC_Label_585
-6	165	140	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	165	140	#line 165 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	166	140		mov __signed_stack_001drive, __drive_7qG2_left_7qG2_000
-6	165	142	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	165	142	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	165	142	#line 165 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	165	142	#line 165 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	166	142		set __D0drive, 0
-6	165	145	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	165	145	#line 165 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	166	145		cmp 1, __zfdrive, __signed_stack_001drive, __D0drive
-6	165	149	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	165	149	#line 165 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	166	149		mov __D0drive, __zfdrive
-6	165	151	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	165	151	#line 165 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	166	151		brtst 4, __NXC_Label_587, __zfdrive
-6	165	154	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	165	154	#line 165 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	166	154		mov __signed_stack_001drive, __D0drive
-6	165	156	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	165	156	#line 165 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	166	156		mov __signed_stack_002drive, __drive_7qG2_right_7qG2_000
-6	165	158	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	165	158	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	165	158	#line 165 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	165	158	#line 165 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	166	158		set __D0drive, 0
-6	165	161	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	165	161	#line 165 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	166	161		cmp 0, __zfdrive, __signed_stack_002drive, __D0drive
-6	165	165	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	165	165	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	165	165	#line 165 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	165	165	#line 165 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	166	165		and __D0drive, __signed_stack_001drive, __zfdrive
-6	166	169	#line 166 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	166	169	#line 166 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	167	169		tst 5, __zfdrive, __D0drive
-6	166	172	#line 166 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	166	172	#line 166 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	167	172		brtst 4, __NXC_Label_592, __zfdrive
-6	168	175	#line 168 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	168	175	#line 168 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	169	175		set __signed_stack_001drive, 20
-6	168	178	#line 168 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	168	178	#line 168 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	168	178	#line 168 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	169	178	#line 169 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	169	178	#line 169 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	168	178	#line 168 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	168	178	#line 168 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	168	178	#line 168 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	169	178	#line 169 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	169	178	#line 169 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	170	178		div __float_stack_002drive, __drive_7qG2_distance_7qG2_000, __constValf0P03761
-6	169	182	#line 169 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	169	182	#line 169 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	169	182	#line 169 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	169	182	#line 169 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	170	182		mov __float_stack_003drive, __constVal100
-6	169	184	#line 169 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	169	184	#line 169 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	169	184	#line 169 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	169	184	#line 169 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	170	184		mov __float_stack_004drive, __constVal1
-6	169	186	#line 169 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	170	186	#line 170 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	169	186	#line 169 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	170	186	#line 170 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	171	186		mov __DF0drive, __constVal0
-6	173	188	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	173	188	#line 173 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	174	188	#pragma macro 35
 6	174	188		mov __rotate_ports5, __OUT_BC
 6	174	190		mov __rotate_power5, __signed_stack_001drive
@@ -691,55 +638,55 @@ Clump	Line	PC	Source
 6	174	202		mov __rotate_theRVI5, __constVal0
 6	174	204		mov __rotate_theRVD5, __constVal96
 6	174	206		subcall __RotateMotor5, ____RotateMotor5_return
-6	4947	208	#line 4947 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	173	208	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	173	208	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	4851	208	#line 4851 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	173	208	#line 173 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	173	208	#line 173 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	174	208		jmp __NXC_Label_603
-6	173	210	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	173	210	#line 173 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	174	210		mov __signed_stack_001drive, __drive_7qG2_left_7qG2_000
-6	173	212	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	173	212	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	173	212	#line 173 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	173	212	#line 173 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	174	212		set __D0drive, 0
-6	173	215	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	173	215	#line 173 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	174	215		cmp 0, __zfdrive, __signed_stack_001drive, __D0drive
-6	173	219	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	173	219	#line 173 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	174	219		mov __D0drive, __zfdrive
-6	173	221	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	173	221	#line 173 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	174	221		brtst 4, __NXC_Label_605, __zfdrive
-6	173	224	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	173	224	#line 173 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	174	224		mov __signed_stack_001drive, __D0drive
-6	173	226	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	173	226	#line 173 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	174	226		mov __signed_stack_002drive, __drive_7qG2_right_7qG2_000
-6	173	228	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	173	228	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	173	228	#line 173 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	173	228	#line 173 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	174	228		set __D0drive, 0
-6	173	231	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	173	231	#line 173 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	174	231		cmp 1, __zfdrive, __signed_stack_002drive, __D0drive
-6	173	235	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	173	235	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	173	235	#line 173 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	173	235	#line 173 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	174	235		and __D0drive, __signed_stack_001drive, __zfdrive
-6	174	239	#line 174 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	174	239	#line 174 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	175	239		tst 5, __zfdrive, __D0drive
-6	174	242	#line 174 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	174	242	#line 174 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	175	242		brtst 4, __NXC_Label_610, __zfdrive
-6	176	245	#line 176 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	176	245	#line 176 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	177	245		set __signed_stack_001drive, 20
-6	176	248	#line 176 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	176	248	#line 176 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	176	248	#line 176 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	177	248	#line 177 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	177	248	#line 177 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	176	248	#line 176 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	176	248	#line 176 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	176	248	#line 176 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	177	248	#line 177 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	177	248	#line 177 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	178	248		div __float_stack_002drive, __drive_7qG2_distance_7qG2_000, __constValf0P03761
-6	177	252	#line 177 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	177	252	#line 177 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	177	252	#line 177 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	177	252	#line 177 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	178	252		mov __float_stack_003drive, __constValNeg100
-6	177	254	#line 177 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	177	254	#line 177 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	177	254	#line 177 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	177	254	#line 177 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	178	254		mov __float_stack_004drive, __constVal1
-6	177	256	#line 177 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	178	256	#line 178 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	177	256	#line 177 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	178	256	#line 178 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	179	256		mov __DF0drive, __constVal0
-6	181	258	#line 181 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	181	258	#line 181 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	182	258	#pragma macro 35
 6	182	258		mov __rotate_ports5, __OUT_BC
 6	182	260		mov __rotate_power5, __signed_stack_001drive
@@ -751,39 +698,39 @@ Clump	Line	PC	Source
 6	182	272		mov __rotate_theRVI5, __constVal0
 6	182	274		mov __rotate_theRVD5, __constVal96
 6	182	276		subcall __RotateMotor5, ____RotateMotor5_return
-6	5023	278	#line 5023 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	181	278	#line 181 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	181	278	#line 181 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	4927	278	#line 4927 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	181	278	#line 181 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	181	278	#line 181 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	182	278		jmp __NXC_Label_621
-6	181	280	#line 181 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	181	280	#line 181 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	182	280		mov __signed_stack_001drive, __drive_7qG2_left_7qG2_000
-6	181	282	#line 181 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	181	282	#line 181 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	181	282	#line 181 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	181	282	#line 181 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	182	282		set __D0drive, 0
-6	181	285	#line 181 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	181	285	#line 181 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	182	285		cmp 1, __zfdrive, __signed_stack_001drive, __D0drive
-6	181	289	#line 181 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	181	289	#line 181 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	182	289		mov __D0drive, __zfdrive
-6	182	291	#line 182 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	182	291	#line 182 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	183	291		brtst 4, __NXC_Label_624, __zfdrive
-6	184	294	#line 184 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	184	294	#line 184 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	185	294		set __signed_stack_001drive, 20
-6	184	297	#line 184 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	184	297	#line 184 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	184	297	#line 184 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	185	297	#line 185 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	185	297	#line 185 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	184	297	#line 184 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	184	297	#line 184 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	184	297	#line 184 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	185	297	#line 185 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	185	297	#line 185 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	186	297		div __float_stack_002drive, __drive_7qG2_distance_7qG2_000, __constValf0P03761
-6	185	301	#line 185 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	185	301	#line 185 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	185	301	#line 185 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	185	301	#line 185 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	186	301		mov __float_stack_003drive, __constVal0
-6	185	303	#line 185 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	185	303	#line 185 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	185	303	#line 185 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	185	303	#line 185 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	186	303		mov __float_stack_004drive, __constVal0
-6	185	305	#line 185 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	186	305	#line 186 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	185	305	#line 185 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	186	305	#line 186 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	187	305		mov __DF0drive, __constVal0
-6	189	307	#line 189 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	189	307	#line 189 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	190	307	#pragma macro 33
 6	190	307		arrbuild __rotate_ports2, __constVal2
 6	190	311		mov __rotate_power2, __signed_stack_001drive
@@ -795,43 +742,43 @@ Clump	Line	PC	Source
 6	190	323		mov __rotate_theRVI2, __constVal0
 6	190	325		mov __rotate_theRVD2, __constVal96
 6	190	327		subcall __RotateMotor2, ____RotateMotor2_return
-6	5077	329	#line 5077 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	189	329	#line 189 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	189	329	#line 189 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	4981	329	#line 4981 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	189	329	#line 189 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	189	329	#line 189 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	190	329		jmp __NXC_Label_635
-6	189	331	#line 189 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	189	331	#line 189 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	190	331		mov __signed_stack_001drive, __drive_7qG2_left_7qG2_000
-6	189	333	#line 189 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	189	333	#line 189 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	189	333	#line 189 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	189	333	#line 189 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	190	333		set __D0drive, 0
-6	189	336	#line 189 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	189	336	#line 189 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	190	336		cmp 0, __zfdrive, __signed_stack_001drive, __D0drive
-6	189	340	#line 189 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	189	340	#line 189 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	190	340		mov __D0drive, __zfdrive
-6	190	342	#line 190 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	190	342	#line 190 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	191	342		brtst 4, __NXC_Label_638, __zfdrive
-6	192	345	#line 192 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	192	345	#line 192 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	193	345		set __signed_stack_001drive, 20
-6	192	348	#line 192 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	192	348	#line 192 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	192	348	#line 192 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	192	348	#line 192 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	192	348	#line 192 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	192	348	#line 192 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	192	348	#line 192 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	192	348	#line 192 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	192	348	#line 192 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	192	348	#line 192 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	193	348		mul __signed_stack_002drive, __drive_7qG2_left_7qG2_000, __drive_7qG2_distance_7qG2_000
-6	192	352	#line 192 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	193	352	#line 193 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	193	352	#line 193 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	192	352	#line 192 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	193	352	#line 193 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	193	352	#line 193 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	194	352		div __float_stack_002drive, __signed_stack_002drive, __constValf0P03761
-6	193	356	#line 193 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	193	356	#line 193 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	193	356	#line 193 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	193	356	#line 193 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	194	356		mov __float_stack_003drive, __constVal0
-6	193	358	#line 193 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	193	358	#line 193 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	193	358	#line 193 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	193	358	#line 193 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	194	358		mov __float_stack_004drive, __constVal0
-6	193	360	#line 193 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	194	360	#line 194 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	193	360	#line 193 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	194	360	#line 194 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	195	360		mov __DF0drive, __constVal0
-6	197	362	#line 197 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	197	362	#line 197 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	198	362	#pragma macro 33
 6	198	362		arrbuild __rotate_ports2, __constVal2
 6	198	366		mov __rotate_power2, __signed_stack_001drive
@@ -843,39 +790,39 @@ Clump	Line	PC	Source
 6	198	378		mov __rotate_theRVI2, __constVal0
 6	198	380		mov __rotate_theRVD2, __constVal96
 6	198	382		subcall __RotateMotor2, ____RotateMotor2_return
-6	5137	384	#line 5137 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	197	384	#line 197 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	197	384	#line 197 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	5041	384	#line 5041 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	197	384	#line 197 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	197	384	#line 197 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	198	384		jmp __NXC_Label_649
-6	197	386	#line 197 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	197	386	#line 197 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	198	386		mov __signed_stack_001drive, __drive_7qG2_right_7qG2_000
-6	197	388	#line 197 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	197	388	#line 197 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	197	388	#line 197 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	197	388	#line 197 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	198	388		set __D0drive, 0
-6	197	391	#line 197 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	197	391	#line 197 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	198	391		cmp 1, __zfdrive, __signed_stack_001drive, __D0drive
-6	197	395	#line 197 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	197	395	#line 197 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	198	395		mov __D0drive, __zfdrive
-6	198	397	#line 198 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	198	397	#line 198 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	199	397		brtst 4, __NXC_Label_652, __zfdrive
-6	200	400	#line 200 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	200	400	#line 200 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	201	400		set __signed_stack_001drive, 20
-6	200	403	#line 200 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	200	403	#line 200 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	200	403	#line 200 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	201	403	#line 201 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	201	403	#line 201 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	200	403	#line 200 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	200	403	#line 200 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	200	403	#line 200 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	201	403	#line 201 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	201	403	#line 201 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	202	403		div __float_stack_002drive, __drive_7qG2_distance_7qG2_000, __constValf0P03761
-6	201	407	#line 201 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	201	407	#line 201 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	201	407	#line 201 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	201	407	#line 201 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	202	407		mov __float_stack_003drive, __constVal0
-6	201	409	#line 201 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	201	409	#line 201 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	201	409	#line 201 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	201	409	#line 201 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	202	409		mov __float_stack_004drive, __constVal0
-6	201	411	#line 201 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	202	411	#line 202 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	201	411	#line 201 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	202	411	#line 202 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	203	411		mov __DF0drive, __constVal0
-6	205	413	#line 205 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	205	413	#line 205 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	206	413	#pragma macro 33
 6	206	413		arrbuild __rotate_ports1, __constVal1
 6	206	417		mov __rotate_power1, __signed_stack_001drive
@@ -887,43 +834,43 @@ Clump	Line	PC	Source
 6	206	429		mov __rotate_theRVI1, __constVal0
 6	206	431		mov __rotate_theRVD1, __constVal96
 6	206	433		subcall __RotateMotor1, ____RotateMotor1_return
-6	5191	435	#line 5191 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	205	435	#line 205 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	205	435	#line 205 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	5095	435	#line 5095 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	205	435	#line 205 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	205	435	#line 205 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	206	435		jmp __NXC_Label_663
-6	205	437	#line 205 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	205	437	#line 205 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	206	437		mov __signed_stack_001drive, __drive_7qG2_right_7qG2_000
-6	205	439	#line 205 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	205	439	#line 205 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	205	439	#line 205 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	205	439	#line 205 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	206	439		set __D0drive, 0
-6	205	442	#line 205 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	205	442	#line 205 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	206	442		cmp 0, __zfdrive, __signed_stack_001drive, __D0drive
-6	205	446	#line 205 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	205	446	#line 205 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	206	446		mov __D0drive, __zfdrive
-6	206	448	#line 206 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	206	448	#line 206 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	207	448		brtst 4, __NXC_Label_666, __zfdrive
-6	208	451	#line 208 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	208	451	#line 208 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	209	451		set __signed_stack_001drive, 20
-6	208	454	#line 208 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	208	454	#line 208 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	208	454	#line 208 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	208	454	#line 208 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	208	454	#line 208 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	208	454	#line 208 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	208	454	#line 208 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	208	454	#line 208 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	208	454	#line 208 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	208	454	#line 208 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	209	454		mul __signed_stack_002drive, __drive_7qG2_right_7qG2_000, __drive_7qG2_distance_7qG2_000
-6	208	458	#line 208 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	209	458	#line 209 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	209	458	#line 209 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	208	458	#line 208 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	209	458	#line 209 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	209	458	#line 209 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	210	458		div __float_stack_002drive, __signed_stack_002drive, __constValf0P03761
-6	209	462	#line 209 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	209	462	#line 209 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	209	462	#line 209 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	209	462	#line 209 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	210	462		mov __float_stack_003drive, __constVal0
-6	209	464	#line 209 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	209	464	#line 209 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	209	464	#line 209 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	209	464	#line 209 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	210	464		mov __float_stack_004drive, __constVal0
-6	209	466	#line 209 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	210	466	#line 210 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	209	466	#line 209 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	210	466	#line 210 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	211	466		mov __DF0drive, __constVal0
-6	211	468	#line 211 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	211	468	#line 211 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	212	468	#pragma macro 33
 6	212	468		arrbuild __rotate_ports1, __constVal1
 6	212	472		mov __rotate_power1, __signed_stack_001drive
@@ -935,27 +882,68 @@ Clump	Line	PC	Source
 6	212	484		mov __rotate_theRVI1, __constVal0
 6	212	486		mov __rotate_theRVD1, __constVal96
 6	212	488		subcall __RotateMotor1, ____RotateMotor1_return
-6	5251	490	#line 5251 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	211	490	#line 211 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	222	490	#line 222 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	222	490	#line 222 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	222	490	#line 222 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	222	490	#line 222 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	222	490	#line 222 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	222	490	#line 222 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	222	490	#line 222 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	222	490	#line 222 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	222	490	#line 222 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	5155	490	#line 5155 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	211	490	#line 211 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	222	490	#line 222 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	222	490	#line 222 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	222	490	#line 222 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	222	490	#line 222 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	222	490	#line 222 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	222	490	#line 222 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	222	490	#line 222 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	222	490	#line 222 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+6	222	490	#line 222 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
 6	223	490		subret __drive_return
-7	535	0	#line 535 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-7	536	0		subret ____initialize_global_data_return
+7	338	0	#line 338 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+7	339	0		subcall colour, __colour_return
+7	338	2	#line 338 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+7	339	2		mov __follow_7qG2_val_7qG2_000, __D0colour
+7	338	4	#line 338 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+7	338	4	#line 338 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+7	338	4	#line 338 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+7	339	4		mov __signed_stack_001follow, __follow_7qG2_val_7qG2_000
+7	338	6	#line 338 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+7	338	6	#line 338 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+7	339	6		set __D0follow, 1
+7	338	9	#line 338 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+7	339	9		cmp 4, __zffollow, __signed_stack_001follow, __D0follow
+7	338	13	#line 338 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+7	339	13		mov __D0follow, __zffollow
+7	339	15	#line 339 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+7	340	15		brtst 4, __NXC_Label_817, __zffollow
+7	339	18	#line 339 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+7	340	18		mov __drive_7qG2_distance_7qG2_000, __constValf0P5
+7	339	20	#line 339 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+7	339	20	#line 339 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+7	340	20		mov __drive_7qG2_left_7qG2_000, __constVal1
+7	339	22	#line 339 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+7	339	22	#line 339 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+7	340	22		mov __drive_7qG2_right_7qG2_000, __constVal1
+7	339	24	#line 339 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+7	340	24	#line 340 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+7	341	24		subcall drive, __drive_return
+7	340	26	#line 340 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+7	341	26	#line 341 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+7	342	26		subcall colour, __colour_return
+7	341	28	#line 341 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+7	342	28		mov __follow_7qG2_val_7qG2_000, __D0colour
+7	341	30	#line 341 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+7	341	30	#line 341 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+7	419	30	#line 419 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+7	420	30		jmp __NXC_Label_816
+7	419	32	#line 419 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+7	419	32	#line 419 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+7	420	32		subret __follow_return
+8	526	0	#line 526 "C:\Users\ken\AppData\Local\Temp\temp.nxc"
+8	527	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
-0	main	0	C:\Users\ken\Desktop\C85\pfilter prob.nxc
-1	__RotateMotor1	57	NXTDefs.h
-2	__RotateMotor2	226	NXTDefs.h
-3	__RotateMotor5	395	NXTDefs.h
-4	__ResetSensorSubroutine	564	NXTDefs.h
-5	colour	577	C:\Users\ken\Desktop\C85\pfilter prob.nxc
-6	drive	782	C:\Users\ken\Desktop\C85\pfilter prob.nxc
-7	__initialize_global_data	1274	C:\Users\ken\Desktop\C85\pfilter prob.nxc
+0	main	0	C:\Users\ken\AppData\Local\Temp\temp.nxc
+1	__RotateMotor1	7	NXTDefs.h
+2	__RotateMotor2	176	NXTDefs.h
+3	__RotateMotor5	345	NXTDefs.h
+4	__ResetSensorSubroutine	514	NXTDefs.h
+5	colour	527	C:\Users\ken\AppData\Local\Temp\temp.nxc
+6	drive	733	C:\Users\ken\AppData\Local\Temp\temp.nxc
+7	follow	1225	C:\Users\ken\AppData\Local\Temp\temp.nxc
+8	__initialize_global_data	1259	C:\Users\ken\AppData\Local\Temp\temp.nxc
