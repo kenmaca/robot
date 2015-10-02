@@ -1,198 +1,203 @@
 #SYMBOLS
 Index	Identifier	Type	Flag	Data	Size	RefCount
 0	__constValf0P85935	10	0	0	4	2
-1	__float_stack_002drive	10	1	4	4	16
-2	__float_stack_004drive	10	1	8	4	16
-3	__float_stack_003drive	10	1	12	4	16
-4	__constValf1P5271	10	0	16	4	4
-5	__signed_stack_002drive	6	1	20	4	12
-6	__signed_stack_001drive	6	1	24	4	40
-7	__Wait_7qG2_ms_7qG2_000_inline_rotate	5	1	28	4	2
-8	__rotate_angle2	6	1	32	4	6
-9	__rotate_7qG2_degrees_7qG2_000	6	1	36	4	25
-10	__drive_7qG2_distance_7qG2_000	6	1	40	4	19
+1	__signed_stack_001drive	6	1	4	4	40
+2	__signed_stack_002drive	6	1	8	4	12
+3	__rotate_7qG2_degrees_7qG2_000	6	1	12	4	26
+4	__float_stack_002drive	10	1	16	4	16
+5	__rotate_angle2	6	1	20	4	6
+6	__signed_stack_002colour	6	1	24	4	8
+7	__signed_stack_003colour	6	1	28	4	2
+8	__constValf1P5271	10	0	32	4	4
+9	__Wait_7qG2_ms_7qG2_000_inline_rotate	5	1	36	4	2
+10	__float_stack_003drive	10	1	40	4	16
 11	__signed_stack_002rotate	6	1	44	4	12
-12	__rotate_angle5	6	1	48	4	8
+12	__rotate_theAngle5	5	1	48	4	2
 13	__rotate_theAngle2	5	1	52	4	2
-14	__signed_stack_001rotate	6	1	56	4	28
-15	__constValf0P3799	10	0	60	4	8
-16	__signed_stack_001follow	6	1	64	4	4
-17	__rotate_theAngle5	5	1	68	4	2
-18	__signed_stack_001measure	6	1	72	4	4
-19	__rotate_theAngle1	5	1	76	4	2
-20	__align_7qG2_theta_7qG2_000	10	1	80	4	2
+14	__rotate_angle5	6	1	56	4	8
+15	__drive_7qG2_distance_7qG2_000	6	1	60	4	19
+16	__float_stack_004drive	10	1	64	4	16
+17	__constValf0P3799	10	0	68	4	8
+18	__signed_stack_001follow	6	1	72	4	6
+19	__signed_stack_001rotate	6	1	76	4	28
+20	__signed_stack_001measure	6	1	80	4	4
 21	__constValf67P5	10	0	84	4	1
-22	__DU0drive	5	1	88	4	16
-23	__D0drive	6	1	92	4	44
-24	__align_7qG2_angle_7qG2_000	10	1	96	4	2
-25	__D0align	6	1	100	4	3
-26	__D0colour	6	1	104	4	25
-27	__SPTArgsMutex	9	0	108	4	2
+22	__align_7qG2_angle_7qG2_000	10	1	88	4	2
+23	__align_7qG2_theta_7qG2_000	10	1	92	4	2
+24	__D0drive	6	1	96	4	44
+25	__constVal32768	6	0	100	4	1
+26	__constVal65536	6	0	104	4	1
+27	__D0colour	6	1	108	4	25
 28	__rotate_angle1	6	1	112	4	6
-29	__signed_stack_003colour	6	1	116	4	2
-30	__float_stack_001align	10	1	120	4	2
-31	__signed_stack_001colour	6	1	124	4	19
-32	__signed_stack_002colour	6	1	128	4	8
-33	__signed_stack_001align	6	1	132	4	2
-34	__D0follow	6	1	136	4	8
-35	__D0measure	6	1	140	4	7
-36	__D0rotate	6	1	144	4	48
-37	__DU0measure	5	1	148	4	2
-38	__colour_7qG2_p_7qG2_000	4	1	152	2	3
-39	__constVal932	4	0	154	2	1
-40	__constVal466	4	0	156	2	1
-41	__constVal233	4	0	158	2	2
-42	__rotate_OldRotCount5	4	1	160	2	2
-43	__rotate_RotCount5	4	1	162	2	4
-44	__ArrHelper__colour_73_0	4	1	164	2	6
-45	__colour_7qG2_n_7qG2_000	4	1	166	2	2
-46	__colour_7qG2_col_7qG2_000	4	1	168	2	2
-47	__constVal1865	4	0	170	2	1
-48	__measure_7qG2_current_7qG2_000	4	1	172	2	3
-49	__measure_7qG2_length_7qG2_000	4	1	174	2	5
-50	__rotate_OldRotCount1	4	1	176	2	2
-51	__measure_7qG2_initial_7qG2_000	4	1	178	2	2
-52	__rotate_RotCount1	4	1	180	2	4
-53	__follow_7qG2_dist_7qG2_001	4	1	182	2	2
-54	__follow_7qG2_col_7qG2_001	4	1	184	2	2
-55	__constValNeg180	4	0	186	2	1
-56	__align_7qG2_dist_7qG2_000	4	1	188	2	2
-57	__align_7qG2_dir_7qG2_000	4	1	190	2	3
-58	__colour_7qG2_i_7qG2_001	4	1	192	2	11
-59	__colour_7qG2_max_i_7qG2_000	4	1	194	2	4
-60	__rotate_OldRotCount2	4	1	196	2	2
-61	__rotate_RotCount2	4	1	198	2	4
-62	__colour_7qG2_max_7qG2_000	4	1	200	2	3
-63	__constVal3729	4	0	202	2	1
-64	__constVal7458	4	0	204	2	1
-65	__zfmeasure	1	1	206	1	5
-66	__constValNeg90	2	0	207	1	4
-67	__zffollow	1	1	208	1	8
-68	__zfcolour	1	1	209	1	9
-69	__follow_return	1	1	210	1	3
-70	____initialize_global_data_return	1	1	211	1	3
-71	__align_return	1	1	212	1	3
-72	__zfdrive	1	1	213	1	40
-73	__SetSensorColorFull_7qG2_port_7qG2_000_inline_colour	1	1	214	1	4
-74	__constVal96	2	0	215	1	8
-75	__rotate_7qG2_mode_7qG2_000	2	1	216	1	19
-76	__rotate_return	1	1	217	1	15
-77	__drive_7qG2_right_7qG2_000	2	1	218	1	18
-78	__drive_7qG2_brake_7qG2_000	1	1	219	1	19
-79	__drive_return	1	1	220	1	13
-80	__constValNeg1	2	0	221	1	14
-81	__colour_return	1	1	222	1	11
-82	__zfrotate	1	1	223	1	42
-83	__scan_surroundings_return	1	1	224	1	4
-84	__measure_7qG2_backtrack_7qG2_000	1	1	225	1	2
-85	__measure_return	1	1	226	1	4
-86	__drive_7qG2_left_7qG2_000	2	1	227	1	18
-87	__rotate_theRS2	1	1	228	1	3
-88	__rotate_theRM2	1	1	229	1	4
-89	__rotate_theRVI2	1	1	230	1	3
-90	__rotate_theRVP2	1	1	231	1	3
-91	__rotate_turnpct2	2	1	232	1	4
-92	__rotate_stop2	1	1	233	1	3
-93	__rotate_theOM2	1	1	234	1	7
-94	__rotate_theUF2	1	1	235	1	6
-95	__rotate_theRVD2	1	1	236	1	3
-96	__rotate_sync5	1	1	237	1	5
-97	__rotate_firstPort5	1	1	238	1	5
-98	__rotate_turnpct5	2	1	239	1	6
-99	__rotate_stop5	1	1	240	1	5
-100	__rotate_thePower2	2	1	241	1	4
-101	__rotate_rs2	1	1	242	1	2
-102	__rotate_power5	1	1	243	1	7
-103	__rotate_theTurnPct2	2	1	244	1	4
-104	__rotate_sync2	1	1	245	1	3
-105	__rotate_theUF1	1	1	246	1	6
-106	__rotate_turnpct1	2	1	247	1	4
-107	__rotate_theRM1	1	1	248	1	4
-108	__rotate_theOM1	1	1	249	1	7
-109	__rotate_firstPort1	1	1	250	1	5
-110	__rotate_power1	1	1	251	1	5
-111	__rotate_stop1	1	1	252	1	3
-112	__rotate_sync1	1	1	253	1	3
-113	__rotate_theRS1	1	1	254	1	3
-114	__rotate_theTurnPct1	2	1	255	1	4
-115	__rotate_thePower1	2	1	256	1	4
-116	__rotate_firstPort2	1	1	257	1	5
-117	__rotate_power2	1	1	258	1	5
-118	__rotate_theRVI1	1	1	259	1	3
-119	__rotate_theRVP1	1	1	260	1	3
-120	__rotate_rs1	1	1	261	1	2
-121	__rotate_theRVD1	1	1	262	1	3
-122	____RotateMotor5_sign_tmp	2	1	263	1	4
-123	____RotateMotor5_return	1	1	264	1	6
-124	__ResetSensorPort	1	1	265	1	3
-125	__constVal5	2	0	266	1	1
-126	____RotateMotor1_sign_tmp	2	1	267	1	4
-127	____RotateMotor1_return	1	1	268	1	4
-128	____RotateMotor2_sign_tmp	2	1	269	1	4
-129	____RotateMotor2_return	1	1	270	1	4
-130	__ResetSensorTmp	1	1	271	1	2
-131	__constValNeg100	2	0	272	1	1
-132	__constVal100	2	0	273	1	1
-133	__zfalign	1	1	274	1	3
-134	__PFTmp	1	1	275	1	1
-135	__constVal2	2	0	276	1	3
-136	____ResetSensorSubroutine_return	1	1	277	1	3
-137	__constVal90	2	0	278	1	1
-138	__constVal13	2	0	279	1	1
-139	__rotate_theRVP5	1	1	280	1	5
-140	__rotate_theRVI5	1	1	281	1	5
-141	__rotate_theRVD5	1	1	282	1	5
-142	__rotate_theRS5	1	1	283	1	3
-143	__rotate_theUF5	1	1	284	1	6
-144	__rotate_theOM5	1	1	285	1	7
-145	__rotate_theRM5	1	1	286	1	4
-146	__rotate_rs5	1	1	287	1	2
-147	__constVal1	2	0	288	1	27
-148	__constVal0	2	1	289	1	40
-149	__constVal50	2	0	290	1	3
-150	__constVal32	2	0	291	1	17
-151	__rotate_thePower5	2	1	292	1	4
-152	__rotate_theTurnPct5	2	1	293	1	4
-153	__SPTArgs	8	0	5	8	6
-154	__SPTArgs.Result	2	1	296	1	6
-155	__SPTArgs.Frequency	3	1	298	2	6
-156	__SPTArgs.Duration	3	1	300	2	6
-157	__SPTArgs.Loop	1	1	302	1	6
-158	__SPTArgs.Volume	1	1	303	1	6
-159	__scan_surroundings_7qG2_rsense_7qG2_000	8	0	4	8	4
-160	__scan_surroundings_7qG2_rsense_7qG2_000.NE	4	1	304	2	4
-161	__scan_surroundings_7qG2_rsense_7qG2_000.SE	4	1	306	2	4
-162	__scan_surroundings_7qG2_rsense_7qG2_000.SW	4	1	308	2	4
-163	__scan_surroundings_7qG2_rsense_7qG2_000.NW	4	1	310	2	4
+29	__SPTArgsMutex	9	0	116	4	2
+30	__D0align	6	1	120	4	3
+31	__signed_stack_001align	6	1	124	4	2
+32	__D0rotate	6	1	128	4	48
+33	__float_stack_001align	10	1	132	4	2
+34	__signed_stack_001colour	6	1	136	4	19
+35	__rotate_theAngle1	5	1	140	4	2
+36	__D0measure	6	1	144	4	7
+37	__D0follow	6	1	148	4	13
+38	__DU0drive	5	1	152	4	16
+39	__DU0measure	5	1	156	4	2
+40	__RandomTmp	5	1	160	4	7
+41	__colour_7qG2_p_7qG2_000	4	1	164	2	3
+42	__colour_7qG2_n_7qG2_000	4	1	166	2	2
+43	__constVal466	4	0	168	2	1
+44	__constVal233	4	0	170	2	2
+45	__rotate_RotCount5	4	1	172	2	4
+46	__ArrHelper__colour_73_0	4	1	174	2	6
+47	__colour_7qG2_col_7qG2_000	4	1	176	2	2
+48	__rotate_OldRotCount5	4	1	178	2	2
+49	__constVal932	4	0	180	2	1
+50	__rotate_OldRotCount1	4	1	182	2	2
+51	__constValNeg180	4	0	184	2	1
+52	__rotate_RotCount2	4	1	186	2	4
+53	__rotate_OldRotCount2	4	1	188	2	2
+54	__align_7qG2_dir_7qG2_000	4	1	190	2	3
+55	__align_7qG2_dist_7qG2_000	4	1	192	2	2
+56	__measure_7qG2_initial_7qG2_000	4	1	194	2	2
+57	__rotate_RotCount1	4	1	196	2	4
+58	__measure_7qG2_current_7qG2_000	4	1	198	2	3
+59	__measure_7qG2_length_7qG2_000	4	1	200	2	5
+60	__colour_7qG2_i_7qG2_001	4	1	202	2	11
+61	__constVal7458	4	0	204	2	1
+62	__constVal1865	4	0	206	2	1
+63	__constVal3729	4	0	208	2	1
+64	__colour_7qG2_max_7qG2_000	4	1	210	2	3
+65	__follow_7qG2_dist_7qG2_001	4	1	212	2	2
+66	__colour_7qG2_max_i_7qG2_000	4	1	214	2	4
+67	__follow_7qG2_col_7qG2_001	4	1	216	2	2
+68	__scan_surroundings_return	1	1	218	1	4
+69	__constValNeg90	2	0	219	1	5
+70	__zfcolour	1	1	220	1	9
+71	__follow_return	1	1	221	1	3
+72	____initialize_global_data_return	1	1	222	1	3
+73	__zffollow	1	1	223	1	11
+74	__zfdrive	1	1	224	1	40
+75	__align_return	1	1	225	1	3
+76	__drive_7qG2_brake_7qG2_000	1	1	226	1	19
+77	__drive_return	1	1	227	1	13
+78	__constVal96	2	0	228	1	8
+79	__drive_7qG2_right_7qG2_000	2	1	229	1	18
+80	__SetSensorColorFull_7qG2_port_7qG2_000_inline_colour	1	1	230	1	4
+81	__colour_return	1	1	231	1	11
+82	__drive_7qG2_left_7qG2_000	2	1	232	1	18
+83	__measure_return	1	1	233	1	4
+84	__zfrotate	1	1	234	1	42
+85	__zfmeasure	1	1	235	1	5
+86	__measure_7qG2_backtrack_7qG2_000	1	1	236	1	2
+87	__rotate_7qG2_mode_7qG2_000	2	1	237	1	20
+88	__rotate_return	1	1	238	1	16
+89	__constValNeg1	2	0	239	1	14
+90	__rotate_theRS2	1	1	240	1	3
+91	__rotate_theRM2	1	1	241	1	4
+92	__rotate_theRVI2	1	1	242	1	3
+93	__rotate_theRVP2	1	1	243	1	3
+94	__rotate_turnpct2	2	1	244	1	4
+95	__rotate_stop2	1	1	245	1	3
+96	__rotate_theOM2	1	1	246	1	7
+97	__rotate_theUF2	1	1	247	1	6
+98	__rotate_theRVD2	1	1	248	1	3
+99	__rotate_sync5	1	1	249	1	5
+100	__rotate_firstPort5	1	1	250	1	5
+101	__rotate_turnpct5	2	1	251	1	6
+102	__rotate_stop5	1	1	252	1	5
+103	__rotate_thePower2	2	1	253	1	4
+104	__rotate_rs2	1	1	254	1	2
+105	__rotate_power5	1	1	255	1	7
+106	__rotate_theTurnPct2	2	1	256	1	4
+107	__rotate_sync2	1	1	257	1	3
+108	__rotate_theUF1	1	1	258	1	6
+109	__rotate_turnpct1	2	1	259	1	4
+110	__rotate_theRM1	1	1	260	1	4
+111	__rotate_theOM1	1	1	261	1	7
+112	__rotate_firstPort1	1	1	262	1	5
+113	__rotate_power1	1	1	263	1	5
+114	__rotate_stop1	1	1	264	1	3
+115	__rotate_sync1	1	1	265	1	3
+116	__rotate_theRS1	1	1	266	1	3
+117	__rotate_theTurnPct1	2	1	267	1	4
+118	__rotate_thePower1	2	1	268	1	4
+119	__rotate_firstPort2	1	1	269	1	5
+120	__rotate_power2	1	1	270	1	5
+121	__rotate_theRVI1	1	1	271	1	3
+122	__rotate_theRVP1	1	1	272	1	3
+123	__rotate_rs1	1	1	273	1	2
+124	__rotate_theRVD1	1	1	274	1	3
+125	__rotate_theUF5	1	1	275	1	6
+126	__constVal5	2	0	276	1	1
+127	____RotateMotor5_sign_tmp	2	1	277	1	4
+128	__ResetSensorTmp	1	1	278	1	2
+129	__ResetSensorPort	1	1	279	1	3
+130	____RotateMotor2_return	1	1	280	1	4
+131	____RotateMotor1_sign_tmp	2	1	281	1	4
+132	____RotateMotor5_return	1	1	282	1	6
+133	____RotateMotor2_sign_tmp	2	1	283	1	4
+134	__constValNeg100	2	0	284	1	1
+135	__constVal100	2	0	285	1	1
+136	__zfalign	1	1	286	1	3
+137	__PFTmp	1	1	287	1	1
+138	__constVal2	2	0	288	1	3
+139	____ResetSensorSubroutine_return	1	1	289	1	3
+140	__constVal90	2	0	290	1	1
+141	__constVal13	2	0	291	1	1
+142	____RotateMotor1_return	1	1	292	1	4
+143	__rotate_theRVI5	1	1	293	1	5
+144	__rotate_theRVD5	1	1	294	1	5
+145	__rotate_rs5	1	1	295	1	2
+146	__rotate_theRS5	1	1	296	1	3
+147	__rotate_theRVP5	1	1	297	1	5
+148	__rotate_theRM5	1	1	298	1	4
+149	__rotate_thePower5	2	1	299	1	4
+150	__constVal1	2	0	300	1	27
+151	__constVal0	2	1	301	1	40
+152	__constVal50	2	0	302	1	3
+153	__rotate_theOM5	1	1	303	1	7
+154	__rotate_theTurnPct5	2	1	304	1	4
+155	__constVal32	2	0	305	1	17
+156	__SPTArgs	8	0	5	8	6
+157	__SPTArgs.Result	2	1	308	1	6
+158	__SPTArgs.Frequency	3	1	310	2	6
+159	__SPTArgs.Duration	3	1	312	2	6
+160	__SPTArgs.Loop	1	1	314	1	6
+161	__SPTArgs.Volume	1	1	315	1	6
+162	__RandomArgs	8	0	1	4	3
+163	__RandomArgs.Result	4	1	316	2	3
 164	__TextOutArgs	8	0	4	16	5
-165	__TextOutArgs.Result	2	1	312	1	5
+165	__TextOutArgs.Result	2	1	320	1	5
 166	__TextOutArgs.Location	8	0	2	4	5
-167	__TextOutArgs.Location.X	4	1	316	2	5
-168	__TextOutArgs.Location.Y	4	1	318	2	5
-169	__TextOutArgs.Text	7	0	320	4	5
+167	__TextOutArgs.Location.X	4	1	324	2	5
+168	__TextOutArgs.Location.Y	4	1	326	2	5
+169	__TextOutArgs.Text	7	0	328	4	5
 170	__TextOutArgs.Text.Text_type	1	0	0	1	0
-171	__TextOutArgs.Options	5	1	324	4	5
-172	__OUT_BC	7	0	328	4	4
-173	__OUT_BC.__OUT_BC_type	1	0	0	1	0
-174	__rotate_ports1	7	0	330	4	7
-175	__rotate_ports1.__rotate_ports1_type	1	0	0	1	0
-176	__colour_7qG2_scans_7qG2_000	7	0	332	4	6
-177	__colour_7qG2_scans_7qG2_000.__colour_7qG2_scans_7qG2_000_type	4	0	0	2	0
-178	__rotate_ports2	7	0	334	4	7
-179	__rotate_ports2.__rotate_ports2_type	1	0	0	1	0
-180	__colour_7qG2_pitch_7qG2_000	7	0	336	4	2
-181	__colour_7qG2_pitch_7qG2_000.__colour_7qG2_pitch_7qG2_000_type	4	0	0	2	0
-182	__rotate_ports5	7	0	338	4	9
-183	__rotate_ports5.__rotate_ports5_type	1	0	0	1	0
+171	__TextOutArgs.Options	5	1	332	4	5
+172	__scan_surroundings_7qG2_rsense_7qG2_000	8	0	4	8	4
+173	__scan_surroundings_7qG2_rsense_7qG2_000.NE	4	1	336	2	4
+174	__scan_surroundings_7qG2_rsense_7qG2_000.SE	4	1	338	2	4
+175	__scan_surroundings_7qG2_rsense_7qG2_000.SW	4	1	340	2	4
+176	__scan_surroundings_7qG2_rsense_7qG2_000.NW	4	1	342	2	4
+177	__rotate_ports1	7	0	344	4	7
+178	__rotate_ports1.__rotate_ports1_type	1	0	0	1	0
+179	__rotate_ports2	7	0	346	4	7
+180	__rotate_ports2.__rotate_ports2_type	1	0	0	1	0
+181	__OUT_BC	7	0	348	4	4
+182	__OUT_BC.__OUT_BC_type	1	0	0	1	0
+183	__colour_7qG2_pitch_7qG2_000	7	0	350	4	2
+184	__colour_7qG2_pitch_7qG2_000.__colour_7qG2_pitch_7qG2_000_type	4	0	0	2	0
+185	__rotate_ports5	7	0	352	4	9
+186	__rotate_ports5.__rotate_ports5_type	1	0	0	1	0
+187	__colour_7qG2_scans_7qG2_000	7	0	354	4	6
+188	__colour_7qG2_scans_7qG2_000.__colour_7qG2_scans_7qG2_000_type	4	0	0	2	0
 #SOURCES
 Clump	Line	PC	Source
-0	560	0	#line 560 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	561	0		subcall __initialize_global_data, ____initialize_global_data_return
-0	560	2	#line 560 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	561	2	#line 561 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	562	2		subcall follow, __follow_return
-0	561	4	#line 561 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-0	562	4		exit -1, -1
+0	566	0	#line 566 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	567	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	566	2	#line 566 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	567	2	#line 567 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	568	2		subcall follow, __follow_return
+0	567	4	#line 567 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+0	568	4		exit -1, -1
 1	4529	0		brtst 4, __rotate_Done1, __rotate_angle1
 1	4530	3		set ____RotateMotor1_sign_tmp, 0
 1	4530	6		brtst EQ, __sign_1, __rotate_angle1
@@ -485,24 +490,24 @@ Clump	Line	PC	Source
 5	134	189		mov __SPTArgs.Frequency, __signed_stack_001colour
 5	133	191	#line 133 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 5	134	191		mov __SPTArgs.Duration, __signed_stack_002colour
-5	133	193	#line 133 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	134	193		mov __SPTArgs.Volume, __signed_stack_003colour
-5	133	196	#line 133 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	134	196		mov __SPTArgs.Loop, __D0colour
-5	133	199	#line 133 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	134	199		syscall 10, __SPTArgs
-5	133	202	#line 133 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	134	202		mov __D0colour, __SPTArgs.Result
-5	133	204	#line 133 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	134	204		release __SPTArgsMutex
-5	133	205	#line 133 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	134	205	#line 134 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	135	205		mov __D0colour, __colour_7qG2_col_7qG2_000
+5	133	194	#line 133 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	134	194		mov __SPTArgs.Volume, __signed_stack_003colour
+5	133	197	#line 133 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	134	197		mov __SPTArgs.Loop, __D0colour
+5	133	200	#line 133 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	134	200		syscall 10, __SPTArgs
+5	133	203	#line 133 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	134	203		mov __D0colour, __SPTArgs.Result
+5	133	206	#line 133 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	134	206		release __SPTArgsMutex
+5	133	207	#line 133 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 5	134	207	#line 134 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	135	207		subret __colour_return
+5	135	207		mov __D0colour, __colour_7qG2_col_7qG2_000
 5	134	209	#line 134 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	146	209	#line 146 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-5	147	209		subret __colour_return
+5	135	209		subret __colour_return
+5	134	211	#line 134 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	146	211	#line 146 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+5	147	211		subret __colour_return
 6	149	0	#line 149 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 6	150	0		mov __signed_stack_001drive, __drive_7qG2_left_7qG2_000
 6	149	2	#line 149 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
@@ -559,382 +564,382 @@ Clump	Line	PC	Source
 6	158	64		mov __rotate_theRVI5, __constVal0
 6	158	66		mov __rotate_theRVD5, __constVal96
 6	158	68		subcall __RotateMotor5, ____RotateMotor5_return
-6	4847	70	#line 4847 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	157	70	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	157	70	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	158	70		jmp __NXC_Label_567
-6	157	72	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	158	72		mov __signed_stack_001drive, __drive_7qG2_left_7qG2_000
-6	157	74	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	157	74	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	158	74		set __D0drive, 0
-6	157	77	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	158	77		cmp 0, __zfdrive, __signed_stack_001drive, __D0drive
-6	157	81	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	158	81		mov __D0drive, __zfdrive
-6	157	83	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	158	83		brtst 4, __NXC_Label_569, __zfdrive
-6	157	86	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	158	86		mov __signed_stack_001drive, __D0drive
-6	157	88	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	158	88		mov __signed_stack_002drive, __drive_7qG2_right_7qG2_000
-6	157	90	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	157	90	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	158	90		set __D0drive, 0
-6	157	93	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	158	93		cmp 0, __zfdrive, __signed_stack_002drive, __D0drive
-6	157	97	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	157	97	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	158	97		and __D0drive, __signed_stack_001drive, __zfdrive
-6	158	101	#line 158 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	159	101		tst 5, __zfdrive, __D0drive
-6	158	104	#line 158 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	159	104		brtst 4, __NXC_Label_574, __zfdrive
-6	160	107	#line 160 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	161	107		set __signed_stack_001drive, 20
-6	160	110	#line 160 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	160	110	#line 160 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	160	110	#line 160 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	161	110	#line 161 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	161	110	#line 161 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	162	110		div __float_stack_002drive, __drive_7qG2_distance_7qG2_000, __constValf0P3799
-6	161	114	#line 161 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	161	114	#line 161 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	162	114		mov __float_stack_003drive, __constVal0
-6	161	117	#line 161 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	161	117	#line 161 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	162	117		mov __float_stack_004drive, __constVal1
-6	161	120	#line 161 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	162	120	#line 162 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	163	120		mov __DU0drive, __drive_7qG2_brake_7qG2_000
-6	165	122	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	166	122	#pragma macro 35
-6	166	122		mov __rotate_ports5, __OUT_BC
-6	166	124		mov __rotate_power5, __signed_stack_001drive
-6	166	126		mov __rotate_angle5, __float_stack_002drive
-6	166	128		mov __rotate_turnpct5, __float_stack_003drive
-6	166	130		mov __rotate_sync5, __float_stack_004drive
-6	166	132		mov __rotate_stop5, __DU0drive
-6	166	134		mov __rotate_theRVP5, __constVal32
-6	166	136		mov __rotate_theRVI5, __constVal0
-6	166	138		mov __rotate_theRVD5, __constVal96
-6	166	140		subcall __RotateMotor5, ____RotateMotor5_return
-6	4923	142	#line 4923 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	165	142	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	165	142	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	166	142		jmp __NXC_Label_585
+6	4847	71	#line 4847 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	157	71	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	157	71	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	158	71		jmp __NXC_Label_567
+6	157	73	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	158	73		mov __signed_stack_001drive, __drive_7qG2_left_7qG2_000
+6	157	75	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	157	75	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	158	75		set __D0drive, 0
+6	157	78	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	158	78		cmp 0, __zfdrive, __signed_stack_001drive, __D0drive
+6	157	82	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	158	82		mov __D0drive, __zfdrive
+6	157	84	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	158	84		brtst 4, __NXC_Label_569, __zfdrive
+6	157	87	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	158	87		mov __signed_stack_001drive, __D0drive
+6	157	89	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	158	89		mov __signed_stack_002drive, __drive_7qG2_right_7qG2_000
+6	157	91	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	157	91	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	158	91		set __D0drive, 0
+6	157	94	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	158	94		cmp 0, __zfdrive, __signed_stack_002drive, __D0drive
+6	157	98	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	157	98	#line 157 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	158	98		and __D0drive, __signed_stack_001drive, __zfdrive
+6	158	102	#line 158 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	159	102		tst 5, __zfdrive, __D0drive
+6	158	105	#line 158 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	159	105		brtst 4, __NXC_Label_574, __zfdrive
+6	160	108	#line 160 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	161	108		set __signed_stack_001drive, 20
+6	160	111	#line 160 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	160	111	#line 160 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	160	111	#line 160 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	161	111	#line 161 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	161	111	#line 161 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	162	111		div __float_stack_002drive, __drive_7qG2_distance_7qG2_000, __constValf0P3799
+6	161	115	#line 161 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	161	115	#line 161 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	162	115		mov __float_stack_003drive, __constVal0
+6	161	118	#line 161 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	161	118	#line 161 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	162	118		mov __float_stack_004drive, __constVal1
+6	161	121	#line 161 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	162	121	#line 162 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	163	121		mov __DU0drive, __drive_7qG2_brake_7qG2_000
+6	165	123	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	166	123	#pragma macro 35
+6	166	123		mov __rotate_ports5, __OUT_BC
+6	166	125		mov __rotate_power5, __signed_stack_001drive
+6	166	127		mov __rotate_angle5, __float_stack_002drive
+6	166	129		mov __rotate_turnpct5, __float_stack_003drive
+6	166	131		mov __rotate_sync5, __float_stack_004drive
+6	166	133		mov __rotate_stop5, __DU0drive
+6	166	135		mov __rotate_theRVP5, __constVal32
+6	166	137		mov __rotate_theRVI5, __constVal0
+6	166	139		mov __rotate_theRVD5, __constVal96
+6	166	141		subcall __RotateMotor5, ____RotateMotor5_return
+6	4923	144	#line 4923 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 6	165	144	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	166	144		mov __signed_stack_001drive, __drive_7qG2_left_7qG2_000
+6	165	144	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	166	144		jmp __NXC_Label_585
 6	165	146	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	165	146	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	166	146		set __D0drive, 0
-6	165	149	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	166	149		cmp 1, __zfdrive, __signed_stack_001drive, __D0drive
-6	165	153	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	166	153		mov __D0drive, __zfdrive
+6	166	146		mov __signed_stack_001drive, __drive_7qG2_left_7qG2_000
+6	165	148	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	165	148	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	166	148		set __D0drive, 0
+6	165	151	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	166	151		cmp 1, __zfdrive, __signed_stack_001drive, __D0drive
 6	165	155	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	166	155		brtst 4, __NXC_Label_587, __zfdrive
-6	165	158	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	166	158		mov __signed_stack_001drive, __D0drive
+6	166	155		mov __D0drive, __zfdrive
+6	165	157	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	166	157		brtst 4, __NXC_Label_587, __zfdrive
 6	165	160	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	166	160		mov __signed_stack_002drive, __drive_7qG2_right_7qG2_000
+6	166	160		mov __signed_stack_001drive, __D0drive
 6	165	162	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	165	162	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	166	162		set __D0drive, 0
-6	165	165	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	166	165		cmp 0, __zfdrive, __signed_stack_002drive, __D0drive
-6	165	169	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	165	169	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	166	169		and __D0drive, __signed_stack_001drive, __zfdrive
-6	166	173	#line 166 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	167	173		tst 5, __zfdrive, __D0drive
-6	166	176	#line 166 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	167	176		brtst 4, __NXC_Label_592, __zfdrive
-6	168	179	#line 168 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	169	179		set __signed_stack_001drive, 20
-6	168	182	#line 168 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	168	182	#line 168 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	168	182	#line 168 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	169	182	#line 169 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	169	182	#line 169 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	170	182		div __float_stack_002drive, __drive_7qG2_distance_7qG2_000, __constValf0P3799
-6	169	186	#line 169 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	169	186	#line 169 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	170	186		mov __float_stack_003drive, __constVal100
-6	169	189	#line 169 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	169	189	#line 169 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	170	189		mov __float_stack_004drive, __constVal1
-6	169	192	#line 169 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	170	192	#line 170 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	171	192		mov __DU0drive, __drive_7qG2_brake_7qG2_000
-6	173	194	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	174	194	#pragma macro 35
-6	174	194		mov __rotate_ports5, __OUT_BC
-6	174	196		mov __rotate_power5, __signed_stack_001drive
-6	174	198		mov __rotate_angle5, __float_stack_002drive
-6	174	200		mov __rotate_turnpct5, __float_stack_003drive
-6	174	202		mov __rotate_sync5, __float_stack_004drive
-6	174	204		mov __rotate_stop5, __DU0drive
-6	174	206		mov __rotate_theRVP5, __constVal32
-6	174	208		mov __rotate_theRVI5, __constVal0
-6	174	210		mov __rotate_theRVD5, __constVal96
-6	174	212		subcall __RotateMotor5, ____RotateMotor5_return
-6	4999	214	#line 4999 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	173	214	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	173	214	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	174	214		jmp __NXC_Label_603
+6	166	162		mov __signed_stack_002drive, __drive_7qG2_right_7qG2_000
+6	165	164	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	165	164	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	166	164		set __D0drive, 0
+6	165	167	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	166	167		cmp 0, __zfdrive, __signed_stack_002drive, __D0drive
+6	165	171	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	165	171	#line 165 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	166	171		and __D0drive, __signed_stack_001drive, __zfdrive
+6	166	175	#line 166 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	167	175		tst 5, __zfdrive, __D0drive
+6	166	178	#line 166 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	167	178		brtst 4, __NXC_Label_592, __zfdrive
+6	168	181	#line 168 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	169	181		set __signed_stack_001drive, 20
+6	168	184	#line 168 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	168	184	#line 168 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	168	184	#line 168 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	169	184	#line 169 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	169	184	#line 169 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	170	184		div __float_stack_002drive, __drive_7qG2_distance_7qG2_000, __constValf0P3799
+6	169	188	#line 169 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	169	188	#line 169 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	170	188		mov __float_stack_003drive, __constVal100
+6	169	190	#line 169 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	169	190	#line 169 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	170	190		mov __float_stack_004drive, __constVal1
+6	169	193	#line 169 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	170	193	#line 170 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	171	193		mov __DU0drive, __drive_7qG2_brake_7qG2_000
+6	173	195	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	174	195	#pragma macro 35
+6	174	195		mov __rotate_ports5, __OUT_BC
+6	174	197		mov __rotate_power5, __signed_stack_001drive
+6	174	199		mov __rotate_angle5, __float_stack_002drive
+6	174	201		mov __rotate_turnpct5, __float_stack_003drive
+6	174	203		mov __rotate_sync5, __float_stack_004drive
+6	174	205		mov __rotate_stop5, __DU0drive
+6	174	207		mov __rotate_theRVP5, __constVal32
+6	174	209		mov __rotate_theRVI5, __constVal0
+6	174	211		mov __rotate_theRVD5, __constVal96
+6	174	213		subcall __RotateMotor5, ____RotateMotor5_return
+6	4999	216	#line 4999 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 6	173	216	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	174	216		mov __signed_stack_001drive, __drive_7qG2_left_7qG2_000
+6	173	216	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	174	216		jmp __NXC_Label_603
 6	173	218	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	173	218	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	174	218		set __D0drive, 0
-6	173	221	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	174	221		cmp 0, __zfdrive, __signed_stack_001drive, __D0drive
-6	173	225	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	174	225		mov __D0drive, __zfdrive
+6	174	218		mov __signed_stack_001drive, __drive_7qG2_left_7qG2_000
+6	173	220	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	173	220	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	174	220		set __D0drive, 0
+6	173	223	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	174	223		cmp 0, __zfdrive, __signed_stack_001drive, __D0drive
 6	173	227	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	174	227		brtst 4, __NXC_Label_605, __zfdrive
-6	173	230	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	174	230		mov __signed_stack_001drive, __D0drive
+6	174	227		mov __D0drive, __zfdrive
+6	173	229	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	174	229		brtst 4, __NXC_Label_605, __zfdrive
 6	173	232	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	174	232		mov __signed_stack_002drive, __drive_7qG2_right_7qG2_000
+6	174	232		mov __signed_stack_001drive, __D0drive
 6	173	234	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	173	234	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	174	234		set __D0drive, 0
-6	173	237	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	174	237		cmp 1, __zfdrive, __signed_stack_002drive, __D0drive
-6	173	241	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	173	241	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	174	241		and __D0drive, __signed_stack_001drive, __zfdrive
-6	174	245	#line 174 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	175	245		tst 5, __zfdrive, __D0drive
-6	174	248	#line 174 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	175	248		brtst 4, __NXC_Label_610, __zfdrive
-6	176	251	#line 176 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	177	251		set __signed_stack_001drive, 20
-6	176	254	#line 176 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	176	254	#line 176 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	176	254	#line 176 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	177	254	#line 177 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	177	254	#line 177 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	178	254		div __float_stack_002drive, __drive_7qG2_distance_7qG2_000, __constValf0P3799
-6	177	258	#line 177 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	177	258	#line 177 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	178	258		mov __float_stack_003drive, __constValNeg100
+6	174	234		mov __signed_stack_002drive, __drive_7qG2_right_7qG2_000
+6	173	236	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	173	236	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	174	236		set __D0drive, 0
+6	173	239	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	174	239		cmp 1, __zfdrive, __signed_stack_002drive, __D0drive
+6	173	243	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	173	243	#line 173 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	174	243		and __D0drive, __signed_stack_001drive, __zfdrive
+6	174	247	#line 174 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	175	247		tst 5, __zfdrive, __D0drive
+6	174	250	#line 174 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	175	250		brtst 4, __NXC_Label_610, __zfdrive
+6	176	253	#line 176 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	177	253		set __signed_stack_001drive, 20
+6	176	256	#line 176 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	176	256	#line 176 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	176	256	#line 176 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	177	256	#line 177 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	177	256	#line 177 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	178	256		div __float_stack_002drive, __drive_7qG2_distance_7qG2_000, __constValf0P3799
 6	177	260	#line 177 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 6	177	260	#line 177 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	178	260		mov __float_stack_004drive, __constVal1
-6	177	263	#line 177 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	178	263	#line 178 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	179	263		mov __DU0drive, __drive_7qG2_brake_7qG2_000
-6	181	265	#line 181 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	182	265	#pragma macro 35
-6	182	265		mov __rotate_ports5, __OUT_BC
-6	182	267		mov __rotate_power5, __signed_stack_001drive
-6	182	269		mov __rotate_angle5, __float_stack_002drive
-6	182	271		mov __rotate_turnpct5, __float_stack_003drive
-6	182	273		mov __rotate_sync5, __float_stack_004drive
-6	182	275		mov __rotate_stop5, __DU0drive
-6	182	277		mov __rotate_theRVP5, __constVal32
-6	182	279		mov __rotate_theRVI5, __constVal0
-6	182	281		mov __rotate_theRVD5, __constVal96
-6	182	283		subcall __RotateMotor5, ____RotateMotor5_return
-6	5075	285	#line 5075 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	181	285	#line 181 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	181	285	#line 181 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	182	285		jmp __NXC_Label_621
-6	181	287	#line 181 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	182	287		mov __signed_stack_001drive, __drive_7qG2_left_7qG2_000
-6	181	289	#line 181 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	181	289	#line 181 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	182	289		set __D0drive, 0
+6	178	260		mov __float_stack_003drive, __constValNeg100
+6	177	262	#line 177 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	177	262	#line 177 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	178	262		mov __float_stack_004drive, __constVal1
+6	177	265	#line 177 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	178	265	#line 178 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	179	265		mov __DU0drive, __drive_7qG2_brake_7qG2_000
+6	181	267	#line 181 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	182	267	#pragma macro 35
+6	182	267		mov __rotate_ports5, __OUT_BC
+6	182	269		mov __rotate_power5, __signed_stack_001drive
+6	182	271		mov __rotate_angle5, __float_stack_002drive
+6	182	273		mov __rotate_turnpct5, __float_stack_003drive
+6	182	275		mov __rotate_sync5, __float_stack_004drive
+6	182	277		mov __rotate_stop5, __DU0drive
+6	182	279		mov __rotate_theRVP5, __constVal32
+6	182	281		mov __rotate_theRVI5, __constVal0
+6	182	283		mov __rotate_theRVD5, __constVal96
+6	182	285		subcall __RotateMotor5, ____RotateMotor5_return
+6	5075	288	#line 5075 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	181	288	#line 181 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	181	288	#line 181 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	182	288		jmp __NXC_Label_621
+6	181	290	#line 181 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	182	290		mov __signed_stack_001drive, __drive_7qG2_left_7qG2_000
 6	181	292	#line 181 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	182	292		cmp 1, __zfdrive, __signed_stack_001drive, __D0drive
-6	181	296	#line 181 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	182	296		mov __D0drive, __zfdrive
-6	182	298	#line 182 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	183	298		brtst 4, __NXC_Label_624, __zfdrive
-6	184	301	#line 184 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	185	301		set __signed_stack_001drive, 20
+6	181	292	#line 181 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	182	292		set __D0drive, 0
+6	181	295	#line 181 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	182	295		cmp 1, __zfdrive, __signed_stack_001drive, __D0drive
+6	181	299	#line 181 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	182	299		mov __D0drive, __zfdrive
+6	182	301	#line 182 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	183	301		brtst 4, __NXC_Label_624, __zfdrive
 6	184	304	#line 184 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	184	304	#line 184 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	184	304	#line 184 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	185	304	#line 185 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	185	304	#line 185 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	186	304		div __float_stack_002drive, __drive_7qG2_distance_7qG2_000, __constValf0P3799
-6	185	308	#line 185 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	185	308	#line 185 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	186	308		mov __float_stack_003drive, __constVal0
+6	185	304		set __signed_stack_001drive, 20
+6	184	307	#line 184 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	184	307	#line 184 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	184	307	#line 184 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	185	307	#line 185 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	185	307	#line 185 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	186	307		div __float_stack_002drive, __drive_7qG2_distance_7qG2_000, __constValf0P3799
 6	185	311	#line 185 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 6	185	311	#line 185 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	186	311		mov __float_stack_004drive, __constVal0
+6	186	311		mov __float_stack_003drive, __constVal0
 6	185	314	#line 185 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	186	314	#line 186 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	187	314		mov __DU0drive, __drive_7qG2_brake_7qG2_000
-6	189	316	#line 189 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	190	316	#pragma macro 33
-6	190	316		arrbuild __rotate_ports2, __constVal2
-6	190	320		mov __rotate_power2, __signed_stack_001drive
-6	190	322		mov __rotate_angle2, __float_stack_002drive
-6	190	324		mov __rotate_turnpct2, __float_stack_003drive
-6	190	326		mov __rotate_sync2, __float_stack_004drive
-6	190	328		mov __rotate_stop2, __DU0drive
-6	190	330		mov __rotate_theRVP2, __constVal32
-6	190	332		mov __rotate_theRVI2, __constVal0
-6	190	334		mov __rotate_theRVD2, __constVal96
-6	190	336		subcall __RotateMotor2, ____RotateMotor2_return
-6	5129	338	#line 5129 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	189	338	#line 189 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	189	338	#line 189 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	190	338		jmp __NXC_Label_635
-6	189	340	#line 189 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	190	340		mov __signed_stack_001drive, __drive_7qG2_left_7qG2_000
-6	189	342	#line 189 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	189	342	#line 189 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	190	342		set __D0drive, 0
+6	185	314	#line 185 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	186	314		mov __float_stack_004drive, __constVal0
+6	185	317	#line 185 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	186	317	#line 186 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	187	317		mov __DU0drive, __drive_7qG2_brake_7qG2_000
+6	189	319	#line 189 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	190	319	#pragma macro 33
+6	190	319		arrbuild __rotate_ports2, __constVal2
+6	190	323		mov __rotate_power2, __signed_stack_001drive
+6	190	325		mov __rotate_angle2, __float_stack_002drive
+6	190	327		mov __rotate_turnpct2, __float_stack_003drive
+6	190	329		mov __rotate_sync2, __float_stack_004drive
+6	190	331		mov __rotate_stop2, __DU0drive
+6	190	333		mov __rotate_theRVP2, __constVal32
+6	190	335		mov __rotate_theRVI2, __constVal0
+6	190	337		mov __rotate_theRVD2, __constVal96
+6	190	339		subcall __RotateMotor2, ____RotateMotor2_return
+6	5129	341	#line 5129 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	189	341	#line 189 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	189	341	#line 189 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	190	341		jmp __NXC_Label_635
+6	189	343	#line 189 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	190	343		mov __signed_stack_001drive, __drive_7qG2_left_7qG2_000
 6	189	345	#line 189 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	190	345		cmp 0, __zfdrive, __signed_stack_001drive, __D0drive
-6	189	349	#line 189 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	190	349		mov __D0drive, __zfdrive
-6	190	351	#line 190 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	191	351		brtst 4, __NXC_Label_638, __zfdrive
-6	192	354	#line 192 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	193	354		set __signed_stack_001drive, 20
+6	189	345	#line 189 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	190	345		set __D0drive, 0
+6	189	348	#line 189 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	190	348		cmp 0, __zfdrive, __signed_stack_001drive, __D0drive
+6	189	352	#line 189 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	190	352		mov __D0drive, __zfdrive
+6	190	354	#line 190 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	191	354		brtst 4, __NXC_Label_638, __zfdrive
 6	192	357	#line 192 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	192	357	#line 192 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	192	357	#line 192 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	192	357	#line 192 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	192	357	#line 192 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	193	357		mul __signed_stack_002drive, __drive_7qG2_left_7qG2_000, __drive_7qG2_distance_7qG2_000
-6	192	361	#line 192 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	193	361	#line 193 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	193	361	#line 193 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	194	361		div __float_stack_002drive, __signed_stack_002drive, __constValf0P3799
-6	193	365	#line 193 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	193	365	#line 193 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	194	365		mov __float_stack_003drive, __constVal0
+6	193	357		set __signed_stack_001drive, 20
+6	192	360	#line 192 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	192	360	#line 192 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	192	360	#line 192 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	192	360	#line 192 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	192	360	#line 192 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	193	360		mul __signed_stack_002drive, __drive_7qG2_left_7qG2_000, __drive_7qG2_distance_7qG2_000
+6	192	364	#line 192 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	193	364	#line 193 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	193	364	#line 193 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	194	364		div __float_stack_002drive, __signed_stack_002drive, __constValf0P3799
 6	193	368	#line 193 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 6	193	368	#line 193 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	194	368		mov __float_stack_004drive, __constVal0
+6	194	368		mov __float_stack_003drive, __constVal0
 6	193	371	#line 193 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	194	371	#line 194 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	195	371		mov __DU0drive, __drive_7qG2_brake_7qG2_000
-6	197	373	#line 197 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	198	373	#pragma macro 33
-6	198	373		arrbuild __rotate_ports2, __constVal2
-6	198	377		mov __rotate_power2, __signed_stack_001drive
-6	198	379		mov __rotate_angle2, __float_stack_002drive
-6	198	381		mov __rotate_turnpct2, __float_stack_003drive
-6	198	383		mov __rotate_sync2, __float_stack_004drive
-6	198	385		mov __rotate_stop2, __DU0drive
-6	198	387		mov __rotate_theRVP2, __constVal32
-6	198	389		mov __rotate_theRVI2, __constVal0
-6	198	391		mov __rotate_theRVD2, __constVal96
-6	198	393		subcall __RotateMotor2, ____RotateMotor2_return
-6	5189	395	#line 5189 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	197	395	#line 197 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	197	395	#line 197 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	198	395		jmp __NXC_Label_649
-6	197	397	#line 197 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	198	397		mov __signed_stack_001drive, __drive_7qG2_right_7qG2_000
-6	197	399	#line 197 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	197	399	#line 197 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	198	399		set __D0drive, 0
+6	193	371	#line 193 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	194	371		mov __float_stack_004drive, __constVal0
+6	193	374	#line 193 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	194	374	#line 194 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	195	374		mov __DU0drive, __drive_7qG2_brake_7qG2_000
+6	197	376	#line 197 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	198	376	#pragma macro 33
+6	198	376		arrbuild __rotate_ports2, __constVal2
+6	198	380		mov __rotate_power2, __signed_stack_001drive
+6	198	382		mov __rotate_angle2, __float_stack_002drive
+6	198	384		mov __rotate_turnpct2, __float_stack_003drive
+6	198	386		mov __rotate_sync2, __float_stack_004drive
+6	198	388		mov __rotate_stop2, __DU0drive
+6	198	390		mov __rotate_theRVP2, __constVal32
+6	198	392		mov __rotate_theRVI2, __constVal0
+6	198	394		mov __rotate_theRVD2, __constVal96
+6	198	396		subcall __RotateMotor2, ____RotateMotor2_return
+6	5189	398	#line 5189 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	197	398	#line 197 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	197	398	#line 197 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	198	398		jmp __NXC_Label_649
+6	197	400	#line 197 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	198	400		mov __signed_stack_001drive, __drive_7qG2_right_7qG2_000
 6	197	402	#line 197 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	198	402		cmp 1, __zfdrive, __signed_stack_001drive, __D0drive
-6	197	406	#line 197 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	198	406		mov __D0drive, __zfdrive
-6	198	408	#line 198 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	199	408		brtst 4, __NXC_Label_652, __zfdrive
-6	200	411	#line 200 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	201	411		set __signed_stack_001drive, 20
+6	197	402	#line 197 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	198	402		set __D0drive, 0
+6	197	405	#line 197 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	198	405		cmp 1, __zfdrive, __signed_stack_001drive, __D0drive
+6	197	409	#line 197 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	198	409		mov __D0drive, __zfdrive
+6	198	411	#line 198 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	199	411		brtst 4, __NXC_Label_652, __zfdrive
 6	200	414	#line 200 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	200	414	#line 200 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	200	414	#line 200 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	201	414	#line 201 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	201	414	#line 201 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	202	414		div __float_stack_002drive, __drive_7qG2_distance_7qG2_000, __constValf0P3799
-6	201	418	#line 201 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	201	418	#line 201 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	202	418		mov __float_stack_003drive, __constVal0
+6	201	414		set __signed_stack_001drive, 20
+6	200	417	#line 200 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	200	417	#line 200 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	200	417	#line 200 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	201	417	#line 201 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	201	417	#line 201 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	202	417		div __float_stack_002drive, __drive_7qG2_distance_7qG2_000, __constValf0P3799
 6	201	421	#line 201 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 6	201	421	#line 201 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	202	421		mov __float_stack_004drive, __constVal0
+6	202	421		mov __float_stack_003drive, __constVal0
 6	201	424	#line 201 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	202	424	#line 202 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	203	424		mov __DU0drive, __drive_7qG2_brake_7qG2_000
-6	205	426	#line 205 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	206	426	#pragma macro 33
-6	206	426		arrbuild __rotate_ports1, __constVal1
-6	206	430		mov __rotate_power1, __signed_stack_001drive
-6	206	432		mov __rotate_angle1, __float_stack_002drive
-6	206	434		mov __rotate_turnpct1, __float_stack_003drive
-6	206	436		mov __rotate_sync1, __float_stack_004drive
-6	206	438		mov __rotate_stop1, __DU0drive
-6	206	440		mov __rotate_theRVP1, __constVal32
-6	206	442		mov __rotate_theRVI1, __constVal0
-6	206	444		mov __rotate_theRVD1, __constVal96
-6	206	446		subcall __RotateMotor1, ____RotateMotor1_return
-6	5243	448	#line 5243 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	205	448	#line 205 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	205	448	#line 205 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	206	448		jmp __NXC_Label_663
-6	205	450	#line 205 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	206	450		mov __signed_stack_001drive, __drive_7qG2_right_7qG2_000
+6	201	424	#line 201 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	202	424		mov __float_stack_004drive, __constVal0
+6	201	427	#line 201 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	202	427	#line 202 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	203	427		mov __DU0drive, __drive_7qG2_brake_7qG2_000
+6	205	429	#line 205 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	206	429	#pragma macro 33
+6	206	429		arrbuild __rotate_ports1, __constVal1
+6	206	433		mov __rotate_power1, __signed_stack_001drive
+6	206	435		mov __rotate_angle1, __float_stack_002drive
+6	206	437		mov __rotate_turnpct1, __float_stack_003drive
+6	206	439		mov __rotate_sync1, __float_stack_004drive
+6	206	441		mov __rotate_stop1, __DU0drive
+6	206	443		mov __rotate_theRVP1, __constVal32
+6	206	445		mov __rotate_theRVI1, __constVal0
+6	206	447		mov __rotate_theRVD1, __constVal96
+6	206	449		subcall __RotateMotor1, ____RotateMotor1_return
+6	5243	452	#line 5243 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 6	205	452	#line 205 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 6	205	452	#line 205 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	206	452		set __D0drive, 0
-6	205	455	#line 205 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	206	455		cmp 0, __zfdrive, __signed_stack_001drive, __D0drive
+6	206	452		jmp __NXC_Label_663
+6	205	454	#line 205 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	206	454		mov __signed_stack_001drive, __drive_7qG2_right_7qG2_000
+6	205	456	#line 205 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	205	456	#line 205 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	206	456		set __D0drive, 0
 6	205	459	#line 205 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	206	459		mov __D0drive, __zfdrive
-6	206	461	#line 206 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	207	461		brtst 4, __NXC_Label_666, __zfdrive
-6	208	464	#line 208 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	209	464		set __signed_stack_001drive, 20
-6	208	467	#line 208 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	208	467	#line 208 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	208	467	#line 208 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	208	467	#line 208 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	208	467	#line 208 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	209	467		mul __signed_stack_002drive, __drive_7qG2_right_7qG2_000, __drive_7qG2_distance_7qG2_000
+6	206	459		cmp 0, __zfdrive, __signed_stack_001drive, __D0drive
+6	205	463	#line 205 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	206	463		mov __D0drive, __zfdrive
+6	206	465	#line 206 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	207	465		brtst 4, __NXC_Label_666, __zfdrive
+6	208	468	#line 208 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	209	468		set __signed_stack_001drive, 20
 6	208	471	#line 208 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	209	471	#line 209 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	209	471	#line 209 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	210	471		div __float_stack_002drive, __signed_stack_002drive, __constValf0P3799
+6	208	471	#line 208 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	208	471	#line 208 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	208	471	#line 208 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	208	471	#line 208 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	209	471		mul __signed_stack_002drive, __drive_7qG2_right_7qG2_000, __drive_7qG2_distance_7qG2_000
+6	208	475	#line 208 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 6	209	475	#line 209 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 6	209	475	#line 209 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	210	475		mov __float_stack_003drive, __constVal0
-6	209	478	#line 209 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	209	478	#line 209 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	210	478		mov __float_stack_004drive, __constVal0
-6	209	481	#line 209 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	210	481	#line 210 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	211	481		mov __DU0drive, __drive_7qG2_brake_7qG2_000
-6	211	483	#line 211 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	212	483	#pragma macro 33
-6	212	483		arrbuild __rotate_ports1, __constVal1
-6	212	487		mov __rotate_power1, __signed_stack_001drive
-6	212	489		mov __rotate_angle1, __float_stack_002drive
-6	212	491		mov __rotate_turnpct1, __float_stack_003drive
-6	212	493		mov __rotate_sync1, __float_stack_004drive
-6	212	495		mov __rotate_stop1, __DU0drive
-6	212	497		mov __rotate_theRVP1, __constVal32
-6	212	499		mov __rotate_theRVI1, __constVal0
-6	212	501		mov __rotate_theRVD1, __constVal96
-6	212	503		subcall __RotateMotor1, ____RotateMotor1_return
-6	5303	505	#line 5303 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	211	505	#line 211 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	222	505	#line 222 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	222	505	#line 222 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	222	505	#line 222 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	222	505	#line 222 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	222	505	#line 222 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	222	505	#line 222 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	222	505	#line 222 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	222	505	#line 222 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	222	505	#line 222 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-6	223	505		subret __drive_return
+6	210	475		div __float_stack_002drive, __signed_stack_002drive, __constValf0P3799
+6	209	479	#line 209 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	209	479	#line 209 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	210	479		mov __float_stack_003drive, __constVal0
+6	209	482	#line 209 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	209	482	#line 209 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	210	482		mov __float_stack_004drive, __constVal0
+6	209	485	#line 209 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	210	485	#line 210 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	211	485		mov __DU0drive, __drive_7qG2_brake_7qG2_000
+6	211	487	#line 211 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	212	487	#pragma macro 33
+6	212	487		arrbuild __rotate_ports1, __constVal1
+6	212	491		mov __rotate_power1, __signed_stack_001drive
+6	212	493		mov __rotate_angle1, __float_stack_002drive
+6	212	495		mov __rotate_turnpct1, __float_stack_003drive
+6	212	497		mov __rotate_sync1, __float_stack_004drive
+6	212	499		mov __rotate_stop1, __DU0drive
+6	212	501		mov __rotate_theRVP1, __constVal32
+6	212	503		mov __rotate_theRVI1, __constVal0
+6	212	505		mov __rotate_theRVD1, __constVal96
+6	212	507		subcall __RotateMotor1, ____RotateMotor1_return
+6	5303	510	#line 5303 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	211	510	#line 211 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	222	510	#line 222 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	222	510	#line 222 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	222	510	#line 222 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	222	510	#line 222 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	222	510	#line 222 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	222	510	#line 222 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	222	510	#line 222 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	222	510	#line 222 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	222	510	#line 222 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+6	223	510		subret __drive_return
 7	225	0	#line 225 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 7	226	0		mov __signed_stack_001rotate, __rotate_7qG2_degrees_7qG2_000
 7	225	2	#line 225 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
@@ -1580,53 +1585,87 @@ Clump	Line	PC	Source
 11	397	34		subcall scan_surroundings, __scan_surroundings_return
 11	396	36	#line 396 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
 11	396	36	#line 396 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-11	397	36		set __rotate_7qG2_degrees_7qG2_000, 90
-11	396	39	#line 396 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-11	396	39	#line 396 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-11	397	39		set __rotate_7qG2_mode_7qG2_000, 0
-11	396	42	#line 396 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-11	398	42	#line 398 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-11	399	42		subcall rotate, __rotate_return
-11	398	44	#line 398 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-11	399	44	#line 399 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-11	400	44		jmp __NXC_Label_933
-11	399	46	#line 399 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-11	400	46		mov __signed_stack_001follow, __follow_7qG2_col_7qG2_001
-11	399	48	#line 399 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-11	399	48	#line 399 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-11	400	48		set __D0follow, 5
-11	399	51	#line 399 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-11	400	51		cmp 4, __zffollow, __signed_stack_001follow, __D0follow
-11	399	55	#line 399 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-11	400	55		mov __D0follow, __zffollow
-11	400	57	#line 400 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-11	401	57		brtst 4, __NXC_Label_936, __zffollow
-11	400	60	#line 400 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-11	401	60		set __rotate_7qG2_degrees_7qG2_000, 180
-11	400	63	#line 400 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-11	400	63	#line 400 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-11	401	63		set __rotate_7qG2_mode_7qG2_000, 0
-11	400	66	#line 400 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-11	401	66	#line 401 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-11	402	66		subcall rotate, __rotate_return
-11	401	68	#line 401 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-11	403	68	#line 403 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-11	404	68		jmp __NXC_Label_941
-11	403	70	#line 403 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-11	404	70		mov __align_7qG2_dist_7qG2_000, __follow_7qG2_dist_7qG2_001
-11	403	72	#line 403 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-11	404	72	#line 404 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-11	405	72		subcall align, __align_return
-11	404	74	#line 404 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-11	406	74	#line 406 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-11	406	74	#line 406 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-11	454	74	#line 454 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-11	455	74		jmp __NXC_Label_914
-11	454	76	#line 454 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-11	454	76	#line 454 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-11	455	76		subret __follow_return
-12	564	0	#line 564 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
-12	565	0		subret ____initialize_global_data_return
+11	397	36		set __D0follow, 2
+11	397	39	#line 397 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	398	39	#pragma macro 8
+11	398	39		syscall 24, __RandomArgs
+11	398	42		mov __RandomTmp, __RandomArgs.Result
+11	398	44		add __RandomTmp, __RandomArgs.Result, __constVal32768
+11	398	48		mul __RandomTmp, __RandomTmp, __D0follow
+11	398	52		div __RandomTmp, __RandomTmp, __constVal65536
+11	6503	56	#line 6503 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	397	56	#line 397 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	397	56	#line 397 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	398	56		mov __signed_stack_001follow, __RandomTmp
+11	397	58	#line 397 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	397	58	#line 397 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	398	58		set __D0follow, 1
+11	397	61	#line 397 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	398	61		cmp 4, __zffollow, __signed_stack_001follow, __D0follow
+11	397	65	#line 397 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	398	65		mov __D0follow, __zffollow
+11	399	67	#line 399 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	400	67		brtst 4, __NXC_Label_935, __zffollow
+11	399	70	#line 399 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	400	70		set __rotate_7qG2_degrees_7qG2_000, 90
+11	399	73	#line 399 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	399	73	#line 399 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	400	73		set __rotate_7qG2_mode_7qG2_000, 0
+11	399	76	#line 399 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	400	76	#line 400 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	401	76		subcall rotate, __rotate_return
+11	400	78	#line 400 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	402	78	#line 402 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	403	78		jmp __NXC_Label_940
+11	402	80	#line 402 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	403	80		mov __rotate_7qG2_degrees_7qG2_000, __constValNeg90
+11	402	82	#line 402 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	402	82	#line 402 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	403	82		set __rotate_7qG2_mode_7qG2_000, 0
+11	402	85	#line 402 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	403	85	#line 403 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	404	85		subcall rotate, __rotate_return
+11	403	87	#line 403 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	405	87	#line 405 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	405	87	#line 405 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	406	87		jmp __NXC_Label_945
+11	405	89	#line 405 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	406	89		mov __signed_stack_001follow, __follow_7qG2_col_7qG2_001
+11	405	91	#line 405 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	405	91	#line 405 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	406	91		set __D0follow, 5
+11	405	94	#line 405 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	406	94		cmp 4, __zffollow, __signed_stack_001follow, __D0follow
+11	405	98	#line 405 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	406	98		mov __D0follow, __zffollow
+11	406	100	#line 406 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	407	100		brtst 4, __NXC_Label_948, __zffollow
+11	406	103	#line 406 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	407	103		set __rotate_7qG2_degrees_7qG2_000, 180
+11	406	106	#line 406 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	406	106	#line 406 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	407	106		set __rotate_7qG2_mode_7qG2_000, 0
+11	406	109	#line 406 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	407	109	#line 407 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	408	109		subcall rotate, __rotate_return
+11	407	111	#line 407 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	409	111	#line 409 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	410	111		jmp __NXC_Label_953
+11	409	113	#line 409 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	410	113		mov __align_7qG2_dist_7qG2_000, __follow_7qG2_dist_7qG2_001
+11	409	115	#line 409 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	410	115	#line 410 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	411	115		subcall align, __align_return
+11	410	117	#line 410 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	412	117	#line 412 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	412	117	#line 412 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	460	117	#line 460 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	461	117		jmp __NXC_Label_914
+11	460	119	#line 460 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	460	119	#line 460 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+11	461	119		subret __follow_return
+12	570	0	#line 570 "C:\Users\ken\Desktop\C85\pfilter prob.nxc"
+12	571	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
 0	main	0	C:\Users\ken\Desktop\C85\pfilter prob.nxc
@@ -1635,10 +1674,10 @@ Clump	Name	Offset	File
 3	__RotateMotor5	345	NXTDefs.h
 4	__ResetSensorSubroutine	514	NXTDefs.h
 5	colour	527	C:\Users\ken\Desktop\C85\pfilter prob.nxc
-6	drive	738	C:\Users\ken\Desktop\C85\pfilter prob.nxc
-7	rotate	1245	C:\Users\ken\Desktop\C85\pfilter prob.nxc
-8	measure	1551	C:\Users\ken\Desktop\C85\pfilter prob.nxc
-9	scan_surroundings	1633	C:\Users\ken\Desktop\C85\pfilter prob.nxc
-10	align	1713	C:\Users\ken\Desktop\C85\pfilter prob.nxc
-11	follow	1813	C:\Users\ken\Desktop\C85\pfilter prob.nxc
-12	__initialize_global_data	1891	C:\Users\ken\Desktop\C85\pfilter prob.nxc
+6	drive	740	C:\Users\ken\Desktop\C85\pfilter prob.nxc
+7	rotate	1252	C:\Users\ken\Desktop\C85\pfilter prob.nxc
+8	measure	1558	C:\Users\ken\Desktop\C85\pfilter prob.nxc
+9	scan_surroundings	1640	C:\Users\ken\Desktop\C85\pfilter prob.nxc
+10	align	1720	C:\Users\ken\Desktop\C85\pfilter prob.nxc
+11	follow	1820	C:\Users\ken\Desktop\C85\pfilter prob.nxc
+12	__initialize_global_data	1941	C:\Users\ken\Desktop\C85\pfilter prob.nxc
