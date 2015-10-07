@@ -224,6 +224,17 @@ int measure(char mode, bool backtrack) {
 /* Subroutine which moves the robot forward from one intersection to the next
 */
 sub move_robot() {
+    while (true) {
+        int dist = measure(0, false);
+        int col = colour();
+        if (col == YELLOW) {
+            scan_surroundings();
+            int random_turn = Random(2);
+            if (random_turn == 1) rotate(90 ,0);
+            else rotate(-90,0);
+        } else if (col == RED) rotate(180, 0);
+        else align(dist);
+    }
 }
 
 /* Scans the surroundings of the robot, takes readings of the colour of 
@@ -300,20 +311,6 @@ sub align(int dist) {
     rotate(angle * dir * (-1), 0);
 }
 
-sub follow() {
-    while (true) {
-        int dist = measure(0, false);
-        int col = colour();
-        if (col == YELLOW) {
-            scan_surroundings();
-            int random_turn = Random(2);
-            if (random_turn == 1) rotate(90 ,0);
-            else rotate(-90,0);
-        } else if (col == RED) rotate(180, 0);
-        else align(dist);
-    }
-}
-
 /* Given a start coordinate, finish coordinate, and a heading, this function
     moves the robot from the start to finish.
    
@@ -354,12 +351,21 @@ particle move(particle p) {
     return p;
 }
 
+/* Takes a north oriented direction and heading (NE, SE, SW, NW) and converts it
+    to the relative direction to current heading.
+
+    @param dir The desired north-oriented direction.
+    @param heading The current heading of the robot.
+*/
+int from_north_oriented(int dir, int heading) {
+    return ((dir - heading) % 3)
+}
+
 /* This function returns data on interesection surroundings for particles.
 
     Based on the map data array, we want the colour of the square at the given x
     and y coordinates in direction dir which is one of NE, SE, SW, NW.
-   
-    Take note that the heading given will change the percieved directions.
+    Take note the heading given will change the percieved directions.
     For example, facing north, NE in terms of compass directions is northeast.
     Facing south however, NE in terms of compass directions is southwest.
    
@@ -367,12 +373,40 @@ particle move(particle p) {
     this by using sensing relative to heading.
 */
 int sense(intersection map[], int x, int y, int dir, int heading) {
-    return -1;
+    int actual_dir = from_north_oriented(dir, heading);
+    int reading;
+
+    // scan NE
+    if (actual_dir == 0) {
+        rotate(RIGHT_90, 1);
+        reading = colour();
+        rotate(LEFT_90, -1);
+
+    // scan SE
+    } else if (actual_dir == 1) {
+        rotate(RIGHT_90, -1);
+        reading = colour();
+        rotate(LEFT_90, 1);
+
+    // scan SW
+    } else if (actual_dir == 2) {
+        rotate(LEFT_90, -1);
+        reading = colour();
+        rotate(RIGHT_90, 1);
+
+    // scan NW
+    } else {
+        rotate(LEFT_90, 1);
+        reading = colour();
+        rotate(RIGHT_90, -1);    
+    }
+
+    return reading;
 }
 
 /* The main task which initializes data and executes the update loop for 
     the particle filters.
 */
 task main() {
-    follow();
+    move_robot();
 }
