@@ -12,14 +12,14 @@
 */
 
 // headings
-#define NORTH 100
-#define EAST 101
-#define SOUTH 102
-#define WEST 103
-#define NORTHEAST 1000
-#define SOUTHEAST 1001
-#define SOUTHWEST 1002
-#define NORTHWEST 1003
+#define NORTH 0
+#define EAST 1
+#define SOUTH 2
+#define WEST 3
+#define NORTHEAST 0
+#define SOUTHEAST 1
+#define SOUTHWEST 2
+#define NORTHWEST 3
 
 // colors
 #define BLACK 1
@@ -63,6 +63,8 @@
     The probability attached to a particle is the likelihood of it being the
     actual position and heading of the robot. This is updated based on the
     robot's surroundings.
+
+    Theta can be 0-3, representing N, E, S, and W, respectively.
 */
 struct particle {
     int x;
@@ -118,7 +120,7 @@ int colour() {
     }
 
     col = max_i;
-    PlayToneEx(pitch[col], 400, 3, false);
+    PlayToneEx(pitch[col], 400, 1, false);
     return col;
 }
 
@@ -237,14 +239,67 @@ sub move_robot() {
     }
 }
 
+/* Takes a north oriented direction and heading (NE, SE, SW, NW) and converts it
+    to the relative direction to current heading.
+
+    @param dir The desired north-oriented direction.
+    @param heading The current heading of the robot.
+*/
+int from_north_oriented(int dir, int heading) {
+    return ((dir - heading) % 3)
+}
+
+/* This function returns data on interesection surroundings for particles.
+
+    Based on the map data array, we want the colour of the square at the given x
+    and y coordinates in direction dir which is one of NE, SE, SW, NW.
+    Take note the heading given will change the percieved directions.
+    For example, facing north, NE in terms of compass directions is northeast.
+    Facing south however, NE in terms of compass directions is southwest.
+   
+    Because the robot does not know it's own heading, the particles must reflect
+    this by using sensing relative to heading.
+*/
+int sense(intersection map[], int x, int y, int dir, int heading) {
+    int actual_dir = from_north_oriented(dir, heading);
+    int reading;
+
+    // scan NE
+    if (actual_dir == 0) {
+        rotate(RIGHT_90, 1);
+        reading = colour();
+        rotate(LEFT_90, -1);
+
+    // scan SE
+    } else if (actual_dir == 1) {
+        rotate(RIGHT_90, -1);
+        reading = colour();
+        rotate(LEFT_90, 1);
+
+    // scan SW
+    } else if (actual_dir == 2) {
+        rotate(LEFT_90, -1);
+        reading = colour();
+        rotate(RIGHT_90, 1);
+
+    // scan NW
+    } else {
+        rotate(LEFT_90, 1);
+        reading = colour();
+        rotate(RIGHT_90, -1);    
+    }
+
+    return reading;
+}
+
 /* Scans the surroundings of the robot, takes readings of the colour of 
     the 4 squares surrounding the intersection, and returns an intersection
     variable which holds the data.
 
     @returns struct
 */
-intersection scan_surroundings() {
-    intersection rsense;
+intersection scan_surroundings(intersection map[], int x, int y, ) {
+    intersection reading;
     
     rotate(RIGHT_90, 1);
     rsense.NE = colour();
@@ -258,6 +313,8 @@ intersection scan_surroundings() {
     rotate(LEFT_90, -1);
     rsense.NW = colour();
     rotate(RIGHT_90, 1);
+
+    reading.NE = sense(map, x, y, 0, heading)
     return rsense;
 }
 
@@ -340,6 +397,27 @@ int move_to(int s, int f, int h) {
     return heading;
 }
 
+particle _move(particle p) {
+
+    // move the particle
+    switch(p.theta) {
+        case 0:
+            p.y -= 1;
+            break;
+        case 1:
+            p.x += 1;
+            break;
+        case 2:
+            p.y += 1;
+            break;
+        case 3:
+            p.x -= 1;
+            break;
+    }
+
+    return p;
+}
+
 /* This function takes a particle and returns an updated particle after moving
 
     To "move" a particle is to move it forward in the direction of the particle.
@@ -348,60 +426,19 @@ int move_to(int s, int f, int h) {
     Upon reaching a boundary, the particle is turned 180 degrees around.
 */
 particle move(particle p) {
-    return p;
-}
+    p = _move(p);
 
-/* Takes a north oriented direction and heading (NE, SE, SW, NW) and converts it
-    to the relative direction to current heading.
+    // check bounds and reverse
+    if ((p.x > GWIDTH) || (p.x < 0) || (p.y > GHEIGHT) || (p.y < 0)) {
 
-    @param dir The desired north-oriented direction.
-    @param heading The current heading of the robot.
-*/
-int from_north_oriented(int dir, int heading) {
-    return ((dir - heading) % 3)
-}
+        // reverse direction
+        p.theta = (p.theta - 2) % 4;
 
-/* This function returns data on interesection surroundings for particles.
-
-    Based on the map data array, we want the colour of the square at the given x
-    and y coordinates in direction dir which is one of NE, SE, SW, NW.
-    Take note the heading given will change the percieved directions.
-    For example, facing north, NE in terms of compass directions is northeast.
-    Facing south however, NE in terms of compass directions is southwest.
-   
-    Because the robot does not know it's own heading, the particles must reflect
-    this by using sensing relative to heading.
-*/
-int sense(intersection map[], int x, int y, int dir, int heading) {
-    int actual_dir = from_north_oriented(dir, heading);
-    int reading;
-
-    // scan NE
-    if (actual_dir == 0) {
-        rotate(RIGHT_90, 1);
-        reading = colour();
-        rotate(LEFT_90, -1);
-
-    // scan SE
-    } else if (actual_dir == 1) {
-        rotate(RIGHT_90, -1);
-        reading = colour();
-        rotate(LEFT_90, 1);
-
-    // scan SW
-    } else if (actual_dir == 2) {
-        rotate(LEFT_90, -1);
-        reading = colour();
-        rotate(RIGHT_90, 1);
-
-    // scan NW
-    } else {
-        rotate(LEFT_90, 1);
-        reading = colour();
-        rotate(RIGHT_90, -1);    
+        // and move back
+        p = _move(p);
     }
 
-    return reading;
+    return p;
 }
 
 /* The main task which initializes data and executes the update loop for 
