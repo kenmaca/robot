@@ -345,33 +345,55 @@ sub move_steps(int step) {
 sub align(int dist) {
     int dir = -1;
     move_steps(-2);
+    
+
+
     rotate(90, 0);
     move_steps(2);
+
     if (colour() != BLACK) {
         move_steps(-2);
         rotate(45, 0);
         move_steps(2);
         dir = -2;
-    } 
+        if (colour() == BLACK) {
+            drive(8, 1, 1, true);
+            float theta = (25 / dist) + ((25 / dist)*(25 / dist)*(25 / dist))/6;    // 67.5
+            float angle = 90 - (theta*52.3);
+            rotate(angle + 45, 0);
+        } else {
+            move_steps(-2);
+            rotate(-225, 0);
+            move_steps(2);
+            dir = 1;
 
-    if (colour() != BLACK) {
-        move_steps(-2);
-        rotate(-225, 0);
-        move_steps(2);
-        dir = 1;
+            if (colour() == BLACK) {
+                drive(11, 1, 1, true);
+                float theta = (67.5 / dist);    // 67.5
+                float angle = 90 - theta;
+                rotate(angle / 2 * dir, 0);
+            } else {
+                move_steps(-2);
+                rotate(-45,0);
+                move_steps(2);
+                dir = 2;  
+                
+                drive(11, 1, 1, true);
+                float theta = (67.5 / dist);    // 67.5
+                float angle = 90 - theta;
+                rotate(angle / 2 * dir, 0); 
+            }
+        }
+    } else {
+        drive(11, 1, 1, true);
+        float theta = (67.5 / dist);    // 67.5
+        float angle = 90 - theta;
+        rotate(angle / dir, 0);
     }
 
-    if (colour() != BLACK) {
-        move_steps(-2);
-        rotate(-45,0);
-        move_steps(2);
-        dir = 2;
-    }
 
-    drive(11, 1, 1, true);
-    float theta = (67.5 / dist);    // 67.5
-    float angle = 90 - theta;
-    rotate(angle / 2 * dir, 0);
+
+
 }
 
 /* Subroutine which moves the robot forward from one intersection to the next
