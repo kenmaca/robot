@@ -46,6 +46,9 @@
 #define MATCH
 #define MISMATCH
 
+// probability
+float ptotal = 1.0;
+
 // movement
 #define SPEED 20
 #define WHEEL_RATIO 0.3799
@@ -411,7 +414,7 @@ int move_to(int s, int f, int h) {
     return heading;
 }
 
-particle _move(particle p) {
+particle _pmove(particle p) {
 
     // move the particle
     switch(p.theta) {
@@ -432,6 +435,18 @@ particle _move(particle p) {
     return p;
 }
 
+/* Rotates a particle by degrees.
+
+    @param p The particle to rotate.
+    @param degrees The degrees to rotate this particle.
+*/
+particle protate(particle p, int degrees) {
+    degrees = degrees / 90;
+    p.theta = (p.theta + degrees) % 4;
+
+    return p;
+}
+
 /* This function takes a particle and returns an updated particle after moving
 
     To "move" a particle is to move it forward in the direction of the particle.
@@ -439,18 +454,73 @@ particle _move(particle p) {
    
     Upon reaching a boundary, the particle is turned 180 degrees around.
 */
-particle move(particle p) {
+particle pmove(particle p) {
     p = _move(p);
 
     // check bounds and reverse
-    if ((p.x > GWIDTH) || (p.x < 0) || (p.y > GHEIGHT) || (p.y < 0)) {
+    if ((p.x >= GWIDTH - 1) || (p.x < 0) || (p.y >= GHEIGHT - 1) || (p.y < 0)) {
 
         // reverse direction
-        p.theta = (p.theta - 2) % 4;
+        p.theta = protate(p, 180);
 
         // and move back
         p = _move(p);
     }
+
+    return p;
+}
+
+/* Rotates all particles by degrees.
+
+    @param p The particles.
+    @param degrees The degrees to rotate all particles.
+*/
+particle protate_all(particle p, int degrees) {
+    for (i = 0; i < GWIDTH * GHEIGHT * 4; i + 1) {
+        p[i] = protate(p[i], degrees);
+    }
+
+    return p;
+}
+
+/* Moves all particles.
+
+    @param p The particles.
+*/
+particle pmove_all(particle p) {
+    for (i = 0; i < GWIDTH * GHEIGHT * 4; i + 1) {
+        p[i] = pmove(p[i]);
+    }
+
+    return p;
+}
+
+/* Normalizes all particles.
+
+    @param p The particles.
+*/
+particle normalize(particle p) {
+    for (i = 0; i < GWIDTH * GHEIGHT * 4; i + 1) {
+        p[i].probability = p[i].probability / ptotal;
+    }
+
+    // reset total probability to 1
+    ptotal = 1;
+    return p;
+}
+
+/* Updates a particle's probability.
+
+    @param p The particle.
+    @param probability The new probability to replace with.
+*/
+particle update_probability(particle p, float probability) {
+
+    // keep global reference of total prob so no need for second pass
+    // during normalization
+    ptotal -= p.probability;
+    ptotal += probability;
+    p.probability = probability;
 
     return p;
 }
