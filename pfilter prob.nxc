@@ -819,7 +819,7 @@ task main() {
        while(robp > THRESHOLD) {
 
            for (i = 0; i < GWIDTH*GHEIGHT*4; i++) {
-           intersection building = scan_surroundings();
+               intersection building = scan_surroundings();
 
            
                int p_NE = (NORTHEAST + list[i].theta)%3; 
@@ -827,23 +827,23 @@ task main() {
                int p_SE = (SOUTHEAST + list[i].theta)%3;
                int p_SW = (SOUTHWEST + list[i].theta)%3;
 
-           int particle_match_count = 0;
-           //check how many particles match the scan
-           if ((building.NE == map[(list[i].x) + 3*(list[i].y)].p_NE) && (building.NW == map[(list[i].x) + 3*(list[i].y)].p_NW) && (building.SE == map[(list[i].x) + 3*(list[i].y)].p_SE) && (building.SW == map[(list[i].x) + 3*(list[i].y)].p_SW)) {
-               particle_match_count += 1;
-           }
+               int particle_match_count = 0;
+               //check how many particles match the scan
+               if ((building.NE == map[(list[i].x) + 3*(list[i].y)].p_NE) && (building.NW == map[(list[i].x) + 3*(list[i].y)].p_NW) && (building.SE == map[(list[i].x) + 3*(list[i].y)].p_SE) && (building.SW == map[(list[i].x) + 3*(list[i].y)].p_SW)) {
+                   particle_match_count += 1;
+               }
 
-           //update probabilities accordingly
-           if ((building.NE == map[(list[i].x) + 3*((list[i].y)-1)].p_NE) && (building.NW == map[(list[i].x) + 3*((list[i].y)-1)].p_NW)) && (building.SE == map[(list[i].x) + 3*((list[i].y)-1)].p_SE) && (building.SW == map[(list[i].x) + 3*((list[i].y)-1)].p_SW) {
-               float new_prob = 0.90/particle_match_count;
+               //update probabilities accordingly
+               if ((building.NE == map[(list[i].x) + 3*((list[i].y)-1)].p_NE) && (building.NW == map[(list[i].x) + 3*((list[i].y)-1)].p_NW)) && (building.SE == map[(list[i].x) + 3*((list[i].y)-1)].p_SE) && (building.SW == map[(list[i].x) + 3*((list[i].y)-1)].p_SW) {
+                   float new_prob = list[i].prob + 0.90/particle_match_count;
 
-           }
-           else {
-               float new_prob = 0.10/(GWIDTH*GHEIGHT*4 - particle_match_count);
-           }
+               }
+               else {
+                   float new_prob = list[i].prob + 0.10/(GWIDTH*GHEIGHT*4 - particle_match_count);
+               }
 
-           update_intersection_probability(list, list[i].x, list[i].y, new_prob);
-           normalize(list);
+               update_intersection_probability(list, list[i].x, list[i].y, new_prob);
+               normalize(list);
            }
        }
        
