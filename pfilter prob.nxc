@@ -496,10 +496,48 @@ particle normalize(particle p[]) {
     return p;
 }
 
+/* Sorts a particle list.
+
+    @param p The particles.
+    @param position The index of the particle to reorder.
+
+    @return particle[]
+*/
+particle sort(particle p[], int position) {
+    bool unsorted = true;
+    particle current;
+
+    while(unsorted) {
+
+        // larger, so move up
+        if ((position > 0) && (p[position].prob > p[position - 1].prob)) {
+            current = p[position];
+            p[position] = p[position - 1];
+            p[position] = current;
+            position -= 1;
+
+        // smaller, so move down
+        } else if ((position < GWIDTH * GHEIGHT * 4) && (p[position].prob < p[position + 1].prob)) {
+            current = p[position];
+            p[position] = p[position + 1];
+            p[position] = current;
+            position += 1;
+
+        // done
+        } else {
+            unsorted = true;
+        }
+    }
+
+    return p;
+}
+
 /* Updates a particle's probability.
 
     @param p The particle.
     @param probability The new probability to replace with.
+
+    @return particle
 */
 particle update_probability(particle p, float probability) {
 
@@ -508,6 +546,27 @@ particle update_probability(particle p, float probability) {
     ptotal -= p.prob;
     ptotal += probability;
     p.prob = probability;
+
+    return p;
+}
+
+/* Updates all particles at position x, y with probability.
+
+    @param p The particles.
+    @param x The x coordinate of the desired intersection.
+    @param y The y coordinate of the desired intersection.
+    @param probability The probability to update all matching particles to.
+
+    @return particle[]
+*/
+particle update_intersection_probability(particle p[], int x, int y, float probability) {
+    int i;
+    for (i = 0; i < GWIDTH * GHEIGHT * 4; i++) {
+        if ((p[i].x == x) && (p[i].y == y)) {
+            p[i] = update_probability(p[i], probability);
+            p = sort(p, i);
+        }
+    }
 
     return p;
 }
