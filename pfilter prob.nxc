@@ -455,10 +455,36 @@ particle pmove(particle p) {
 
 /* Rotates all particles by degrees.
 
-    @param p The particles
+    @param p The particles.
     @param degrees The degrees to rotate all particles.
 */
-particle protate_all(particle)
+particle protate_all(particle p, int degrees) {
+    for (i = 0; i < GWIDTH * GHEIGHT * 4; i + 1) {
+        p[i] = protate(p[i], degrees);
+    }
+
+    return p;
+}
+
+/* Moves all particles.
+
+    @param p The particles.
+*/
+particle pmove_all(particle p) {
+    for (i = 0; i < GWIDTH * GHEIGHT * 4; i + 1) {
+        p[i] = pmove(p[i]);
+    }
+
+    return p;
+}
+
+/* Normalizes all particles.
+
+    @param p The particles.
+*/
+particle normalize(particle p) {
+    
+}
 
 /* The main task which initializes data and executes the update loop for 
     the particle filters.
