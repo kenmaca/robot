@@ -46,6 +46,9 @@
 #define MATCH
 #define MISMATCH
 
+// probability
+float ptotal = 1.0;
+
 // movement
 #define SPEED 20
 #define WHEEL_RATIO 0.3799
@@ -483,7 +486,29 @@ particle pmove_all(particle p) {
     @param p The particles.
 */
 particle normalize(particle p) {
-    
+    for (i = 0; i < GWIDTH * GHEIGHT * 4; i + 1) {
+        p[i].probability = p[i].probability / ptotal;
+    }
+
+    // reset total probability to 1
+    ptotal = 1;
+    return p;
+}
+
+/* Updates a particle's probability.
+
+    @param p The particle.
+    @param probability The new probability to replace with.
+*/
+particle update_probability(particle p, float probability) {
+
+    // keep global reference of total prob so no need for second pass
+    // during normalization
+    ptotal -= p.probability;
+    ptotal += probability;
+    p.probability = probability;
+
+    return p;
 }
 
 /* The main task which initializes data and executes the update loop for 
