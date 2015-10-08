@@ -360,7 +360,7 @@ sub align(int dist) {
             drive(8, 1, 1, true);
             float theta = (25 / dist) + ((25 / dist)*(25 / dist)*(25 / dist))/6;    // 67.5
             float angle = 90 - (theta*52.3);
-            rotate(angle + 45, 0);
+            rotate((angle + 45)/2, 0);
         } else {
             move_steps(-2);
             rotate(-225, 0);
