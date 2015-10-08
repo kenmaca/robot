@@ -336,7 +336,7 @@ sub change_direction(int orig, int new) {
 /* Moves the robot step number of steps.
 */
 sub move_steps(int step) {
-    drive(step * STEP, 1, 1);
+    drive(step * STEP, 1, 1, true);
 }
 
 /* Given the number of steps taken by the robot on the road, 
@@ -344,18 +344,18 @@ sub move_steps(int step) {
 */
 sub align(int dist) {
     int dir = -1;
-
+    move_steps(-2);
     rotate(90, 0);
     move_steps(2);
     if (colour() != BLACK) {
         move_steps(-2);
         rotate(45, 0);
-        move_steps(4);
+        move_steps(2);
         dir = -2;
     } 
 
     if (colour() != BLACK) {
-        move_steps(-4);
+        move_steps(-2);
         rotate(-225, 0);
         move_steps(2);
         dir = 1;
@@ -364,27 +364,33 @@ sub align(int dist) {
     if (colour() != BLACK) {
         move_steps(-2);
         rotate(-45,0);
-        move_steps(4);
-        d = 2;
+        move_steps(2);
+        dir = 2;
     }
 
     drive(11, 1, 1, true);
-    float theta = (67.5 / dist);
+    float theta = (67.5 / dist);    // 67.5
     float angle = 90 - theta;
-    rotate(angle / dir, 0);
+    rotate(angle / 2 * dir, 0);
 }
 
 /* Subroutine which moves the robot forward from one intersection to the next
 */
 sub move_robot() {
+    int old = 6;
     while (true) {
+        old = colour();
         int dist = measure(0, false);
         int col = colour();
 
         if (col == YELLOW) return;
         else if (col == RED) rotate(180, 0);
-        else if (col == BLACK) continue;
-        else align(dist);
+        //else if (col == BLACK) continue;
+        else if (old == BLACK) {
+
+            align(dist);
+        }
+        //old = col;
     }
 }
 
@@ -595,7 +601,7 @@ particle update_intersection_probability(particle p[], int x, int y, float proba
 */
 task main() {
 
-        /* variable declarations */
+        /* variable declarations */  move_robot();
          intersection map [GWIDTH *GHEIGHT]; /* holds map data */
          
          int guess[3]; /* holds x y and theta of the best guess at robot's position */
