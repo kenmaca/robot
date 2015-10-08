@@ -815,37 +815,18 @@ task main() {
           accepted as the actual position of the robot.
           
        */
-     /*
+     
        while(robp > THRESHOLD) {
 
            for (i = 0; i < GWIDTH*GHEIGHT*4; i++) {
            intersection building = scan_surroundings();
 
-           if (list[i].theta == NORTH) {
-               int p_NE = NORTHEAST;
-               int p_NW = NORTHWEST;
-               int p_SE = SOUTHEAST;
-               int p_SW = SOUTHWEST;
-           }
+           
+               int p_NE = (NORTHEAST+list[i].theta)%3; 
+               int p_NW = (NORTHWEST)+list[i].theta)%3;;
+               int p_SE = (SOUTHEAST)+list[i].theta)%3;;
+               int p_SW = (SOUTHWEST)+list[i].theta)%3;;
 
-           else if (list[i].theta == EAST){
-               int p_NE = SOUTHEAST;
-               int p_NW = NORTHEAST;
-               int p_SE = SOUTHWEST;
-               int p_SW = NORTHWEST;
-           }
-           else if (list[i].theta == SOUTH){
-               int p_NE = SOUTHWEST;
-               int p_NW = SOUTHEAST;
-               int p_SE = NORTHWEST;
-               int p_SW = NORTHEAST; 
-           }
-           else if (list[i].theta == WEST){
-               int p_NE = NORTHWEST;
-               int p_NW = SOUTHWEST;
-               int p_SE = NORTHEAST;
-               int p_SW = SOUTHEAST; 
-           }
            int particle_match_count = 0;
            //check how many particles match the scan
            if ((building.NE == map[(list[i].x) + 3*(list[i].y)].p_NE) && (building.NW == map[(list[i].x) + 3*(list[i].y)].p_NW) && (building.SE == map[(list[i].x) + 3*(list[i].y)].p_SE) && (building.SW == map[(list[i].x) + 3*(list[i].y)].p_SW)) {
@@ -865,7 +846,7 @@ task main() {
            normalize(list);
            }
        }
-       */
+       
        PlayToneEx(Random(1000) + 200, 400, 3, FALSE);
        
        /* When we are fairly confident about the robot's position, we can move on
