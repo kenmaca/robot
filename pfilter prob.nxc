@@ -226,20 +226,6 @@ int measure(char mode, bool backtrack) {
     return length;
 }
 
-/* Subroutine which moves the robot forward from one intersection to the next
-*/
-sub move_robot() {
-    while (true) {
-        int dist = measure(0, false);
-        int col = colour();
-
-        if (col == YELLOW) return;
-        else if (col == RED) rotate(180, 0);
-        else if (col == BLACK) continue;
-        else align(dist);
-    }
-}
-
 /* Takes a north oriented direction and heading (NE, SE, SW, NW) and converts it
     to the relative direction to current heading.
 
@@ -247,7 +233,7 @@ sub move_robot() {
     @param heading The current heading of the robot.
 */
 int from_north_oriented(int dir, int heading) {
-    return ((dir - heading) % 3)
+    return ((dir - heading) % 3);
 }
 
 /* This function returns data on interesection surroundings for particles.
@@ -261,7 +247,7 @@ int from_north_oriented(int dir, int heading) {
     Because the robot does not know it's own heading, the particles must reflect
     this by using sensing relative to heading.
 */
-int sense(intersection map[], int x, int y, int dir, int heading) {
+int sense(intersection map, int x, int y, int dir, int heading) {
     int actual_dir = from_north_oriented(dir, heading);
     int reading;
 
@@ -299,8 +285,8 @@ int sense(intersection map[], int x, int y, int dir, int heading) {
 
     @returns struct
 */
-intersection scan_surroundings(intersection map[], int x, int y, ) {
-    intersection reading;
+intersection scan_surroundings() {
+    intersection rsense;
     
     rotate(RIGHT_90, 1);
     rsense.NE = colour();
@@ -314,8 +300,6 @@ intersection scan_surroundings(intersection map[], int x, int y, ) {
     rotate(LEFT_90, -1);
     rsense.NW = colour();
     rotate(RIGHT_90, 1);
-
-    reading.NE = sense(map, x, y, 0, heading)
     return rsense;
 }
 
@@ -390,6 +374,20 @@ sub align(int dist) {
     rotate(angle / dir, 0);
 }
 
+/* Subroutine which moves the robot forward from one intersection to the next
+*/
+sub move_robot() {
+    while (true) {
+        int dist = measure(0, false);
+        int col = colour();
+
+        if (col == YELLOW) return;
+        else if (col == RED) rotate(180, 0);
+        else if (col == BLACK) continue;
+        else align(dist);
+    }
+}
+
 /* Given a start coordinate, finish coordinate, and a heading, this function
     moves the robot from the start to finish.
    
@@ -460,7 +458,7 @@ particle protate(particle p, int degrees) {
     Upon reaching a boundary, the particle is turned 180 degrees around.
 */
 particle pmove(particle p) {
-    p = _move(p);
+    p = _pmove(p);
 
     // check bounds and reverse
     if ((p.x >= GWIDTH - 1) || (p.x < 0) || (p.y >= GHEIGHT - 1) || (p.y < 0)) {
@@ -469,7 +467,7 @@ particle pmove(particle p) {
         p.theta = protate(p, 180);
 
         // and move back
-        p = _move(p);
+        p = _pmove(p);
     }
 
     return p;
@@ -480,8 +478,9 @@ particle pmove(particle p) {
     @param p The particles.
     @param degrees The degrees to rotate all particles.
 */
-particle protate_all(particle p, int degrees) {
-    for (i = 0; i < GWIDTH * GHEIGHT * 4; i + 1) {
+particle protate_all(particle p[], int degrees) {
+    int i;
+    for (i = 0; i < GWIDTH * GHEIGHT * 4; i++) {
         p[i] = protate(p[i], degrees);
     }
 
@@ -492,8 +491,9 @@ particle protate_all(particle p, int degrees) {
 
     @param p The particles.
 */
-particle pmove_all(particle p) {
-    for (i = 0; i < GWIDTH * GHEIGHT * 4; i + 1) {
+particle pmove_all(particle p[]) {
+    int i;
+    for (i = 0; i < GWIDTH * GHEIGHT * 4; i++) {
         p[i] = pmove(p[i]);
     }
 
@@ -504,9 +504,10 @@ particle pmove_all(particle p) {
 
     @param p The particles.
 */
-particle normalize(particle p) {
-    for (i = 0; i < GWIDTH * GHEIGHT * 4; i + 1) {
-        p[i].probability = p[i].probability / ptotal;
+particle normalize(particle p[]) {
+    int i;
+    for (i = 0; i < GWIDTH * GHEIGHT * 4; i++) {
+        p[i].prob = p[i].prob / ptotal;
     }
 
     // reset total probability to 1
@@ -523,9 +524,9 @@ particle update_probability(particle p, float probability) {
 
     // keep global reference of total prob so no need for second pass
     // during normalization
-    ptotal -= p.probability;
+    ptotal -= p.prob;
     ptotal += probability;
-    p.probability = probability;
+    p.prob = probability;
 
     return p;
 }
@@ -534,6 +535,7 @@ particle update_probability(particle p, float probability) {
     the particle filters.
 */
 task main() {
+
         /* variable declarations */
          intersection map [GWIDTH *GHEIGHT]; /* holds map data */
          
@@ -626,7 +628,9 @@ task main() {
        target = target*GHEIGHT; // add x coordinate calculation
        charat = StrIndex(line,2);
        target = target + ASCII_TO_INT(charat); // add y coordinate
-            
+
+   
+        
        /* read information about the destination which sould be following the target data */
        fgets(line, READSIZE, fd);
        charat = StrIndex(line,0);
@@ -682,26 +686,6 @@ task main() {
           
        */
        
-       ////////////////////////////////////////////////////////////////////////////
-       // TO DO:
-       //
-       // Write the main particle filter execution loop. It will loop until a
-       // particle weight reaches the threshold
-       //
-       // At each iteration the following steps take place:
-       //    - robot checks its surroundings
-       //    - each particle checks its surroundings and compares them with the
-       //      robot's
-       //    - adjust particle weights based on the comparison
-       //    - normalize particle weights
-       //    - find the best guess of the robot's position
-       //    - move the robot and the particles forward to the next intersection
-       //
-       /////////////////////////////////////////////////////////////////////////////
-       while (robp < THRESHOLD){ /* run the update loop until an acceptable
-                                   probability is obtained */
-          /* implement me */
-       }
        PlayToneEx(Random(1000) + 200, 400, 3, FALSE);
        
        /* When we are fairly confident about the robot's position, we can move on
@@ -715,6 +699,6 @@ task main() {
        */
        guess[2] = move_to(guess[0]*GHEIGHT + guess[1], target, guess[2]);
        PlayToneEx(Random(1000) + 200, 400, 3, FALSE);
-       move_to(target, dest,guess[2]);
-       PlayToneEx(Random(1000) + 200, 400, 3, FALSE);````````````````````````````````````````````
-    }
+       move_to(target, dest, guess[2]);
+       PlayToneEx(Random(1000) + 200, 400, 3, FALSE);
+}
