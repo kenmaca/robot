@@ -109,7 +109,7 @@ int colour() {
 
     for (int i = 0; i < n; i++) {
         p = Sensor(IN_3);
-        NumOut(10, 10, p);
+        //NumOut(10, 10, p);
         scans[p] += 1;
     }
 
@@ -355,11 +355,11 @@ sub align(int dist) {
         move_steps(-4);
         dir = -2;
         if (colour() == BLACK) {
-            rotate(-180,0);
+            //rotate(-180,0);
             //drive(6, 1, 1, true);
-            float theta = (67.5 / dist) +  ((25 / dist)*(25 / dist)*(25 / dist))/6;    // 67.5
-            float angle = 90 - (theta*52.3);
-            rotate(theta*52.3, 0);
+            float theta = (25 / dist); //+  ((25 / dist)*(25 / dist)*(25 / dist))/6;    // 67.5
+            float angle = 90 + (theta*52.3);
+            rotate(-angle, 0);
         } else {
             move_steps(2);
             rotate(45, 0);
@@ -367,9 +367,10 @@ sub align(int dist) {
             dir = 1;
 
             if (colour() == BLACK) {
-               drive(8, 1, 1, true);
+               drive(5, 1, 1, true);
                float theta = (25 / dist) + ((25 / dist)*(25 / dist)*(25 / dist))/6;    // 67.5
-               float angle = 90 - (theta*52.3);
+               float angle = (theta*52.3);
+               NumOut(10, 10, angle);
                rotate(-(angle + 45)/2, 0);
             
 
@@ -378,16 +379,17 @@ sub align(int dist) {
                 rotate(90,0);
                 move_steps(2);
                 dir = 2;  
-                
-                drive(11, 1, 1, true);
-                float theta = (67.5 / dist);    // 67.5
-                float angle = 90 - (theta*52.3);
+
+                //drive(5, 1, 1, true);
+                float theta = ( 25 / dist) + ((25 / dist)*(25 / dist)*(25 / dist))/6;    // 67.5
+                float angle = (theta*52.3);
+                NumOut(10, 10, angle);
                 rotate((angle + 45)/2, 0);
             }
         }
     } else {
-        drive(11, 1, 1, true);
-        float theta = (67.5 / dist);    // 67.5
+        //drive(11, 1, 1, true);
+        float theta = (25 / dist);    // 67.5
         float angle = 90 - (theta*52.3);
         rotate(-angle, 0);
     }
