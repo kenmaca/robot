@@ -427,22 +427,44 @@ sub move_robot() {
    
     This function is used after the robot knows it's own position.
 */
-int move_to(int s, int f, int h) {
-    int sx, sy, fx, fy, tx, ty;
-    int heading;
+int move_to(int x1, int y1, int x2, int y2, int h) {
+    int i;
     
-    // extract coordinates from given information
-    sx = s / GHEIGHT;
-    sy = s % GHEIGHT;
-    fx = f / GHEIGHT;
-    fy = f % GHEIGHT;
-    
-    // calculate how far to go in manhatten distances
-    tx = fx - sx;
-    ty = fy - sy;
-    heading = h;
+    // horizontal movement
+    int dx = x2 - x1;
 
-    return heading;
+    // change heading to east or west
+    if (dx < 0) {
+        change_direction(h, 3);
+        h = 3;
+    } else if (dx > 0) {
+        change_direction(h, 1);
+        h = 1;
+    }
+
+    // now move
+    for (i = 0; i < (dx < 0 ? -dx: dx); i++) {
+        move_robot();
+    }
+
+    // vertical movement
+    int dy = y2 - y1;
+
+    // change heading to north or south
+    if (dy > 0) {
+        change_direction(h, 2);
+        h = 2;
+    } else if (dy < 0) {
+        change_direction(h, 0);
+        h = 0;
+    }
+
+    // now move
+    for (i = 0; i < (dy < 0 ? -dy: dy); i++) {
+        move_robot();
+    }
+
+    return h;
 }
 
 particle _pmove(particle p) {
@@ -623,7 +645,26 @@ particle update_intersection_probability(particle p[], int x, int y, float proba
 */
 task main() {
 
-        /* variable declarations */  move_robot();
+        /* variable declarations */
+
+        int h = 0;
+        int x = 0;
+        int y = 0;
+        int x2;
+        int y2;
+        int ii;
+        
+        while(true) {
+            x2 = Random(GWIDTH - 1);
+            y2 = Random(GHEIGHT - 1);
+            h = move_to(x, y, x2, y2, h);
+            x = x2;
+            y = y2;
+            for (ii = 0; ii < 100; ii++) {
+                PlayToneEx(Random(1000) + 200, 1000, 3, FALSE);
+                Wait(1000);
+            }
+        }
          intersection map [GWIDTH *GHEIGHT]; /* holds map data */
          
          int guess[3]; /* holds x y and theta of the best guess at robot's position */
@@ -784,8 +825,8 @@ task main() {
           the delivery point given by the destination from the initialization file.
           
        */
-       guess[2] = move_to(guess[0]*GHEIGHT + guess[1], target, guess[2]);
+       //guess[2] = move_to(guess[0]*GHEIGHT + guess[1], target, guess[2]);
        PlayToneEx(Random(1000) + 200, 400, 3, FALSE);
-       move_to(target, dest, guess[2]);
+       //move_to(target, dest, guess[2]);
        PlayToneEx(Random(1000) + 200, 400, 3, FALSE);
 }
