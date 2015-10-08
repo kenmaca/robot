@@ -347,17 +347,19 @@ sub change_direction(int orig, int new) {
 }
 
 sub align(int dist) {
-    rotate(90, 0);
-      
-    // means you turned left
     int dir = 1;
+
+    rotate(90, 0);
     drive(10, 1, 1, true);
-    if (colour() != BLACK){
-        rotate(-180, 0);
-         
-        // means you turned right
-        dir = -1;
-        drive(15, 1, 1, true);
+    if (colour() != BLACK) {
+        drive(-10, 1, 1, true);
+        rotate(45, 0);
+        drive(10, 1, 1, true);
+    } 
+
+    if (colour() != BLACK) {
+        drive(-10, 1, 1, true);
+        rotate(225, 0);
     }
 
     drive(11, 1, 1, true);
