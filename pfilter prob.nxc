@@ -822,10 +822,10 @@ task main() {
            intersection building = scan_surroundings();
 
            
-               int p_NE = (NORTHEAST+list[i].theta)%3; 
-               int p_NW = (NORTHWEST)+list[i].theta)%3;;
-               int p_SE = (SOUTHEAST)+list[i].theta)%3;;
-               int p_SW = (SOUTHWEST)+list[i].theta)%3;;
+               int p_NE = (NORTHEAST + list[i].theta)%3; 
+               int p_NW = (NORTHWEST + list[i].theta)%3;
+               int p_SE = (SOUTHEAST + list[i].theta)%3;
+               int p_SW = (SOUTHWEST + list[i].theta)%3;
 
            int particle_match_count = 0;
            //check how many particles match the scan
