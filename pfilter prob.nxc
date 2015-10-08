@@ -397,7 +397,7 @@ int move_to(int s, int f, int h) {
     return heading;
 }
 
-particle _move(particle p) {
+particle _pmove(particle p) {
 
     // move the particle
     switch(p.theta) {
@@ -418,6 +418,18 @@ particle _move(particle p) {
     return p;
 }
 
+/* Rotates a particle by degrees.
+
+    @param p The particle to rotate.
+    @param degrees The degrees to rotate this particle.
+*/
+particle protate(particle p, int degrees) {
+    degrees = degrees / 90;
+    p.theta = (p.theta + degrees) % 4;
+
+    return p;
+}
+
 /* This function takes a particle and returns an updated particle after moving
 
     To "move" a particle is to move it forward in the direction of the particle.
@@ -425,14 +437,14 @@ particle _move(particle p) {
    
     Upon reaching a boundary, the particle is turned 180 degrees around.
 */
-particle move(particle p) {
+particle pmove(particle p) {
     p = _move(p);
 
     // check bounds and reverse
-    if ((p.x > GWIDTH) || (p.x < 0) || (p.y > GHEIGHT) || (p.y < 0)) {
+    if ((p.x >= GWIDTH - 1) || (p.x < 0) || (p.y >= GHEIGHT - 1) || (p.y < 0)) {
 
         // reverse direction
-        p.theta = (p.theta - 2) % 4;
+        p.theta = protate(p, 180);
 
         // and move back
         p = _move(p);
@@ -440,6 +452,13 @@ particle move(particle p) {
 
     return p;
 }
+
+/* Rotates all particles by degrees.
+
+    @param p The particles
+    @param degrees The degrees to rotate all particles.
+*/
+particle protate_all(particle)
 
 /* The main task which initializes data and executes the update loop for 
     the particle filters.
