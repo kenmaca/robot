@@ -336,7 +336,7 @@ sub change_direction(int orig, int new) {
 /* Moves the robot step number of steps.
 */
 sub move_steps(int step) {
-    drive(step * STEP, 1, 1, true);
+    drive(step * STEP, 1, 1);
 }
 
 /* Given the number of steps taken by the robot on the road, 
@@ -624,6 +624,8 @@ particle update_intersection_probability(particle p[], int x, int y, float proba
 task main() {
 
         /* variable declarations */
+        move_robot();
+        Wait(10000);
 
         int h = 0;
         int x = 0;
