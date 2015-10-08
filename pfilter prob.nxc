@@ -349,10 +349,15 @@ sub change_direction(int orig, int new) {
     }
 }
 
+/* Moves the robot step number of steps.
+*/
 sub move_steps(int step) {
     drive(step * STEP, 1, 1);
 }
 
+/* Given the number of steps taken by the robot on the road, 
+    gets back on the road.
+*/
 sub align(int dist) {
     int dir = -1;
 
@@ -361,12 +366,12 @@ sub align(int dist) {
     if (colour() != BLACK) {
         move_steps(-2);
         rotate(45, 0);
-        move_steps(2);
+        move_steps(4);
         dir = -2;
     } 
 
     if (colour() != BLACK) {
-        move_steps(-2);
+        move_steps(-4);
         rotate(-225, 0);
         move_steps(2);
         dir = 1;
@@ -375,7 +380,7 @@ sub align(int dist) {
     if (colour() != BLACK) {
         move_steps(-2);
         rotate(-45,0);
-        move_steps(2);
+        move_steps(4);
         d = 2;
     }
 
