@@ -1,0 +1,10 @@
+diff a/pfilter prob.nxc b/pfilter prob.nxc	(rejected hunks)
+@@ -336,7 +336,7 @@
+ /* Moves the robot step number of steps.
+ */
+ sub move_steps(int step) {
+-    drive(step * STEP, 1, 1);
++    drive(step * STEP, 1, 1, true);
+ }
+ 
+ /* Given the number of steps taken by the robot on the road, 
