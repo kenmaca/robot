@@ -647,8 +647,7 @@ particle update_intersection_probability(particle p[], int x, int y, int heading
     the particle filters.
 */
 task main() {
-    
-    float robp = 0;
+    float robp = 0.0;
     intersection rsense;
     intersection map[GWIDTH * GHEIGHT];
     int guess[3];
