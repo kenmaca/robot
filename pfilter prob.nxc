@@ -517,20 +517,19 @@ particle protate(particle p, int degrees) {
    
     Upon reaching a boundary, the particle is turned 180 degrees around.
 */
-particle pmove(particle p) {
-    p = _pmove(p);
+sub pmove(int i) {
+    list[i] = _pmove(list[i]);
 
     // check bounds and reverse
-    if ((p.x >= GWIDTH - 1) || (p.x < 0) || (p.y >= GHEIGHT - 1) || (p.y < 0)) {
+    if ((list[i].x >= GWIDTH - 1) || (list[i].x < 0) || (list[i].y >= GHEIGHT - 1) || (list[i].y < 0)) {
 
         // reverse direction
-        p.theta = protate(p, 180);
+        list[i] = protate(list[i], 180);
 
         // and move back
-        p = _pmove(p);
+        list[i] = _pmove(list[i]);
     }
 
-    return p;
 }
 
 /* Rotates all particles by degrees.
@@ -551,13 +550,12 @@ particle protate_all(particle p[], int degrees) {
 
     @param p The particles.
 */
-particle pmove_all(particle p[]) {
+sub pmove_all() {
     int i;
     for (i = 0; i < GWIDTH * GHEIGHT * 4; i++) {
-        p[i] = pmove(p[i]);
+        pmove(i);
     }
 
-    return p;
 }
 
 /* Normalizes all particles.
@@ -580,16 +578,14 @@ sub normalize() {
     particle p;
     
     float total_s = total();
-    NumOut(50, 50, total_s);
 
     for (i = 0; i < GWIDTH * GHEIGHT * 4; i++) {
-        NumOut(30, 30, list[i].prob);
+
         list[i].prob = list[i].prob / total_s;
-        NumOut(20, 20, list[i].prob);
+
     }
 
-    NumOut(10, 10, total());
-    Wait(5000);
+
     // reset total probability to 1
     ptotal = 1.0;
 }
@@ -604,7 +600,7 @@ sub find_max_p() {
             p_max.x = list[i].x;
             p_max.y = list[i].y;
             p_max.theta = list[i].theta;
-            p_max.prob = list[i].theta;
+            p_max.prob = list[i].prob;
         }
     }
 
@@ -823,6 +819,7 @@ task main() {
         for (i = 0; i < GHEIGHT * GWIDTH * 4; i++) {
 
             k = (list[i].x) * GHEIGHT + list[i].y;
+
             p_inter = map[k];
             colours[0] = p_inter.NE;
             colours[1] = p_inter.SE;
@@ -830,34 +827,39 @@ task main() {
             colours[3] = p_inter.NW;
             
 
-            
+
 
             orient(list[i].theta);
-
-
+            if (k == 10) {
+            NumOut(20, 20, k);
+            NumOut(10,10,colours[0]); NumOut(10,20,colours[1]); NumOut(10,30,colours[2]); NumOut(10,40,colours[3]);
+            Wait(10000);
+                 }
             if (
                 (building.NE == colours[0])
                 && (building.NW == colours[1])
                 && (building.SE == colours[2])
                 && (building.SW == colours[3])
             ) {
-                newp = list[i].prob + 0.9;    PlayToneEx(Random(1000) + 200, 400, 3, FALSE); Wait(400);
+                newp = list[i].prob + 0.9;    PlayToneEx(Random(1000) + 200, 400, 3, FALSE); Wait(10000);
             } else { newp =  list[i].prob + 0.1;}
+            
+            
             
 
 
             update_intersection_probability(list[i].x, list[i].y, list[i].theta, newp);
-            //NumOut(10,10,p_max.prob);
+            //
 
             //NumOut(20, 20, ptotal);
         }
         normalize();
         find_max_p();
-
+        pmove_all();
         robp = p_max.prob;
        // NumOut(10, 10, p_max.prob);
     PlayToneEx(Random(1000) + 200, 400, 3, FALSE);
-    Wait(10000);
+    //Wait(10000);
     }
 
 
