@@ -656,6 +656,21 @@ int orient(int intersection[], int heading) {
     return new_intersection;
 }
 
+/* Given the intersection as a number, returns the corresponding x-coordinate.
+*/
+int to_x(int inter) {
+    return inter / GHEIGHT;
+}
+
+
+int to_y(int inter) {
+    return inter % GHEIGHT;
+}
+
+
+
+
+
 /* The main task which initializes data and executes the update loop for 
     the particle filters.
 */
@@ -786,6 +801,8 @@ task main() {
     NumOut(10, 10, final.x);
     NumOut(20, 20, final.y);
     PlayToneEx(Random(1000) + 200, 400, 3, FALSE);
+
+    move_to(final.x, final.y, to_x(dest), to_y(dest));
     PlayToneEx(Random(1000) + 200, 400, 3, FALSE);
     PlayToneEx(Random(1000) + 200, 400, 3, FALSE);
 }
