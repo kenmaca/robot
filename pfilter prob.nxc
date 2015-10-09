@@ -761,12 +761,12 @@ task main() {
 
     fclose(fd);
     particle final;
-    move_robot();
     intersection building;
     int p, p_NE, p_NW, p_SE, p_SW, k, colours[4], p_inter;
     float newp;
 
     while(robp > THRESHOLD) {
+        move_robot();
         building = scan_surroundings();
         for (i = 0; i < GHEIGHT * GWIDTH; i++) {
             
