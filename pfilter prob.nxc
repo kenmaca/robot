@@ -370,7 +370,7 @@ sub align(int dist) {
                drive(5, 1, 1, true);
                float theta = (25 / dist) + ((25 / dist)*(25 / dist)*(25 / dist))/6;    // 67.5
                float angle = (theta*52.3);
-               NumOut(10, 10, angle);
+               //NumOut(10, 10, angle);
                rotate(-(angle + 45)/2, 0);
             
 
@@ -383,7 +383,7 @@ sub align(int dist) {
                 //drive(5, 1, 1, true);
                 float theta = ( 25 / dist) + ((25 / dist)*(25 / dist)*(25 / dist))/6;    // 67.5
                 float angle = (theta*52.3);
-                NumOut(10, 10, angle);
+                //NumOut(10, 10, angle);
                 rotate((angle + 45)/2, 0);
             }
         }
@@ -818,6 +818,7 @@ task main() {
           accepted as the actual position of the robot.
           
        */
+       particle final;
        move_robot();
        intersection building = scan_surroundings();
        int j;
@@ -855,8 +856,10 @@ task main() {
             }
 
            robp = list[0].prob;
+           final = list[0];
        }
-       
+       NumOut(10, 10, final.x);
+       NumOut(20, 20, final.y);
        PlayToneEx(Random(1000) + 200, 400, 3, FALSE);
        
        /* When we are fairly confident about the robot's position, we can move on
