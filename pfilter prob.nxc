@@ -748,32 +748,36 @@ task main() {
     particle final;
     move_robot();
     intersection building;
-    int p, p_NE, p_NW, p_SE, p_SW, k, colours[4];
+    int p, p_NE, p_NW, p_SE, p_SW, k, colours[4], p_inter;
+    float newp;
 
     while(robp > THRESHOLD) {
         building = scan_surroundings();
-        k = (list[i].x - 1) * GHEIGHT list[i].y
-        for (i = 0; i < GWIDTH * GHEIGHT * 4; i++) {
-            for (p = 0; p < 4; p++) {
+        for (i = 0; i < GHEIGHT * GWIDTH; i++) {
+            
+            k = (list[i].x - 1) * GHEIGHT list[i].y;
+            p_inter = map[k];
+            colours[0] = p_inter.NE;
+            colours[1] = p_inter.SE;
+            colours[2] = p_inter.SW;
+            colours[3] = p_inter.NW;
 
-                                
+            colours = orient(colours, p_inter.theta);
 
-                float newp = (
-                    (building.NE == map[k].NE + p_NE)
-                    && (building.NW == map[k].NW + p_NW)
-                    && (building.SE == map[k].SE + p_SE)
-                    && (building.SW == map[k].SW + p_SW)
-                ) ? list[i].prob + 0.9: list[i].prob + 0.1;
+                  
 
-                list = update_intersection_probability(list, list[i].x, list[i].y, list[i].theta, newp);
-                list = normalize(list);
+            newp = (
+                (building.NE == colours[0])
+                && (building.NW == colours[1])
+                && (building.SE == colours[2])
+                && (building.SW == colours[3])
+            ) ? list[i].prob + 0.9: list[i].prob + 0.1;
 
-                building.NW = (building.NW + 1) % 3;
-                building.NE = (building.NE + 1) % 3;
-                building.SW = (building.SW + 1) % 3;
-                building.SE = (building.SE + 1) % 3;
-            }
+            list = update_intersection_probability(list, list[i].x, list[i].y, list[i].theta, newp);
+            list = normalize(list);
+
         }
+    
 
         robp = list[0].prob;
         final = list[0];
