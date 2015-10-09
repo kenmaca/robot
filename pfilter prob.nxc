@@ -643,12 +643,24 @@ particle update_intersection_probability(particle p[], int x, int y, int heading
     return p;
 }
 
+/* Rotates a intersection reading clockwise heading times.
+
+    @param intersection The reading of colors.
+    @param heading The number of times to rotate the intersection clockwise by.
+
+    @return int[]
+*/
+int orient(int intersection[], int heading) {
+    int new_intersection[4], i;
+    for (i = 0, i < 4, i++) new_intersection[(i - heading) % 4] = intersection[i];
+    return new_intersection;
+}
+
 /* The main task which initializes data and executes the update loop for 
     the particle filters.
 */
 task main() {
-    
-    float robp = 0;
+    float robp = 0.0;
     intersection rsense;
     intersection map[GWIDTH * GHEIGHT];
     int guess[3];
