@@ -820,12 +820,12 @@ task main() {
        */
        move_robot();
        intersection building = scan_surroundings();
-       int j;
+       int p;
        while(robp > THRESHOLD) {
 
            for (i = 0; i < GWIDTH*GHEIGHT*4; i++) {
                
-                   for (j = 0; j<4; j++) {
+               for (p = 0; p<4; p+) {
 
                
                    int p_NE = (NORTHEAST + list[i].theta)%3; 
