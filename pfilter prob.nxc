@@ -42,7 +42,7 @@
 #define GHEIGHT 5
 
 // macros for probability sensing
-#define THRESHOLD 0.9
+#define THRESHOLD 0.27
 #define MATCH 0.9
 #define MISMATCH 0.1
 
@@ -351,7 +351,7 @@ sub move_steps(int step) {
 */
 sub align(int dist) {
     int dir = -1;
-    move_steps(-1);
+    //move_steps(-1);
     
 
 
@@ -362,9 +362,7 @@ sub align(int dist) {
         move_steps(-4);
         dir = -2;
         if (colour() == BLACK) {
-            //rotate(-180,0);
-            //drive(6, 1, 1, true);
-            float theta = (25 / dist); //+  ((25 / dist)*(25 / dist)*(25 / dist))/6;    // 67.5
+            float theta = (25 / dist) +  ((25 / dist)*(25 / dist)*(25 / dist))/6;    // 67.5
             float angle = 90 + (theta*52.3);
             rotate(-angle, 0);
         } else {
@@ -374,10 +372,8 @@ sub align(int dist) {
             dir = 1;
 
             if (colour() == BLACK) {
-               drive(5, 1, 1, true);
                float theta = (25 / dist) + ((25 / dist)*(25 / dist)*(25 / dist))/6;    // 67.5
                float angle = (theta*52.3);
-               //NumOut(10, 10, angle);
                rotate(-(angle + 45)/2, 0);
             
 
@@ -387,16 +383,13 @@ sub align(int dist) {
                 move_steps(2);
                 dir = 2;  
 
-                //drive(5, 1, 1, true);
                 float theta = ( 25 / dist) + ((25 / dist)*(25 / dist)*(25 / dist))/6;    // 67.5
                 float angle = (theta*52.3);
-                //NumOut(10, 10, angle);
                 rotate((angle + 45)/2, 0);
             }
         }
     } else {
-        //drive(11, 1, 1, true);
-        float theta = (25 / dist);    // 67.5
+        float theta = (25 / dist) + ((25 / dist)*(25 / dist)*(25 / dist))/6;    // 67.5
         float angle = 90 - (theta*52.3);
         rotate(-angle, 0);
     }
@@ -504,7 +497,6 @@ particle _pmove(particle p) {
     @param degrees The degrees to rotate this particle.
 */
 particle protate(particle p, int degrees) {
-    degrees = degrees / 90;
     p.theta = (p.theta + degrees) % 4;
 
     return p;
@@ -521,10 +513,10 @@ sub pmove(int i) {
     list[i] = _pmove(list[i]);
 
     // check bounds and reverse
-    if ((list[i].x >= GWIDTH - 1) || (list[i].x < 0) || (list[i].y >= GHEIGHT - 1) || (list[i].y < 0)) {
+    if ((list[i].x >= GWIDTH ) || (list[i].x < 0) || (list[i].y >= GHEIGHT ) || (list[i].y < 0)) {
 
         // reverse direction
-        list[i] = protate(list[i], 180);
+        list[i] = protate(list[i], 2);
 
         // and move back
         list[i] = _pmove(list[i]);
@@ -582,7 +574,6 @@ sub normalize() {
     for (i = 0; i < GWIDTH * GHEIGHT * 4; i++) {
 
         list[i].prob = list[i].prob / total_s;
-
     }
 
 
@@ -729,11 +720,16 @@ task main() {
     int i, j; /* variables for loop counters */
     int hits, misses; /* keeps track of how many of a particle's
                       surroundings match the robot's */
+                      
+    i = (0 == 1) + (4 == 4);
+    
+    NumOut(10,10,i);
+    Wait(20000);
     float maxprob, totalprob;
 
     byte fd, charat;         /* variables for file descriptors and characters */
     string line;
-    int target, dest; /* records the target and destination coordinates for use
+    int target, dest, target_x, target_y, dest_x, dest_y; /* records the target and destination coordinates for use
                       after finding the robot's position */
     PlayToneEx(Random(1000) + 200, 400, 3, FALSE);
     /* sensor initialization */
@@ -789,25 +785,27 @@ task main() {
     /* read information about the target which should be following the map data */
     fgets(line, READSIZE, fd);
     charat = StrIndex(line,0);
-    target = ASCII_TO_INT(charat);
-    target = target*GHEIGHT; // add x coordinate calculation
+    target_x = ASCII_TO_INT(charat);
+    target = target_x*GHEIGHT; // add x coordinate calculation
     charat = StrIndex(line,2);
-    target = target + ASCII_TO_INT(charat); // add y coordinate
+    target_y =  ASCII_TO_INT(charat);
+    target = target + target_y; // add y coordinate
 
 
 
     /* read information about the destination which sould be following the target data */
     fgets(line, READSIZE, fd);
     charat = StrIndex(line,0);
-    dest = ASCII_TO_INT(charat);
-    dest = dest*GHEIGHT; // add x coordinate calculation
+    dest_x = ASCII_TO_INT(charat);
+    dest = dest_x*GHEIGHT; // add x coordinate calculation
     charat = StrIndex(line,2);
-    dest = dest + ASCII_TO_INT(charat); // add y coordinate
+    dest_y = ASCII_TO_INT(charat);
+    dest = dest + dest_y; // add y coordinate
 
     fclose(fd);
     particle final;
     intersection building, p_inter;
-    int p, p_NE, p_NW, p_SE, p_SW, k;
+    int p, p_NE, p_NW, p_SE, p_SW, k, r, e;
     float newp;
     p_max = list[0];
     p_max.prob = 0.0;
@@ -815,6 +813,7 @@ task main() {
     
     while(p_max.prob < THRESHOLD) {
         move_robot();
+        pmove_all();
         building = scan_surroundings();
         for (i = 0; i < GHEIGHT * GWIDTH * 4; i++) {
 
@@ -827,45 +826,49 @@ task main() {
             colours[3] = p_inter.NW;
             
 
-
+            // probability model
 
             orient(list[i].theta);
-            if (k == 10) {
-            NumOut(20, 20, k);
-            NumOut(10,10,colours[0]); NumOut(10,20,colours[1]); NumOut(10,30,colours[2]); NumOut(10,40,colours[3]);
-            Wait(10000);
-                 }
             if (
                 (building.NE == colours[0])
-                && (building.NW == colours[1])
-                && (building.SE == colours[2])
-                && (building.SW == colours[3])
+                && (building.SE == colours[1])
+                && (building.SW == colours[2])
+                && (building.NW == colours[3])
             ) {
-                newp = list[i].prob + 0.9;    PlayToneEx(Random(1000) + 200, 400, 3, FALSE); Wait(10000);
-            } else { newp =  list[i].prob + 0.1;}
+                list[i].prob = list[i].prob + MATCH;
+            }
+            /*else if (
+                (building.NE != colours[0])
+                && (building.SE != colours[1])
+                && (building.SW != colours[2])
+                && (building.NW != colours[3])
+            ) { list[i].prob =  list[i].prob;
+            } else {list[i] = list[i] + ((
+                (building.NE == colours[0])
+                + (building.SE == colours[1])
+                + (building.SW == colours[2])
+                + (building.NW == colours[3])
+            ))*MISMATCH; }   */
             
             
             
 
 
-            update_intersection_probability(list[i].x, list[i].y, list[i].theta, newp);
-            //
 
-            //NumOut(20, 20, ptotal);
         }
         normalize();
         find_max_p();
-        pmove_all();
+
         robp = p_max.prob;
-       // NumOut(10, 10, p_max.prob);
-    PlayToneEx(Random(1000) + 200, 400, 3, FALSE);
-    //Wait(10000);
     }
 
 
     PlayToneEx(Random(1000) + 200, 400, 3, FALSE);
 
-    move_to(p_max.x, p_max.y, to_x(dest), to_y(dest), p_max.theta);
+    p_max.theta = move_to(p_max.x, p_max.y, target_x, target_y, p_max.theta);
+    p_max.x = target_x; p_max.y = target_y;
+    p_max.theta = move_to(p_max.x, p_max.y, dest_x, dest_y, p_max.theta);
     PlayToneEx(Random(1000) + 200, 400, 3, FALSE);
     PlayToneEx(Random(1000) + 200, 400, 3, FALSE);
+    Wait(500);
 }
