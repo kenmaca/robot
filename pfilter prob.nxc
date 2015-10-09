@@ -736,18 +736,15 @@ task main() {
     particle final;
     move_robot();
     intersection building;
-    int p;
+    int p, p_NE, p_NW, p_SE, p_SW, k, colours[4];
 
     while(robp > THRESHOLD) {
         building = scan_surroundings();
+        k = (list[i].x - 1) * GHEIGHT list[i].y
         for (i = 0; i < GWIDTH * GHEIGHT * 4; i++) {
             for (p = 0; p < 4; p++) {
-                int p_NE = list[i].theta % 3;
-                int p_NW = list[i].theta % 3;
-                int p_SE = list[i].theta % 3;
-                int p_SW = list[i].theta % 3;
-                int particle_match_count = 0;
-                int k = (list[i].x + 3) * list[i].y;
+
+                                
 
                 float newp = (
                     (building.NE == map[k].NE + p_NE)
